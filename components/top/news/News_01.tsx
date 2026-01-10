@@ -3,6 +3,7 @@
 
 import { useState, useEffect } from "react"
 import Image from "next/image"
+import Link from "next/link"
 // import { microcms } from "@/lib/microcms"
 import { Cms } from "@/types"
 import ContentHeadline from "@/components/ui/frame/ContentHeadline"
@@ -69,7 +70,11 @@ const News_01 = ({ limit = 3 }: NewsProps) => {
         <ContentHeadline subTitle="News" mainTitle="お知らせ" />
         <div className="grid grid-cols-1 md:grid-cols-3 md:gap-x-10">
           {contents.map((post) => (
-            <div key={post.id} className="w-full">
+            <Link
+              key={post.id}
+              href={`/news/${post.id}`}
+              className="w-full block hover:opacity-80 transition-opacity"
+            >
               <div className="w-full h-[250px] mt-5 md:mt-0">
                 {post.image && (
                   <Image
@@ -87,11 +92,14 @@ const News_01 = ({ limit = 3 }: NewsProps) => {
                   {post.description}
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
         <div className="flex justify-center mt-16">
-          <MoreButton className="text-accentColor border-accentColor" />
+          <MoreButton
+            href="/news"
+            className="text-accentColor border-accentColor"
+          />
         </div>
       </section>
     </SectionContent>

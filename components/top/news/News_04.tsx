@@ -72,13 +72,20 @@ const News_04 = ({ limit = 3 }: NewsProps) => {
         <div className="w-[300px]">
           <ContentHeadline subTitle="News" mainTitle="お知らせ" />
           <div className="mt-16 flex justify-center">
-            <MoreButton className="text-accentColor border-accentColor" />
+            <MoreButton
+              href="/news"
+              className="text-accentColor border-accentColor"
+            />
           </div>
         </div>
 
         <div className="w-[820px] grid grid-cols-1 gap-y-10 gap-x-16">
           {contents.map((post) => (
-            <div key={post.id} className="w-full flex space-x-6">
+            <Link
+              key={post.id}
+              href={`/news/${post.id}`}
+              className="w-full flex space-x-6 hover:opacity-80 transition-opacity"
+            >
               <div className="w-[250px] h-[150px] mt-5 md:mt-0">
                 {post.image && (
                   <Image
@@ -97,15 +104,12 @@ const News_04 = ({ limit = 3 }: NewsProps) => {
                     ? format(new Date(post.date), "yyyy/MM/dd", { locale: ja })
                     : ""}
                 </p>
-                <Link
-                  href="/"
-                  className="mt-6 flex items-center text-accentColor font-semibold"
-                >
+                <div className="mt-6 flex items-center text-accentColor font-semibold">
                   もっと見る
                   <ChevronRightIcon className="ml-1 w-4 h-6" />
-                </Link>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>

@@ -4,6 +4,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 // import { microcms } from "@/lib/microcms";
 import { Cms } from "@/types";
 import ContentHeadline from "@/components/ui/frame/ContentHeadline";
@@ -72,12 +73,19 @@ const Case_04 = ({ limit = 3 }: CaseProps) => {
         <div className="md:w-[300px]">
           <ContentHeadline subTitle="Case study" mainTitle="導入事例" />
           <div className="mt-0 md:mt-16 flex justify-center">
-            <MoreButton className="text-accentColor border-accentColor" />
+            <MoreButton
+              href="/case"
+              className="text-accentColor border-accentColor"
+            />
           </div>
         </div>
         <div className="mt-10 md:mt-0 md:w-[820px] grid grid-cols-1 gap-y-5 md:gap-y-10 gap-x-10 md:gap-x-16">
           {contents.map((post) => (
-            <div key={post.id} className="w-full md:flex space-x-6">
+            <Link
+              key={post.id}
+              href={`/case/${post.id}`}
+              className="w-full md:flex space-x-6 hover:opacity-80 transition-opacity"
+            >
               <div className="w-full md:w-[180px] h-[250px] md:h-[130px] mt-5 md:mt-0">
                 {post.image && (
                   <Image
@@ -94,15 +102,12 @@ const Case_04 = ({ limit = 3 }: CaseProps) => {
                 <p className="mt-2 text-[#5f5f5f] text-xs">
                   {post.description}
                 </p>
-                <a
-                  href="/"
-                  className="mt-6 flex items-center text-accentColor font-semibold"
-                >
+                <div className="mt-6 flex items-center text-accentColor font-semibold">
                   もっと見る
                   <ChevronRightIcon className="ml-1 w-4 h-6" />
-                </a>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>

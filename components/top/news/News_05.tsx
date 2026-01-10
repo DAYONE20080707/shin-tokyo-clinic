@@ -75,7 +75,11 @@ const News_05 = ({ limit = 6 }: NewsProps) => {
 
         <div className="mt-16 grid grid-cols-2 gap-y-10 gap-x-16">
           {contents.map((post) => (
-            <div key={post.id} className="w-full flex space-x-6">
+            <Link
+              key={post.id}
+              href={`/news/${post.id}`}
+              className="w-full flex space-x-6 hover:opacity-80 transition-opacity"
+            >
               <div className="w-[180px] h-[130px] mt-5 md:mt-0">
                 {post.image && (
                   <Image
@@ -94,20 +98,20 @@ const News_05 = ({ limit = 6 }: NewsProps) => {
                     ? format(new Date(post.date), "yyyy/MM/dd", { locale: ja })
                     : ""}
                 </p>
-                <Link
-                  href="/"
-                  className="mt-6 flex items-center text-accentColor font-semibold"
-                >
+                <div className="mt-6 flex items-center text-accentColor font-semibold">
                   もっと見る
                   <ChevronRightIcon className="ml-1 w-4 h-6" />
-                </Link>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
         <div className="mt-16 flex justify-center">
-          <MoreButton className="text-accentColor border-accentColor" />
+          <MoreButton
+            href="/news"
+            className="text-accentColor border-accentColor"
+          />
         </div>
       </section>
     </SectionContent>

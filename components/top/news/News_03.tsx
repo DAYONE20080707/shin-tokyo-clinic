@@ -60,7 +60,11 @@ const News_03 = ({ limit = 3 }: NewsProps) => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 md:gap-x-10">
           {contents.map((post) => (
-            <div key={post.id} className="w-full">
+            <Link
+              key={post.id}
+              href={`/news/${post.id}`}
+              className="w-full block hover:opacity-80 transition-opacity"
+            >
               <div className="w-full h-[250px] rounded-[15px] mt-5 md:mt-0 overflow-hidden">
                 {post.image && (
                   <Image
@@ -80,20 +84,20 @@ const News_03 = ({ limit = 3 }: NewsProps) => {
                     : ""}
                 </p>
 
-                <Link
-                  href={`/news/${post.id}`}
-                  className="mt-6 inline-flex items-center text-accentColor font-semibold"
-                >
+                <div className="mt-6 inline-flex items-center text-accentColor font-semibold">
                   もっと見る
                   <ChevronRightIcon className="ml-1 w-4 h-6" />
-                </Link>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
         <div className="flex justify-center mt-16">
-          <MoreButton className="text-accentColor border-accentColor" />
+          <MoreButton
+            href="/news"
+            className="text-accentColor border-accentColor"
+          />
         </div>
       </section>
     </SectionContent>

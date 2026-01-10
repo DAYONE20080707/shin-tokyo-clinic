@@ -1,23 +1,23 @@
 import { componentsConfig } from "@/lib/componentsConfig"
 import React from "react"
 
-interface CaseDetailPageProps {
+interface NewsDetailPageProps {
   params: Promise<{ id: string }>
   searchParams: Promise<{
     draftKey?: string
   }>
 }
 
-const CaseDetailPage = async ({
+const NewsDetailPage = async ({
   params,
   searchParams,
-}: CaseDetailPageProps) => {
+}: NewsDetailPageProps) => {
   const { id } = await params
   const { draftKey } = await searchParams
 
-  const sections = componentsConfig.CaseDetail.sections
-  const defaultTemplate = sections.caseDetail.options[1].id
-  const Component = sections.caseDetail.components[defaultTemplate]
+  const sections = componentsConfig.NewsDetail.sections
+  const defaultTemplate = sections.newsDetail.options[1].id
+  const Component = sections.newsDetail.components[defaultTemplate]
 
   return Component
     ? React.cloneElement(Component as React.ReactElement, {
@@ -27,4 +27,4 @@ const CaseDetailPage = async ({
     : null
 }
 
-export default CaseDetailPage
+export default NewsDetailPage

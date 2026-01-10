@@ -3,6 +3,7 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import { useState, useEffect, useRef } from "react"
 // import { microcms } from "@/lib/microcms";
 import { Cms } from "@/types"
@@ -111,7 +112,10 @@ const Case_02 = ({ limit = 5 }: CaseProps) => {
         >
           {contents.map((post) => (
             <SwiperSlide key={post.id} className="md:w-[700px]">
-              <div className="md:w-[800px] h-[250px] md:h-[400px] relative">
+              <Link
+                href={`/case/${post.id}`}
+                className="block md:w-[800px] h-[250px] md:h-[400px] relative hover:opacity-80 transition-opacity"
+              >
                 <div className="w-full h-[250px] md:h-[400px] mt-5 md:mt-0">
                   {post.image && (
                     <Image
@@ -134,7 +138,7 @@ const Case_02 = ({ limit = 5 }: CaseProps) => {
                       : "カテゴリーなし"}
                   </p>
                 </div>
-              </div>
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>
@@ -151,7 +155,10 @@ const Case_02 = ({ limit = 5 }: CaseProps) => {
         </div>
       </section>
       <div className="flex justify-center mt-16">
-        <MoreButton className="text-accentColor border-accentColor" />
+        <MoreButton
+          href="/case"
+          className="text-accentColor border-accentColor"
+        />
       </div>
     </SectionContent>
   )

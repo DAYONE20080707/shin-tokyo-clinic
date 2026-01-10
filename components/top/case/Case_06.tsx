@@ -3,6 +3,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Link from "next/link"
 // import { microcms } from "@/lib/microcms";
 import { Cms } from "@/types"
 import ContentHeadline from "@/components/ui/frame/ContentHeadline"
@@ -72,14 +73,18 @@ const Case_06 = ({ limit = 9 }: CaseProps) => {
         <div className="md:w-[300px]">
           <ContentHeadline subTitle="Case study" mainTitle="導入事例" />
           <div className="mt-0 md:mt-16">
-            <MoreButton className="text-accentColor border-accentColor" />
+            <MoreButton
+              href="/case"
+              className="text-accentColor border-accentColor"
+            />
           </div>
         </div>
         <div className="mt-10 md:mt-0 md:w-[820px] space-y-5">
           {contents.map((post) => (
-            <div
+            <Link
               key={post.id}
-              className="w-full md:flex md:space-x-6 border-b border-[#eeeeee] pb-5"
+              href={`/case/${post.id}`}
+              className="w-full md:flex md:space-x-6 border-b border-[#eeeeee] pb-5 hover:opacity-80 transition-opacity"
             >
               <p className="font-medium">
                 {post.date
@@ -92,7 +97,7 @@ const Case_06 = ({ limit = 9 }: CaseProps) => {
                   : "カテゴリーなし"}
               </p>
               <p className="text-lg font-bold">{post.title}</p>
-            </div>
+            </Link>
           ))}
         </div>
       </section>

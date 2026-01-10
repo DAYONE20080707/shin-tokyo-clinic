@@ -1,7 +1,8 @@
-// components/news/News_05.tsx
+// components/news/News_06.tsx
 "use client"
 
 import { useState, useEffect } from "react"
+import Link from "next/link"
 // import { microcms } from "@/lib/microcms"
 import { Cms } from "@/types"
 import ContentHeadline from "@/components/ui/frame/ContentHeadline"
@@ -15,7 +16,7 @@ interface NewsProps {
   limit?: number
 }
 
-const News_05 = ({ limit = 9 }: NewsProps) => {
+const News_06 = ({ limit = 9 }: NewsProps) => {
   const [contents, setContents] = useState<Cms[]>([])
   const [loading, setLoading] = useState(true)
 
@@ -69,15 +70,19 @@ const News_05 = ({ limit = 9 }: NewsProps) => {
         <div className="w-[300px]">
           <ContentHeadline subTitle="News" mainTitle="お知らせ" />
           <div className="mt-16">
-            <MoreButton className="text-accentColor border-accentColor" />
+            <MoreButton
+              href="/news"
+              className="text-accentColor border-accentColor"
+            />
           </div>
         </div>
 
         <div className="w-[820px] space-y-5">
           {contents.map((post) => (
-            <div
+            <Link
               key={post.id}
-              className="w-full flex space-x-6 border-b border-[#eeeeee] pb-5"
+              href={`/news/${post.id}`}
+              className="w-full flex space-x-6 border-b border-[#eeeeee] pb-5 hover:opacity-80 transition-opacity"
             >
               <p className="font-medium">
                 {post.date
@@ -90,7 +95,7 @@ const News_05 = ({ limit = 9 }: NewsProps) => {
                   : "カテゴリーなし"}
               </p>
               <p className="text-lg font-bold">{post.title}</p>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
@@ -98,4 +103,4 @@ const News_05 = ({ limit = 9 }: NewsProps) => {
   )
 }
 
-export default News_05
+export default News_06

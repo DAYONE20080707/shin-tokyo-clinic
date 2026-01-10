@@ -1,5 +1,3 @@
-// components/blog/blogDetail/BlogDetail_02.tsx
-
 "use client"
 
 import { useState, useEffect } from "react"
@@ -7,16 +5,18 @@ import Image from "next/image"
 import Link from "next/link"
 import { blogsFetch } from "@/lib/api/blogsFetch"
 import { Cms } from "@/types"
-import styles from '@/styles/microcms.module.css'
+import styles from "@/styles/microcms.module.css"
 
 interface BlogDetailProps {
   params: {
     id: string
   }
+  draftKey?: string
 }
 
-const BlogDetail_02 = ({ params }: BlogDetailProps) => {
+const BlogDetail_02 = ({ params, draftKey }: BlogDetailProps) => {
   const { id } = params
+
   const [post, setPost] = useState<Cms | null>(null)
   const [relatedPosts, setRelatedPosts] = useState<Cms[]>([])
   const [loading, setLoading] = useState(true)
@@ -30,8 +30,7 @@ const BlogDetail_02 = ({ params }: BlogDetailProps) => {
         setLoading(true)
         setError(null)
 
-        // 記事取得
-        const currentPost = await blogsFetch.get(id)
+        const currentPost = await blogsFetch.get(id, draftKey)
         if (!mounted) return
 
         if (!currentPost) {
@@ -41,25 +40,32 @@ const BlogDetail_02 = ({ params }: BlogDetailProps) => {
 
         setPost(currentPost)
 
-        // 関連記事取得（同カテゴリーで最新順）
-        let related: Cms[] = []
-        if (
-          Array.isArray(currentPost.category) &&
-          currentPost.category.length > 0
-        ) {
-          const allSameCategory = await blogsFetch.list(100)
-          if (mounted) {
-            related = allSameCategory
-              .filter(
-                (p) =>
-                  p.id !== id &&
-                  Array.isArray(p.category) &&
-                  p.category.includes(currentPost.category![0])
-              )
-              .slice(0, 5)
-            setRelatedPosts(related)
+        // ✅ 全記事取得（draftKey対応）
+        const allPosts = await blogsFetch.list(100, draftKey)
+        if (!mounted) return
+
+        const sorted = allPosts.sort(
+          (a, b) =>
+            new Date(b.date ?? "").getTime() -
+            new Date(a.date ?? "").getTime()
+        )
+
+        // ✅ 関連記事生成（TypeScript安全）
+        const related = sorted.filter((p) => {
+          if (
+            p.id === id ||
+            !Array.isArray(p.category) ||
+            !Array.isArray(currentPost.category)
+          ) {
+            return false
           }
-        }
+
+          return p.category.some((cat) =>
+            currentPost.category!.includes(cat)
+          )
+        })
+
+        setRelatedPosts(related.slice(0, 5))
       } catch (err) {
         console.error("Failed to fetch blog post:", err)
         if (mounted) {
@@ -77,7 +83,7 @@ const BlogDetail_02 = ({ params }: BlogDetailProps) => {
     return () => {
       mounted = false
     }
-  }, [id])
+  }, [id, draftKey])
 
   if (loading) {
     return (
@@ -135,6 +141,7 @@ const BlogDetail_02 = ({ params }: BlogDetailProps) => {
                 </span>
               )}
             </div>
+
             {post.date && (
               <time className="text-gray-500 text-sm">
                 {new Date(post.date)
@@ -152,11 +159,10 @@ const BlogDetail_02 = ({ params }: BlogDetailProps) => {
             {post.title}
           </h1>
 
-         <div
-                className={styles.content}
-                dangerouslySetInnerHTML={{ __html: post.content }}
-              />
-
+          <div
+            className={styles.content}
+            dangerouslySetInnerHTML={{ __html: post.content }}
+          />
         </article>
 
         {relatedPosts.length > 0 && (

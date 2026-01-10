@@ -14,9 +14,10 @@ interface BlogDetailProps {
   params: {
     id: string
   }
+  draftKey?: string
 }
 
-const BlogDetail_01 = ({ params }: BlogDetailProps) => {
+const BlogDetail_01 = ({ params, draftKey }: BlogDetailProps) => {
   const { id } = params
   const [post, setPost] = useState<Cms | null>(null)
   const [prevPost, setPrevPost] = useState<Cms | null>(null)
@@ -32,8 +33,7 @@ const BlogDetail_01 = ({ params }: BlogDetailProps) => {
         setLoading(true)
         setError(null)
 
-        // 記事取得
-        const currentPost = await blogsFetch.get(id)
+        const currentPost = await blogsFetch.get(id, draftKey)
         if (!mounted) return
 
         if (!currentPost) {
@@ -43,8 +43,7 @@ const BlogDetail_01 = ({ params }: BlogDetailProps) => {
 
         setPost(currentPost)
 
-        // 全記事取得（publishedAt順）
-        const allPosts = await blogsFetch.list(100)
+        const allPosts = await blogsFetch.list(100, draftKey)
         if (!mounted) return
 
         const sorted = allPosts.sort(
@@ -72,7 +71,7 @@ const BlogDetail_01 = ({ params }: BlogDetailProps) => {
     return () => {
       mounted = false
     }
-  }, [id])
+  }, [id, draftKey])
 
   if (loading) {
     return (

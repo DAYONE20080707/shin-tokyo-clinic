@@ -104,12 +104,22 @@
   color: blue;
 }
 
+.content figure {
+  margin: 20px 0;
+}
+
+.content figure img {
+  display: inline-block;
+}
+
 .content img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .content a img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .content a img:hover {

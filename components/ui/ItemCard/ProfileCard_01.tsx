@@ -1,4 +1,4 @@
-// components/ui/itemCard/ProfileCard_01.tsx
+// components/ui/itemCard/ProfileCard_01_01.tsx
 
 import React from "react"
 

@@ -3,12 +3,12 @@ export const Menu = [
   {
     name: "Our Service",
     nameJa: "事業内容",
-    href: "/#service",
+    href: "/service",
   },
   {
     name: "About  us",
     nameJa: "会社概要",
-    href: "/#about",
+    href: "/about",
   },
 
   // {

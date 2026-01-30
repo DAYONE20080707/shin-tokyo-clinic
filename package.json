@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:export": "cross-env EXPORT=true next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -12,6 +13,7 @@
     "@heroicons/react": "^2.1.5",
     "@radix-ui/react-icons": "^1.3.0",
     "@radix-ui/react-slot": "^1.1.0",
+    "@types/nodemailer": "^7.0.3",
     "class-variance-authority": "^0.7.0",
     "classnames": "^2.5.1",
     "clsx": "^2.1.1",
@@ -20,7 +22,7 @@
     "lucide-react": "^0.435.0",
     "microcms-js-sdk": "^3.1.2",
     "next": "^16.0.8",
-    "nodemailer": "^7.0.6",
+    "nodemailer": "^7.0.10",
     "react": "^18",
     "react-dom": "^18",
     "react-feather": "^2.0.10",
@@ -33,9 +35,9 @@
   },
   "devDependencies": {
     "@types/node": "^20",
-    "@types/nodemailer": "^7.0.1",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "cross-env": "^10.1.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.6",
     "postcss": "^8",

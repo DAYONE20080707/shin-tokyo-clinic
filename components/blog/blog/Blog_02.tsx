@@ -75,7 +75,7 @@ const Blog_02 = ({ limit = 3 }: BlogProps) => {
     <PageContent className="bg-bgLight">
       <section className="md:max-w-[1200px] mx-auto">
         {/* カテゴリボタン */}
-        <div className="flex flex-wrap justify-start md:justify-center gap-x-5 md:gap-20 rounded-full bg-white mx-auto px-5 md:px-20 w-fit">
+        <div className="flex flex-wrap justify-start md:justify-center gap-x-5 md:gap-x-20 rounded-full bg-white mx-auto px-5 md:px-20 w-fit">
           {categories.map((category) => (
             <button
               key={category.id}

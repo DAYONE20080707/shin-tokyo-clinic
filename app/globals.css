@@ -71,7 +71,7 @@ body,
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground tracking-[0.03em] leading-[160%];
   }
 }
 

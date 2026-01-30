@@ -20,7 +20,7 @@ const KeyVisual_04 = () => {
         {/* widthがフルサイズでない場合は指定する */}
         <section className="mx-auto">
           {/* KeyVisualContentに高さを指定 */}
-          <KeyVisualContent className="h-screen" />
+          <KeyVisualContent className="h-screen md:h-[810px]" />
         </section>
         <TopPageHeadline
           mainTitle={<>Lorem Ipsum

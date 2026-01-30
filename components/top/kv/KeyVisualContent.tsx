@@ -7,9 +7,13 @@ import { useState, useEffect } from "react"
 
 interface KeyVisualContentProps {
   className?: string
+  isSlider?: boolean
 }
 
-const KeyVisualContent: React.FC<KeyVisualContentProps> = ({ className }) => {
+const KeyVisualContent: React.FC<KeyVisualContentProps> = ({
+  className,
+  isSlider = false,
+}) => {
   const [currentSlide, setCurrentSlide] = useState(0)
 
   const slides = [
@@ -21,13 +25,31 @@ const KeyVisualContent: React.FC<KeyVisualContentProps> = ({ className }) => {
   ]
 
   useEffect(() => {
+    if (!isSlider) return
+
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length)
     }, 4000) // 4秒ごとに切り替え
 
     return () => clearInterval(timer)
-  }, [slides.length])
+  }, [slides.length, isSlider])
 
+  // 単一画像の場合
+  if (!isSlider) {
+    return (
+      <div className={classNames("relative w-full", className)}>
+        <Image
+          src={slides[0].src}
+          alt={slides[0].alt}
+          priority
+          fill
+          className="object-cover"
+        />
+      </div>
+    )
+  }
+
+  // スライダーの場合
   return (
     <div className={classNames("relative w-full", className)}>
       {slides.map((slide, index) => (

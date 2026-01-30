@@ -15,7 +15,7 @@ const FirstViewContent: React.FC<FirstViewContentProps> = ({
   return (
     <div
       className={classNames(
-        "w-full ",
+        "w-full",
         className
       )}
     >

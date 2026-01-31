@@ -69,29 +69,29 @@ const Case_06 = ({ limit = 9 }: CaseProps) => {
 
   return (
     <SectionContent>
-      <section className="md:max-w-[1200px] mx-auto md:flex justify-between gap-x-20">
-        <div className="md:w-[300px]">
+      <section className="lg:max-w-[1200px] mx-auto lg:flex justify-between gap-x-20">
+        <div className="lg:w-[300px]">
           <ContentHeadline subTitle="Case study" mainTitle="導入事例" />
-          <div className="mt-0 md:mt-16">
+          <div className="mt-0 lg:mt-16">
             <MoreButton
               href="/case"
               className="text-accentColor border-accentColor"
             />
           </div>
         </div>
-        <div className="mt-10 md:mt-0 md:w-[820px] space-y-5">
+        <div className="mt-10 lg:mt-0 lg:w-[820px] space-y-5">
           {contents.map((post) => (
             <Link
               key={post.id}
               href={`/case/${post.id}`}
-              className="w-full md:flex md:space-x-6 border-b border-[#eeeeee] pb-5 hover:opacity-80 transition-opacity"
+              className="w-full lg:flex lg:space-x-6 border-b border-[#eeeeee] pb-5 hover:opacity-80 transition-opacity"
             >
               <p className="font-medium">
                 {post.date
                   ? format(new Date(post.date), "yyyy/MM/dd", { locale: ja })
                   : ""}
               </p>
-              <p className="mt-1 md:mt-0 w-40 h-[25px] px-2 bg-accentColor rounded-[5px] text-white flex justify-center items-center text-xs">
+              <p className="mt-1 lg:mt-0 w-40 h-[25px] px-2 bg-accentColor rounded-[5px] text-white flex justify-center items-center text-xs">
                 {Array.isArray(post.category) && post.category.length > 0
                   ? post.category.join(", ")
                   : "カテゴリーなし"}

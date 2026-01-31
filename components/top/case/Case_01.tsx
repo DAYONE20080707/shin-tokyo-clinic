@@ -68,17 +68,17 @@ const Case_01 = ({ limit = 3 }: CaseProps) => {
 
   return (
     <SectionContent className="bg-bgLight">
-      <section className="md:max-w-[1200px] mx-auto md:space-y-10">
+      <section className="lg:max-w-[1200px] mx-auto lg:space-y-10">
         <ContentHeadline subTitle="Case study" mainTitle="導入事例" />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 md:gap-x-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-10">
           {contents.map((post) => (
             <Link
               key={post.id}
               href={`/case/${post.id}`}
               className="w-full block hover:opacity-80 transition-opacity"
             >
-              <div className="w-full h-[250px] mt-5 md:mt-0 rounded-t-2xl">
+              <div className="w-full h-[250px] mt-5 lg:mt-0 rounded-t-2xl">
                 {post.image && (
                   <Image
                     src={post.image.url}

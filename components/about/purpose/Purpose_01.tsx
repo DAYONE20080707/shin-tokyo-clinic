@@ -55,7 +55,7 @@ const Purpose_01 = () => {
 
   return (
     <SectionContent>
-      <section className="md:max-w-[1200px] mx-auto">
+      <section className="lg:max-w-[1200px] mx-auto">
         <ContentHeadline
           subTitle="Purpose"
           mainTitle="私たちの想い"
@@ -67,7 +67,7 @@ const Purpose_01 = () => {
           <PurposeCard {...purposeData.vision} />
           <PurposeCard {...purposeData.values} />
         </ul>
-        <div className="w-full h-[300px] md:h-[523px] relative rounded overflow-hidden">
+        <div className="w-full h-[300px] lg:h-[523px] relative rounded overflow-hidden">
           <Image
             src="/about/about-purpose.jpg"
             alt="message"

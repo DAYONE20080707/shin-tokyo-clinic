@@ -76,9 +76,9 @@ const Blog_01 = ({ limit = 3 }: BlogProps) => {
 
   return (
     <PageContent className="bg-bgLight">
-      <section className="md:max-w-[1200px] mx-auto">
+      <section className="lg:max-w-[1200px] mx-auto">
         {/* カテゴリボタン */}
-        <div className="flex flex-wrap justify-start md:justify-center gap-x-5 md:gap-x-20 rounded-full bg-white mx-auto px-5 md:px-20 w-fit">
+        <div className="flex flex-wrap justify-start lg:justify-center gap-x-5 lg:gap-x-20 rounded-full bg-white mx-auto px-5 lg:px-20 w-fit">
           {categories.map((category) => (
             <button
               key={category.id}
@@ -104,7 +104,7 @@ const Blog_01 = ({ limit = 3 }: BlogProps) => {
           </div>
         ) : (
           <>
-            <div className="grid grid-cols-1 md:grid-cols-3 md:gap-10 mt-16">
+            <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-10 mt-16">
               {displayContents.map((post) => (
                 <Link
                   key={post.id}
@@ -112,7 +112,7 @@ const Blog_01 = ({ limit = 3 }: BlogProps) => {
                   className="w-full hover:opacity-90 transition-opacity"
                 >
                   <div className="w-full">
-                    <div className="w-full h-[250px] mt-5 md:mt-0 rounded-t-2xl">
+                    <div className="w-full h-[250px] mt-5 lg:mt-0 rounded-t-2xl">
                       {post.image && (
                         <Image
                           src={post.image.url}

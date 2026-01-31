@@ -86,7 +86,7 @@ const Blog_02 = ({ limit = 5 }: BlogProps) => {
   return (
     <>
       <SectionContent className="bg-bgLight">
-        <section className="md:max-w-[1200px] mx-auto relative">
+        <section className="lg:max-w-[1200px] mx-auto relative">
           <ContentHeadline subTitle="Blog" mainTitle="ブログ" />
 
           <Swiper
@@ -111,8 +111,8 @@ const Blog_02 = ({ limit = 5 }: BlogProps) => {
           >
             {contents.map((post) => (
               <SwiperSlide key={post.id} className="w-[700px]">
-                <div className="md:w-[800px] h-[250px] md:h-[400px] relative">
-                  <div className="w-full h-[250px] md:h-[400px] mt-5 md:mt-0">
+                <div className="lg:w-[800px] h-[250px] lg:h-[400px] relative">
+                  <div className="w-full h-[250px] lg:h-[400px] mt-5 lg:mt-0">
                     {post.image && (
                       <Image
                         src={post.image.url}
@@ -123,11 +123,11 @@ const Blog_02 = ({ limit = 5 }: BlogProps) => {
                       />
                     )}
                   </div>
-                  <div className="absolute bottom-0 left-0 w-full md:w-[400px] bg-black/50 py-3 md:py-8 px-3 md:px-10 text-white">
-                    <p className="md:text-lg font-bold min-h-12 md:min-h-0">
+                  <div className="absolute bottom-0 left-0 w-full lg:w-[400px] bg-black/50 py-3 lg:py-8 px-3 lg:px-10 text-white">
+                    <p className="lg:text-lg font-bold min-h-12 lg:min-h-0">
                       {post.title}
                     </p>
-                    <p className="mt-2 md:mt-4 text-white text-xs min-h-8 md:min-h-0">
+                    <p className="mt-2 lg:mt-4 text-white text-xs min-h-8 lg:min-h-0">
                       #
                       {Array.isArray(post.category) && post.category.length > 0
                         ? post.category.join(", ")
@@ -139,7 +139,7 @@ const Blog_02 = ({ limit = 5 }: BlogProps) => {
             ))}
           </Swiper>
 
-          <div className="absolute right-4 md:right-60 -bottom-3 z-10">
+          <div className="absolute right-4 lg:right-60 -bottom-3 z-10">
             <div className="swiper-pagination"></div>
             <button onClick={handlePlayPause} className="focus:outline-none">
               {isPlaying ? (

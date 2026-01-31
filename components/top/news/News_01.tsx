@@ -66,16 +66,16 @@ const News_01 = ({ limit = 3 }: NewsProps) => {
 
   return (
     <SectionContent className="bg-bgLight">
-      <section className="md:max-w-[1200px] mx-auto">
+      <section className="lg:max-w-[1200px] mx-auto">
         <ContentHeadline subTitle="News" mainTitle="お知らせ" />
-        <div className="grid grid-cols-1 md:grid-cols-3 md:gap-x-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-10">
           {contents.map((post) => (
             <Link
               key={post.id}
               href={`/news/${post.id}`}
               className="w-full block hover:opacity-80 transition-opacity"
             >
-              <div className="w-full h-[250px] mt-5 md:mt-0">
+              <div className="w-full h-[250px] mt-5 lg:mt-0">
                 {post.image && (
                   <Image
                     src={post.image.url}

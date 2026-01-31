@@ -3,10 +3,10 @@ import PlanCard from "./PlanCard_03";
 const PlanList_03 = () => {
   return (
     <div className="pb-24">
-      <div className="mt-0 md:mt-16 ">
+      <div className="mt-0 lg:mt-16 ">
         <div>
           <div className="bg-accentColor text-white p-6 rounded-t-2xl">
-            <h3 className="ext-lg md:text-2xl font-bold leading-relaxed md:leading-[38.40px] mb-1 text-center">
+            <h3 className="ext-lg lg:text-2xl font-bold leading-relaxed lg:leading-[38.40px] mb-1 text-center">
               プラン_A
             </h3>
           </div>
@@ -14,7 +14,7 @@ const PlanList_03 = () => {
             <p className="font-light">
               説明文入ります説明文入ります説明文入ります
             </p>
-            <p className="my-4 text-[30px] md:text-[40px] font-bold text-accentColor">
+            <p className="my-4 text-[30px] lg:text-[40px] font-bold text-accentColor">
               <span className="text-lg font-extrabold">￥</span>0,000
             </p>
           </div>

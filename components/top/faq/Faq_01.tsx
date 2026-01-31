@@ -10,7 +10,7 @@ import SectionContent from "@/components/ui/frame/SectionContent";
 const Faq_01 = () => {
   return (
     <SectionContent className="bg-white">
-      <section className="md:max-w-[1200px] mx-auto">
+      <section className="lg:max-w-[1200px] mx-auto">
         <ContentHeadline
           subTitle="FAQ"
           mainTitle="よくある質問"

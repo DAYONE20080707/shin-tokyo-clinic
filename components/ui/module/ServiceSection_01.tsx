@@ -28,8 +28,8 @@ const ServiceSection_01 = ({
   };
 
   return (
-    <div className="flex flex-col md:flex-row justify-start gap-10 md:gap-20">
-      <div className="md:w-1/2 relative min-h-[300px]">
+    <div className="flex flex-col lg:flex-row justify-start gap-10 lg:gap-20">
+      <div className="lg:w-1/2 relative min-h-[300px]">
         <Image
           src={imageUrl || "/service/service-01.jpg"}
           alt={jaTitle || "message"}
@@ -37,7 +37,7 @@ const ServiceSection_01 = ({
           className="object-cover w-full h-full rounded-[15px]"
         />
       </div>
-      <div className="md:w-1/2">
+      <div className="lg:w-1/2">
         <p className="text-accentColor text-lg font-lato font-extrabold tracking-[0.03em]">
           {enTitle}
         </p>

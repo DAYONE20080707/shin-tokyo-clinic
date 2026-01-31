@@ -22,7 +22,7 @@ const KeyVisual_06 = () => {
           {/* KeyVisualContentに高さを指定 */}
           <KeyVisualContent className="h-screen" />
         </section>
-        <div className="absolute left-1/2 -translate-x-1/2 bottom-[120px] w-full md:max-w-[1240px] px-5 flex justify-end">
+        <div className="absolute left-1/2 -translate-x-1/2 bottom-[120px] w-full lg:max-w-[1240px] px-5 flex justify-end">
           <TopPageHeadline
             mainTitle={<>Lorem Ipsum Lorem Ipsum</>}
             description="日本語見出し文日本語見出し文はいります"

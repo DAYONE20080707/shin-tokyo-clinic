@@ -97,7 +97,7 @@ const BlogDetail_01 = ({ params, draftKey }: BlogDetailProps) => {
     <div className="max-w-[1200px] mx-auto py-16 px-4">
       <article className="bg-white">
         <h1 className="text-3xl font-bold mb-6">{post.title}</h1>
-        <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-10 gap-2">
+        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-10 gap-2">
           <div className="flex flex-wrap gap-2">
             {Array.isArray(post.category) && post.category.length > 0 ? (
               post.category.map((cat, i) => (

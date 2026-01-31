@@ -66,14 +66,14 @@ const Blog_05 = ({ limit = 6 }: BlogProps) => {
 
   return (
     <SectionContent>
-      <section className="md:max-w-[1200px] mx-auto">
-        <div className="md:w-[300px]">
+      <section className="lg:max-w-[1200px] mx-auto">
+        <div className="lg:w-[300px]">
           <ContentHeadline subTitle="Blog" mainTitle="ブログ" />
         </div>
-        <div className="mt-0 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-y-5 md:gap-y-10 gap-x-10 md:gap-x-16">
+        <div className="mt-0 lg:mt-16 grid grid-cols-1 lg:grid-cols-2 gap-y-5 lg:gap-y-10 gap-x-10 lg:gap-x-16">
           {contents.map((post) => (
-            <div key={post.id} className="w-full md:flex space-x-6">
-              <div className="w-full md:w-[180px] h-[250px] md:h-[130px] mt-5 md:mt-0">
+            <div key={post.id} className="w-full lg:flex space-x-6">
+              <div className="w-full lg:w-[180px] h-[250px] lg:h-[130px] mt-5 lg:mt-0">
                 {post.image && (
                   <Image
                     src={post.image.url}
@@ -93,7 +93,7 @@ const Blog_05 = ({ limit = 6 }: BlogProps) => {
             </div>
           ))}
         </div>
-        <div className="mt-10 md:mt-16 flex justify-center">
+        <div className="mt-10 lg:mt-16 flex justify-center">
           <MoreButton className="text-accentColor border-accentColor" />
         </div>
       </section>

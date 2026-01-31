@@ -18,7 +18,7 @@ const Service_01 = () => {
   return (
     <>
       <SectionContent>
-        <section className="md:max-w-[1200px] mx-auto space-y-10">
+        <section className="lg:max-w-[1200px] mx-auto space-y-10">
           <ContentHeadline
             subTitle="Service"
             mainTitle="事業内容"
@@ -26,7 +26,7 @@ const Service_01 = () => {
             titleClassName="text-center"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             {servicesToDisplay.map((service) => (
               <ServiceCard
                 key={service.id}

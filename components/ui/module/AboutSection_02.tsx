@@ -30,8 +30,8 @@ const AboutSection_02 = ({
   }
 
   return (
-    <div className="flex flex-col-reverse md:flex-row justify-start md:space-x-20 pb-24">
-      <div className="md:w-[36vw] md:max-w-[520px] h-[300px] md:h-auto relative mt-10 md:mt-0">
+    <div className="flex flex-col-reverse lg:flex-row justify-start lg:space-x-20 pb-24">
+      <div className="lg:w-[36vw] lg:max-w-[520px] h-[300px] lg:h-auto relative mt-10 lg:mt-0">
         <Image
           src={imageUrl || "/top/message.png"}
           alt={name || "message"}
@@ -39,11 +39,11 @@ const AboutSection_02 = ({
           className="object-cover w-full h-full"
         />
       </div>
-      <div className="md:max-w-[600px] ">
-        <h3 className="text-3xl md:text-[40px] font-light leading-[160%] tracking-[0.03em]">
+      <div className="lg:max-w-[600px] ">
+        <h3 className="text-3xl lg:text-[40px] font-light leading-[160%] tracking-[0.03em]">
           {convertNewLines(title)}
         </h3>
-        <p className="mt-10 !leading-[250%] tracking-[0.03em] md:text-lg whitespace-pre-line">
+        <p className="mt-10 !leading-[250%] tracking-[0.03em] lg:text-lg whitespace-pre-line">
           {description}
         </p>
         {(position || name) && (

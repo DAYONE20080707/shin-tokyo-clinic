@@ -1,0 +1,10 @@
+{
+  "hooks": {
+    "session_start": [
+      {
+        "command": "npm install",
+        "description": "Install dependencies on session start"
+      }
+    ]
+  }
+}

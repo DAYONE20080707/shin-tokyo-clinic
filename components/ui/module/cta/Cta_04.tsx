@@ -10,7 +10,7 @@ const Cta_04 = () => {
   return (
     <>
       <PageContent className="bg-accentColor">
-        <section className="md:max-w-[1200px] mx-auto grid grid-cols-2 gap-x-10">
+        <section className="lg:max-w-[1200px] mx-auto grid grid-cols-2 gap-x-10">
           <div className="bg-white text-accentColor text-center px-16 py-6 flex flex-col items-center">
             <Phone className="w-[50px] h-[40px] mx-auto mb-4 text-accentColor" />
             <h4

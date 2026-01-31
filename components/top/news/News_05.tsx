@@ -68,7 +68,7 @@ const News_05 = ({ limit = 6 }: NewsProps) => {
 
   return (
     <SectionContent>
-      <section className="md:max-w-[1200px] mx-auto">
+      <section className="lg:max-w-[1200px] mx-auto">
         <div className="w-[300px]">
           <ContentHeadline subTitle="News" mainTitle="お知らせ" />
         </div>
@@ -80,7 +80,7 @@ const News_05 = ({ limit = 6 }: NewsProps) => {
               href={`/news/${post.id}`}
               className="w-full flex space-x-6 hover:opacity-80 transition-opacity"
             >
-              <div className="w-[180px] h-[130px] mt-5 md:mt-0">
+              <div className="w-[180px] h-[130px] mt-5 lg:mt-0">
                 {post.image && (
                   <Image
                     src={post.image.url}

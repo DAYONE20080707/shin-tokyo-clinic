@@ -20,8 +20,8 @@ const Service_02 = () => {
   return (
     <>
       <SectionContent id="service">
-        <section className="md:max-w-[1200px] mx-auto">
-          <div className="flex flex-col-reverse md:flex-row gap-10 md:gap-20">
+        <section className="lg:max-w-[1200px] mx-auto">
+          <div className="flex flex-col-reverse lg:flex-row gap-10 lg:gap-20">
             <div className="flex-1 flex items-center justify-center">
               <Image
                 src="/service/top.png"
@@ -38,7 +38,7 @@ const Service_02 = () => {
                 subTitleClassName=""
                 titleClassName=""
               />
-              <h3 className=" text-2xl md:text-[40px] tracking-[0.05em] leading-[160%] pb-6 border-b border-borderGray">
+              <h3 className=" text-2xl lg:text-[40px] tracking-[0.05em] leading-[160%] pb-6 border-b border-borderGray">
                 人と会社と社会をつなぐ。
                 <br />
                 関わる全てに成長を。
@@ -52,7 +52,7 @@ const Service_02 = () => {
                     description={service.description}
                     image={service.image} // 画像パスを渡す
                     href={service.href} // リンク先を渡す
-                    className=" md:flex justify-between"
+                    className=" lg:flex justify-between"
                   />
                 ))}
               </div>

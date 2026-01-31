@@ -120,9 +120,9 @@ const CaseDetail_02 = ({ params, draftKey }: CaseDetailProps) => {
         </div>
       )}
 
-      <div className="max-w-[1200px] mx-auto mt-10 md:mt-24 px-3">
-        <article className="bg-white p-5 md:p-16">
-          <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-6 gap-2">
+      <div className="max-w-[1200px] mx-auto mt-10 lg:mt-24 px-3">
+        <article className="bg-white p-5 lg:p-16">
+          <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-6 gap-2">
             <div className="flex gap-2 flex-wrap">
               {Array.isArray(post.category) && post.category.length > 0 ? (
                 post.category.map((cat, i) => (
@@ -153,7 +153,7 @@ const CaseDetail_02 = ({ params, draftKey }: CaseDetailProps) => {
             )}
           </div>
 
-          <h1 className="text-xl md:text-3xl font-bold mb-10 md:mb-24 pb-10 border-b border-accentColor">
+          <h1 className="text-xl lg:text-3xl font-bold mb-10 lg:mb-24 pb-10 border-b border-accentColor">
             {post.title}
           </h1>
 
@@ -164,9 +164,9 @@ const CaseDetail_02 = ({ params, draftKey }: CaseDetailProps) => {
         </article>
 
         {relatedPosts.length > 0 && (
-          <section className="mt-10 md:mt-24 bg-white p-5 md:p-16">
+          <section className="mt-10 lg:mt-24 bg-white p-5 lg:p-16">
             <h2 className="text-2xl mb-6 text-accentColor">関連事例</h2>
-            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
+            <div className="grid grid-cols-2 lg:grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-6">
               {relatedPosts.map((relatedPost) => (
                 <Link
                   key={relatedPost.id}
@@ -174,7 +174,7 @@ const CaseDetail_02 = ({ params, draftKey }: CaseDetailProps) => {
                   className="bg-white overflow-hidden duration-300"
                 >
                   {relatedPost.image && (
-                    <div className="relative w-full pt-[56.25%] rounded-[15px] overflow-hidden md:h-[180px]">
+                    <div className="relative w-full pt-[56.25%] rounded-[15px] overflow-hidden lg:h-[180px]">
                       <Image
                         src={relatedPost.image.url}
                         alt={relatedPost.title}

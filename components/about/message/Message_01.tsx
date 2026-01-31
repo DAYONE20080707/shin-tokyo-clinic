@@ -12,9 +12,9 @@ import AboutSection from "@/components/ui/module/AboutSection_01";
 const Message_01 = () => {
   return (
     <>
-      <SectionContent className="pt-14 md:pt-24">
+      <SectionContent className="pt-14 lg:pt-24">
         {/* widthがフルサイズでない場合は指定する */}
-        <section className="w-full md:max-w-[1200px] mx-auto">
+        <section className="w-full lg:max-w-[1200px] mx-auto">
           <ContentHeadline
             subTitle="Message"
             mainTitle="代表挨拶"

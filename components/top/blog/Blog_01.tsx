@@ -85,14 +85,14 @@ const Blog_01 = ({ limit = 3 }: BlogProps) => {
 
   return (
     <SectionContent className="bg-bgLight">
-      <section className="md:max-w-[1200px] mx-auto md:space-y-10">
+      <section className="lg:max-w-[1200px] mx-auto lg:space-y-10">
         <ContentHeadline subTitle="Blog" mainTitle="ブログ" />
-     <div className="grid grid-cols-1 md:grid-cols-3 md:gap-10">
+     <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-10">
           {contents.map((post) => (
             <ul key={post.id} className="w-full">
               <Link href={`/blog/${post.id}`} className="block group">
-                <li className="flex flex-row md:flex-col items-center rounded-2xl overflow-hidden">
-                  <figure className="w-1/2 md:w-full h-[120px] md:h-[223px]">
+                <li className="flex flex-row lg:flex-col items-center rounded-2xl overflow-hidden">
+                  <figure className="w-1/2 lg:w-full h-[120px] lg:h-[223px]">
                     {post.image && (
                       <Image
                         src={post.image.url}
@@ -103,13 +103,13 @@ const Blog_01 = ({ limit = 3 }: BlogProps) => {
                       />
                     )}
                   </figure>
-                  <div className="w-1/2 md:w-full p-4 flex flex-col justify-between">
+                  <div className="w-1/2 lg:w-full p-4 flex flex-col justify-between">
                     <div>
-                      <p className=" text-base md:text-lg font-medium break-words leading-[160%] group-hover:text-accent transition-colors">
+                      <p className=" text-base lg:text-lg font-medium break-words leading-[160%] group-hover:text-accent transition-colors">
                         {post.title}
                       </p>
                       {post.content && (
-                        <p className="mt-2 text-sm md:text-base line-clamp-2 leading-[160%] text-gray-700">
+                        <p className="mt-2 text-sm lg:text-base line-clamp-2 leading-[160%] text-gray-700">
                           {Array.from(stripHtmlTags(post.content))
                             .slice(0, 100)
                             .join("")}

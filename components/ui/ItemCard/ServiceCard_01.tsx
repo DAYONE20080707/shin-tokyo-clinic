@@ -31,8 +31,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       <div
         className={classNames(
           {
-            "h-[250px] md:h-[400px] ": !className.includes("overlay"),
-            "h-[250px] md:h-[600px]": className.includes("overlay"),
+            "h-[250px] lg:h-[400px] ": !className.includes("overlay"),
+            "h-[250px] lg:h-[600px]": className.includes("overlay"),
           },
           "w-full aspect-[1/1] relative rounded-[30px]",
           imageContainerClass
@@ -50,7 +50,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 
       <div
         className={classNames("space-y-3 ", {
-          "w-full md:h-[600px]  rounded-[30px] absolute inset-0 flex flex-col justify-center items-center bg-black/50 text-white":
+          "w-full lg:h-[600px]  rounded-[30px] absolute inset-0 flex flex-col justify-center items-center bg-black/50 text-white":
             className.includes("overlay"),
           "relative text-black ": !className.includes("overlay"),
         })}
@@ -73,7 +73,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         </div>
         <div
           className={classNames("font-light",{
-            "text-white  px-10 md:px-20": className.includes("overlay"),
+            "text-white  px-10 lg:px-20": className.includes("overlay"),
             "text-baseColor": !className.includes("overlay"),
           })}
         >

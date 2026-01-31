@@ -14,7 +14,7 @@ const History_01 = () => {
     <>
       <SectionContent className="">
         {/* widthがフルサイズでない場合は指定する */}
-        <section className=" md:max-w-[1200px] mx-auto ">
+        <section className=" lg:max-w-[1200px] mx-auto ">
           <ContentHeadline
             subTitle="History"
             mainTitle="企業沿革"

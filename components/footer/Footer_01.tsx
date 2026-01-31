@@ -13,9 +13,9 @@ const Footer_01 = () => {
   const { companyName, companyNameText, companyPostalCode, companyAddress } =
     CompanyInfo[0]
   return (
-    <footer className="bg-white border-t py-10 md:py-24 px-4 md:px-0">
-      <div className="md:max-w-[1240px] mx-auto md:px-5">
-        <div className="md:flex justify-between items-center">
+    <footer className="bg-white border-t py-10 lg:py-24 px-4 lg:px-0">
+      <div className="lg:max-w-[1240px] mx-auto lg:px-5">
+        <div className="lg:flex justify-between items-center">
           <div className="space-y-3">
             <h4 className="w-[100px]">
               {CompanyInfo[0].companyName("tertiary")}
@@ -23,8 +23,8 @@ const Footer_01 = () => {
             <p>{companyNameText}</p>
             <p>{companyPostalCode}{companyAddress}</p>
           </div>
-          <div className="flex flex-col md:items-end mt-5 md:mt-0">
-            <ul className="md:flex items-center md:space-x-10 font-light space-y-5 md:space-y-0">
+          <div className="flex flex-col lg:items-end mt-5 lg:mt-0">
+            <ul className="lg:flex items-center lg:space-x-10 font-light space-y-5 lg:space-y-0">
               <li>
                 <Link href="/">
                   <div>トップページ</div>
@@ -43,12 +43,12 @@ const Footer_01 = () => {
             </div>
           </div>
         </div>
-        <div className="md:flex justify-between items-center !border-t border-baseColor mt-4 pt-4 ">
-          <ul className="flex items-center justify-start font-semibold  space-x-5 md:space-x-0">
+        <div className="lg:flex justify-between items-center !border-t border-baseColor mt-4 pt-4 ">
+          <ul className="flex items-center justify-start font-semibold  space-x-5 lg:space-x-0">
             {Sns.map((item, index) => (
               <li
                 key={index}
-                className="w-5 h-5 md:w-[60px] md:h-[60px] flex items-center justify-center"
+                className="w-5 h-5 lg:w-[60px] lg:h-[60px] flex items-center justify-center"
               >
                 <Link href={item.href} className="">
                   <Image
@@ -61,7 +61,7 @@ const Footer_01 = () => {
               </li>
             ))}
           </ul>
-          <ul className="md:flex items-center md:space-x-10 font-light mt-5 md:mt-0 space-y-5 md:space-y-0">
+          <ul className="lg:flex items-center lg:space-x-10 font-light mt-5 lg:mt-0 space-y-5 lg:space-y-0">
             {FooterLinks.map((item, index) => (
               <li key={index}>
                 <Link href={item.href}>
@@ -71,7 +71,7 @@ const Footer_01 = () => {
             ))}
           </ul>
         </div>
-        <small className="mt-4 flex justify-end items-center md:text-base">
+        <small className="mt-4 flex justify-end items-center lg:text-base">
         &copy;0000aaaaa. ALL Rights Reserved.
         </small>
       </div>

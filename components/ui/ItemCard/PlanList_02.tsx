@@ -3,8 +3,8 @@ import PlanCard from "./PlanCard_02";
 const PlanList_02 = () => {
   return (
     <div className="pb-24">
-      <div className="overflow-x-scroll md:overflow-y-auto">
-        <div className="mt-0 md:mt-16 grid grid-cols-5 gap-x-1 min-w-[1200px]">
+      <div className="overflow-x-scroll lg:overflow-y-auto">
+        <div className="mt-0 lg:mt-16 grid grid-cols-5 gap-x-1 min-w-[1200px]">
           <PlanCard
             title="プラン一覧"
             colorClass="bg-accentColor"

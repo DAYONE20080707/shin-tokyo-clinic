@@ -42,7 +42,7 @@ const AdminLayout = ({
       )}
 
       <main
-        className={`flex-1 transition-all duration-300  w-screen md:w-auto ${
+        className={`flex-1 transition-all duration-300  w-screen lg:w-auto ${
           isSidebarVisible ? "ml-40 mt-12" : "ml-0 mt-0"
         }`}
       >

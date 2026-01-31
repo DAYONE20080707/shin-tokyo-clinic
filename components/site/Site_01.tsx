@@ -5,7 +5,7 @@ import Image from "next/image";
 // サイトポリシー
 const Site_01 = () => {
   return (
-    <div className="md:max-w-[1000px] px-5 mx-auto py-[96px] text-base font-normal leading-[160%]">
+    <div className="lg:max-w-[1000px] px-5 mx-auto py-[96px] text-base font-normal leading-[160%]">
       <ul className="space-y-16">
         <li>
           <p className="pb-2 border-b border-[#EFEFEF]">推奨環境</p>

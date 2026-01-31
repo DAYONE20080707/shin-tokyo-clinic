@@ -68,18 +68,18 @@ const Case_05 = ({ limit = 6 }: CaseProps) => {
 
   return (
     <SectionContent>
-      <section className="md:max-w-[1200px] mx-auto">
-        <div className="md:w-[300px]">
+      <section className="lg:max-w-[1200px] mx-auto">
+        <div className="lg:w-[300px]">
           <ContentHeadline subTitle="Case study" mainTitle="導入事例" />
         </div>
-        <div className="mt-0 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-y-5 md:gap-y-10 gap-x-10 md:gap-x-16">
+        <div className="mt-0 lg:mt-16 grid grid-cols-1 lg:grid-cols-2 gap-y-5 lg:gap-y-10 gap-x-10 lg:gap-x-16">
           {contents.map((post) => (
             <Link
               key={post.id}
               href={`/case/${post.id}`}
-              className="w-full md:flex space-x-6 hover:opacity-80 transition-opacity"
+              className="w-full lg:flex space-x-6 hover:opacity-80 transition-opacity"
             >
-              <div className="w-full md:w-[180px] h-[250px] md:h-[130px] mt-5 md:mt-0">
+              <div className="w-full lg:w-[180px] h-[250px] lg:h-[130px] mt-5 lg:mt-0">
                 {post.image && (
                   <Image
                     src={post.image.url}
@@ -99,7 +99,7 @@ const Case_05 = ({ limit = 6 }: CaseProps) => {
             </Link>
           ))}
         </div>
-        <div className="mt-10 md:mt-16 flex justify-center">
+        <div className="mt-10 lg:mt-16 flex justify-center">
           <MoreButton
             href="/case"
             className="text-accentColor border-accentColor"

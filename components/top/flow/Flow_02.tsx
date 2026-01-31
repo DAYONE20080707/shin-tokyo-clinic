@@ -12,7 +12,7 @@ const Flow_02 = ({ className = "" }) => {
   return (
     <>
       <SectionContent className={className}>
-        <section className="md:max-w-[1200px] mx-auto">
+        <section className="lg:max-w-[1200px] mx-auto">
           <ContentHeadline
             subTitle="Flow"
             mainTitle="ご利用の流れ"

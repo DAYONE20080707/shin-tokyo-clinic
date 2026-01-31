@@ -17,7 +17,7 @@ const Strength_01 = () => {
     <>
       <SectionContent className="rounded-t-[40px]" variant="dot">
         {/* widthがフルサイズでない場合は指定する */}
-        <section className="md:max-w-[1200px] mx-auto space-y-10">
+        <section className="lg:max-w-[1200px] mx-auto space-y-10">
           <ContentHeadlineReverse
             subTitle="Instagram"
             mainTitle="チョイスの活動を\nご紹介します。"
@@ -25,7 +25,7 @@ const Strength_01 = () => {
           />
 
           {/* gridレイアウトを使用して2列（モバイル）・4列（デスクトップ）に画像を配置 */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
             {/* 8枚の画像を表示 */}
             {[1, 2, 3, 4, 5, 6, 7, 8].map((index) => (
               <div

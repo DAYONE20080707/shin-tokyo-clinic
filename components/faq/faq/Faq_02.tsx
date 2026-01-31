@@ -10,7 +10,7 @@ import MoreButton from "@/components/ui/button/MoreButton";
 const Faq_02 = () => {
   return (
     <PageContent className="bg-white">
-      <section className="md:max-w-[1200px] mx-auto">
+      <section className="lg:max-w-[1200px] mx-auto">
         {/* <ContentHeadline
           subTitle="FAQ"
           mainTitle="よくある質問"

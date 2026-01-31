@@ -47,9 +47,9 @@ const TopWorkCard = ({ limit = 5 }: TopWorkProps) => {
       {contents.map((post: Work) => (
         <div
           key={post.id}
-          className="bg-white text-black rounded-2xl py-10 px-5 md:p-16 flex-shrink-0 w-[600px] md:flex justify-between"
+          className="bg-white text-black rounded-2xl py-10 px-5 lg:p-16 flex-shrink-0 w-[600px] lg:flex justify-between"
         >
-          <div className="md:w-[272px] flex flex-col justify-between">
+          <div className="lg:w-[272px] flex flex-col justify-between">
             <div>
               <p className="inline-block bg-black text-xs text-center px-2 py-1 text-white">
                 {Array.isArray(post.category) && post.category.length > 0
@@ -62,7 +62,7 @@ const TopWorkCard = ({ limit = 5 }: TopWorkProps) => {
             </div>
             <p className="mt-2 text-gray-400 ">{post.content}</p>
           </div>
-          <div className="w-full md:w-[350px] h-[207px] border border-gray-300 rounded-2xl mt-5 md:mt-0">
+          <div className="w-full lg:w-[350px] h-[207px] border border-gray-300 rounded-2xl mt-5 lg:mt-0">
             {post.image && (
               <Image
                 src={post.image.url}

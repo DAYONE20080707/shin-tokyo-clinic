@@ -42,7 +42,7 @@ const MoreLinkButton = ({
     <Link
       href={href}
       className={classNames(
-        "border font-en tracking-[0.03em] cursor-pointer flex items-center justify-between w-full md:w-[300px] px-6 py-4 relative group",
+        "border font-en tracking-[0.03em] cursor-pointer flex items-center justify-between w-full lg:w-[300px] px-6 py-4 relative group",
         getVariantStyles(),
         className
       )}

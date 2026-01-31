@@ -15,7 +15,7 @@ const Plan_01 = () => {
   return (
     <>
       <SectionContent className="bg-bgLight">
-        <section className="md:max-w-[1200px] mx-auto">
+        <section className="lg:max-w-[1200px] mx-auto">
           <div className="mb-24">
             <h2 className="text-center text-[28px] font-bold leading-[150%]">
               様々な料金プランをご用意しております。

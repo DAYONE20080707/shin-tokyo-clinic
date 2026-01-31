@@ -22,17 +22,17 @@ const Header_04 = () => {
   const { companyName } = CompanyInfo[0];
   return (
     <div className="h-[98px]">
-      <header className="w-full h-20 md:h-[98px] text-[#393939] tracking-wide px-4 md:px-0 fixed top-0 left-0 z-10 bg-white">
-        <div className="md:max-w-screen-xl h-full mx-auto flex items-center justify-between ">
+      <header className="w-full h-20 lg:h-[98px] text-[#393939] tracking-wide px-4 lg:px-0 fixed top-0 left-0 z-10 bg-white">
+        <div className="lg:max-w-screen-xl h-full mx-auto flex items-center justify-between ">
           <div className="flex items-center space-x-10 ">
             <Link href="/">{CompanyInfo[0].companyName("primary")}</Link>
           </div>
-          <div className="hidden md:flex flex-col justify-between items-end h-full">
+          <div className="hidden lg:flex flex-col justify-between items-end h-full">
             <div className="flex items-center justify-center w-full">
               <TelButton />
               <ContactButton className="h-10" />
             </div>
-            <ul className="hidden md:flex items-center space-x-10 font-semibold  ">
+            <ul className="hidden lg:flex items-center space-x-10 font-semibold  ">
               {Menu.map((item, index) => (
                 <li key={index} className="py-4">
                   <Link href={item.href}>
@@ -44,7 +44,7 @@ const Header_04 = () => {
           </div>
           {/* ハンバーガーメニューボタン */}
           <div
-            className="md:hidden w-10 md:w-20 h-20 flex items-center ustify-end md:justify-center cursor-pointer"
+            className="lg:hidden w-10 lg:w-20 h-20 flex items-center ustify-end lg:justify-center cursor-pointer"
             onClick={toggleMenu}
           >
             <Image
@@ -58,7 +58,7 @@ const Header_04 = () => {
 
         {/* ハンバーガーメニュー */}
         <div
-          className={`fixed z-10 top-0 right-0 h-screen w-full md:w-[500px] bg-bgBlack text-white shadow-lg transform transition-transform duration-300 ${
+          className={`fixed z-10 top-0 right-0 h-screen w-full lg:w-[500px] bg-bgBlack text-white shadow-lg transform transition-transform duration-300 ${
             MenuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >

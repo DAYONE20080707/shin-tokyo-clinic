@@ -12,14 +12,14 @@ const Profile_01 = () => {
   return (
     <>
       <SectionContent className="bg-bgLight">
-        <section className="md:max-w-[1200px] mx-auto">
+        <section className="lg:max-w-[1200px] mx-auto">
           <ContentHeadline
             subTitle="Profile"
             mainTitle="会社概要"
             subTitleClassName="text-center"
             titleClassName="text-center"
           />
-          <div className="mt-16 bg-white grid md:grid-cols-2 gap-x-20 p-10">
+          <div className="mt-16 bg-white grid lg:grid-cols-2 gap-x-20 p-10">
             <div>
               <ProfileCard label="社名" value="企業名" />
               <ProfileCard label="設立" value="0000年00月00日" />
@@ -55,7 +55,7 @@ const Profile_01 = () => {
               style={{ border: "0" }}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              className="w-full max-w-[600px] md:max-w-[1200px]"
+              className="w-full max-w-[600px] lg:max-w-[1200px]"
             />
             <p className="mt-4 font-light">
               000-000

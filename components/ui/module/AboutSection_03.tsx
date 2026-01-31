@@ -30,12 +30,12 @@ const AboutSection_03 = ({
   }
 
   return (
-    <div className="w-full  md:flex justify-start md:space-x-20 pb-24">
+    <div className="w-full  lg:flex justify-start lg:space-x-20 pb-24">
       <div className="w-full">
-        <h3 className="text-3xl md:text-[40px] font-light leading-[160%] tracking-[0.03em] mt-10 md:mt-0">
+        <h3 className="text-3xl lg:text-[40px] font-light leading-[160%] tracking-[0.03em] mt-10 lg:mt-0">
           {convertNewLines(title)}
         </h3>
-        <p className="mt-10 !leading-[250%] tracking-[0.03em] md:text-lg whitespace-pre-line">
+        <p className="mt-10 !leading-[250%] tracking-[0.03em] lg:text-lg whitespace-pre-line">
           {description}
         </p>
         {(position || name) && (

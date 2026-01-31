@@ -8,7 +8,7 @@ import PlanList from "@/components/ui/ItemCard/PlanList_02"
 const Plan_02 = () => {
   return (
     <SectionContent className="bg-bgLight">
-      <section className="w-full md:max-w-[1200px] mx-auto overflow-hidden">
+      <section className="w-full lg:max-w-[1200px] mx-auto overflow-hidden">
         <ContentHeadline
           subTitle="Plan"
           mainTitle="料金プラン"

@@ -49,18 +49,18 @@ const Header_01 = () => {
   return (
     <HeaderContent className="h-20">
       <div
-        className={`px-6 md:pl-10 md:pr-0 w-full h-full flex items-center justify-between mx-auto transition-all duration-300 ${
+        className={`px-6 lg:pl-10 lg:pr-0 w-full h-full flex items-center justify-between mx-auto transition-all duration-300 ${
           isScrolled ? "bg-white" : "bg-transparent"
         }`}
       >
         <div className="flex gap-10">
           {/* ロゴ */}
-          <Link href="/" className="w-[150px] md:w-[200px]">
+          <Link href="/" className="w-[150px] lg:w-[200px]">
             {CompanyInfo[0].companyName("primary")}
           </Link>
 
           {/* デスクトップ用メニュー */}
-          <ul className="hidden md:flex items-center gap-10 font-en tracking-[0.03em]">
+          <ul className="hidden lg:flex items-center gap-10 font-en tracking-[0.03em]">
             {filteredMenu.map((item, index) => (
               <li key={index}>
                 <Link href={item.href}>
@@ -71,7 +71,7 @@ const Header_01 = () => {
           </ul>
         </div>
 
-        <div className="hidden md:flex h-full gap-10">
+        <div className="hidden lg:flex h-full gap-10">
           <div className="flex items-center ">
             {SnsButton.slice(0, 3).map((sns, index) => (
               <SnsIconButton
@@ -87,7 +87,7 @@ const Header_01 = () => {
         </div>
         {/* ハンバーガーメニューボタン */}
         <button
-          className={`block md:hidden text-white transition-transform duration-300 ${
+          className={`block lg:hidden text-white transition-transform duration-300 ${
             isMenuOpen ? "rotate-90" : "rotate-0"
           }`}
           onClick={handleMenuToggle}
@@ -103,7 +103,7 @@ const Header_01 = () => {
 
       {/* スマホ用メニュー */}
       <div
-        className={`absolute top-20 left-0 w-full h-screen bg-gray-800 bg-opacity-70 text-white md:hidden transition-opacity duration-300 ${
+        className={`absolute top-20 left-0 w-full h-screen bg-gray-800 bg-opacity-70 text-white lg:hidden transition-opacity duration-300 ${
           isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         } ${isAnimating ? "pointer-events-auto" : ""}`}
       >

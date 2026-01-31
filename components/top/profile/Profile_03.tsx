@@ -12,7 +12,7 @@ const Profile_03 = () => {
   return (
     <>
       <SectionContent className="">
-        <section className="md:max-w-[1200px] mx-auto">
+        <section className="lg:max-w-[1200px] mx-auto">
           <ContentHeadline
             subTitle="Profile"
             mainTitle="会社概要"
@@ -53,7 +53,7 @@ const Profile_03 = () => {
               style={{ border: "0" }}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              className="w-full max-w-[600px] md:max-w-[1200px]"
+              className="w-full max-w-[600px] lg:max-w-[1200px]"
             />
 
             <p className="mt-4 font-light">

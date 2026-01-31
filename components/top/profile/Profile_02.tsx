@@ -12,14 +12,14 @@ const Profile_02 = () => {
   return (
     <>
       <SectionContent className="bg-bgLight">
-        <section className="md:max-w-[1200px] mx-auto">
+        <section className="lg:max-w-[1200px] mx-auto">
           <ContentHeadline
             subTitle="Profile"
             mainTitle="会社概要"
             subTitleClassName=""
             titleClassName=""
           />
-          <div className="mt-16 bg-white p-10 md:flex md:justify-between">
+          <div className="mt-16 bg-white p-10 lg:flex lg:justify-between">
             <div>
               <ProfileCard label="社名" value="企業名" />
               <ProfileCard label="設立" value="0000年00月00日" />

@@ -14,7 +14,7 @@ const Strength_03 = () => {
     <>
       <SectionContent>
         {/* widthがフルサイズでない場合は指定する */}
-        <section className="md:max-w-[1200px] mx-auto space-y-10">
+        <section className="lg:max-w-[1200px] mx-auto space-y-10">
           <ContentHeadline
             subTitle="Strength"
             mainTitle="私たちの強み"

@@ -10,12 +10,18 @@ const Aside_01 = () => {
   return (
     <>
       <PageContent className="bg-white px-0 pt-0">
-        <section className="md:max-w-[1200px] py-10 md:py-16 mx-auto bg-[url('/common/aside.png')] bg-no-repeat bg-cover flex flex-col items-center  text-white px-4">
-          <p className="md:text-lg font-bold">料金プラン</p>
-          <h4 className="text-3xl md:text-[40px] font-poppins font-bold">
+        <section className="lg:max-w-[1200px] py-10 lg:py-16 mx-auto relative overflow-hidden flex flex-col items-center text-white px-4">
+          <Image
+            src="/common/aside.png"
+            alt=""
+            fill
+            className="object-cover -z-10"
+          />
+          <p className="lg:text-lg font-bold">料金プラン</p>
+          <h4 className="text-3xl lg:text-[40px] font-poppins font-bold">
             Plan
           </h4>
-          <p className="text-center md:text-lg font-medium md:w-[495px] my-6">
+          <p className="text-center lg:text-lg font-medium lg:w-[495px] my-6">
             御社のニーズに沿ったプランをご用意しております。
           </p>
           <div className="w-full flex justify-center">

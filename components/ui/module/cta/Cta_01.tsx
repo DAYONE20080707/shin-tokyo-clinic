@@ -11,7 +11,7 @@ const Cta_01 = () => {
   return (
     <>
       <SectionContent className="bg-accentColor">
-        <section className="md:max-w-[1200px] mx-auto flex flex-col md:flex-row justify-center items-center gap-4 md:gap-10">
+        <section className="lg:max-w-[1200px] mx-auto flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-10">
           <p className="text-center text-[22px] text-white font-bold">
             詳しく知りたい方は
             <br />

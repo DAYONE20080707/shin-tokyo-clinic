@@ -11,12 +11,12 @@ const Footer_02 = () => {
   const { companyName } = CompanyInfo[0]
 
   return (
-    <footer className="py-10 md:py-24 px-4 md:px-0">
-      <div className="md:max-w-[1200px] mx-auto">
+    <footer className="py-10 lg:py-24 px-4 lg:px-0">
+      <div className="lg:max-w-[1200px] mx-auto">
         <div className="flex flex-col items-center justify-center space-y-6">
           <h4>{CompanyInfo[0].companyName("primary")}</h4>
 
-          <ul className="flex flex-col md:flex-row items-center space-y-5 md:space-y-0 md:space-x-10 font-light">
+          <ul className="flex flex-col lg:flex-row items-center space-y-5 lg:space-y-0 lg:space-x-10 font-light">
             {Menu.map((item, index) => (
               <li key={index}>
                 <Link href={item.href}>
@@ -28,11 +28,11 @@ const Footer_02 = () => {
         </div>
 
         <div className="border-t border-borderGray mt-6 pt-6">
-          <ul className="flex items-center justify-center font-semibold  space-x-5 md:space-x-0">
+          <ul className="flex items-center justify-center font-semibold  space-x-5 lg:space-x-0">
             {Sns.map((item, index) => (
               <li
                 key={index}
-                className="w-5 h-5 md:w-[60px] md:h-[60px] flex items-center justify-center"
+                className="w-5 h-5 lg:w-[60px] lg:h-[60px] flex items-center justify-center"
               >
                 <Link href={item.href} className="">
                   <Image
@@ -46,7 +46,7 @@ const Footer_02 = () => {
             ))}
           </ul>
         </div>
-        <small className="mt-6 flex justify-center items-center text-sm md:text-base ">
+        <small className="mt-6 flex justify-center items-center text-sm lg:text-base ">
           &copy;0000aaaaa.ALL Rights Reserved.
         </small>
       </div>

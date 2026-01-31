@@ -68,13 +68,13 @@ const Blog_03 = ({ limit = 3 }: BlogProps) => {
 
   return (
     <SectionContent>
-      <section className="md:max-w-[1200px] mx-auto space-y-10">
+      <section className="lg:max-w-[1200px] mx-auto space-y-10">
         <ContentHeadline subTitle="Blog" mainTitle="ブログ" />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 md:gap-x-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-10">
           {contents.map((post) => (
             <div key={post.id} className="w-full">
-              <div className="w-full h-[250px] rounded-[15px] mt-5 md:mt-0">
+              <div className="w-full h-[250px] rounded-[15px] mt-5 lg:mt-0">
                 {post.image && (
                   <Image
                     src={post.image.url}
@@ -86,7 +86,7 @@ const Blog_03 = ({ limit = 3 }: BlogProps) => {
                 )}
               </div>
               <div className="bg-white p-6">
-                <p className="text-lg font-bold md:min-h-14">{post.title}</p>
+                <p className="text-lg font-bold lg:min-h-14">{post.title}</p>
                 <p className="mt-2 text-[#5f5f5f] text-xs">
                   {post.description}
                 </p>

@@ -28,7 +28,7 @@ const ServiceSection_03 = ({
   };
 
   return (
-    <div className="flex flex-col justify-start gap-10 md:gap-10">
+    <div className="flex flex-col justify-start gap-10 lg:gap-10">
       <div className="relative min-h-[480px] mr-[calc(50%-50vw)]">
         <Image
           src={imageUrl || "/service/service-03.jpg"}
@@ -36,8 +36,8 @@ const ServiceSection_03 = ({
           className="object-cover w-full h-full rounded-[15px]"
         />
       </div>
-      <div className="flex flex-col md:flex-row gap-6">
-        <div className="md:w-[28vw] md:max-w-[400px]">
+      <div className="flex flex-col lg:flex-row gap-6">
+        <div className="lg:w-[28vw] lg:max-w-[400px]">
           <p className="text-accentColor text-lg font-lato font-extrabold tracking-[0.03em]">
             {enTitle}
           </p>
@@ -45,7 +45,7 @@ const ServiceSection_03 = ({
             {jaTitle}
           </h2>
         </div>
-        <div className="md:w-[72vw] md:max-w-[800px]">
+        <div className="lg:w-[72vw] lg:max-w-[800px]">
           <h3 className="text-[22px] font-medium leading-[160%] tracking-[0.03em] text-accentColor">
             {convertNewLines(headingText)}
           </h3>

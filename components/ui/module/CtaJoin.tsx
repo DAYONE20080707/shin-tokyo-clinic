@@ -19,7 +19,7 @@ const CtaJoin = () => {
 
   return (
     <div className="py-16 bg-mainBlue">
-      <div className="md:md:max-w-[1200px] mx-auto text-white px-6 md:px-0">
+      <div className="lg:lg:max-w-[1200px] mx-auto text-white px-6 lg:px-0">
         <ContentHeadline
           ImageSrc="/common/join_cta.svg"
           ImageWidth={35}
@@ -28,10 +28,10 @@ const CtaJoin = () => {
         />
         <p className="text-center leading-8 -mt-8 text-lg">
           通信販売広告に協会の会員であることをあらわすJADMAマークを使用することができ、
-          <br className="hidden md:block" />
+          <br className="hidden lg:block" />
           企業に対する信頼感を消費者に対してアピールできます。
         </p>
-        <ul className="mt-6 md:flex items-center justify-center md:gap-x-4 ">
+        <ul className="mt-6 lg:flex items-center justify-center lg:gap-x-4 ">
           <li>
             <FreeButtonBlue
               text="入会資格について詳しくはこちら"

@@ -21,7 +21,7 @@ const KeyVisual_02 = () => {
       <FirstViewContent>
         {/* widthがフルサイズでない場合は指定する */}
         <div className="max-w-[1240px] mx-auto pt-40 px-5">
-          <div className=" md:flex justify-between items-end">
+          <div className=" lg:flex justify-between items-end">
             <TopPageHeadline
               mainTitle={
                 <>
@@ -40,7 +40,7 @@ const KeyVisual_02 = () => {
           {/* キービジュアルの画像 */}
           <section className="mx-auto mt-16">
             {/* KeyVisualContentに高さを指定 */}
-            <KeyVisualContent className="h-[300px] md:h-[600px]" />
+            <KeyVisualContent className="h-[300px] lg:h-[600px]" />
           </section>
         </div>
       </FirstViewContent>

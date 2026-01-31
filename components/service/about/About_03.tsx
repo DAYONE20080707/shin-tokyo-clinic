@@ -14,8 +14,8 @@ const About_03 = () => {
     <>
       <SectionContent className="![padding-bottom:0]">
         {/* widthがフルサイズでない場合は指定する */}
-        <section className=" md:max-w-[1200px] mx-auto ">
-          <div className=" md:flex justify-start">
+        <section className=" lg:max-w-[1200px] mx-auto ">
+          <div className=" lg:flex justify-start">
             <ContentHeadline subTitle="Who we are" mainTitle="私たちについて" />
             <AboutSection
               title="無数の選択肢の中から\nベストな選択を"

@@ -74,9 +74,9 @@ const Blog_03 = ({ limit = 3 }: BlogProps) => {
 
   return (
     <PageContent className="bg-bgLight">
-      <section className="md:max-w-[1200px] mx-auto">
+      <section className="lg:max-w-[1200px] mx-auto">
         {/* カテゴリボタン */}
-        <div className="flex flex-wrap justify-start md:justify-center gap-x-5 md:gap-x-20 rounded-full bg-white mx-auto px-5 md:px-20 w-fit">
+        <div className="flex flex-wrap justify-start lg:justify-center gap-x-5 lg:gap-x-20 rounded-full bg-white mx-auto px-5 lg:px-20 w-fit">
           {categories.map((category) => (
             <button
               key={category.id}
@@ -102,14 +102,14 @@ const Blog_03 = ({ limit = 3 }: BlogProps) => {
           </div>
         ) : (
           <>
-            <div className="mt-16 bg-white p-4 md:p-16">
+            <div className="mt-16 bg-white p-4 lg:p-16">
               {displayContents.map((post) => (
                 <Link
                   key={post.id}
                   href={`/blog/${post.id}`}
                   className="w-full hover:opacity-90 transition-opacity"
                 >
-                  <div className="w-full flex flex-col md:flex-row gap-4 border-b border-[#eeeeee] p-4 md:p-6">
+                  <div className="w-full flex flex-col lg:flex-row gap-4 border-b border-[#eeeeee] p-4 lg:p-6">
                     <p className="font-medium">
                       {post.date
                         ? new Date(post.date)
@@ -121,7 +121,7 @@ const Blog_03 = ({ limit = 3 }: BlogProps) => {
                             .replace(/\//g, ".")
                         : ""}
                     </p>
-                    <div className="flex flex-col md:flex-row gap-2">
+                    <div className="flex flex-col lg:flex-row gap-2">
                       <p className="inline-block h-[25px] px-4 py-1 bg-accentColor rounded-[5px] text-white justify-center items-center text-xs w-fit">
                         {post.category?.length
                           ? post.category.join(", ")

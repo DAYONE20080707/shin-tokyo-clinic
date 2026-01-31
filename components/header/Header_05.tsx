@@ -48,19 +48,19 @@ const Header_05 = () => {
     <div className="">
       <HeaderContent className="max-w-[1200px] fixed top-5 left-1/2 transform -translate-x-1/2 z-10 w-full transition-all duration-300 rounded-[10px]">
         <div
-          className={`w-full h-full flex items-center justify-between mx-auto p-3 md:py-4 md:px-10 rounded-full transition-all duration-300 ${
+          className={`w-full h-full flex items-center justify-between mx-auto p-3 lg:py-4 lg:px-10 rounded-full transition-all duration-300 ${
             isScrolled ? "bg-white bg-opacity-80" : "bg-transparent"
           }`}
         >
           {/* ロゴ */}
-          <Link href="/" className="w-[150px] md:w-[200px]">
+          <Link href="/" className="w-[150px] lg:w-[200px]">
             <div className="text-lg font-bold ">
               {CompanyInfo[0].companyName("primary")}
             </div>
           </Link>
 
           {/* デスクトップ用メニュー */}
-          <ul className="hidden md:flex items-center space-x-10 ml-10 font-en tracking-[0.03em]">
+          <ul className="hidden lg:flex items-center space-x-10 ml-10 font-en tracking-[0.03em]">
             {filteredMenu.map((item, index) => (
               <li key={index}>
                 <Link href={item.href}>
@@ -86,7 +86,7 @@ const Header_05 = () => {
 
           {/* ハンバーガーメニューボタン */}
           <button
-            className={`block md:hidden text-white transition-transform duration-300 ${
+            className={`block lg:hidden text-white transition-transform duration-300 ${
               isMenuOpen ? "rotate-90" : "rotate-0"
             }`}
             onClick={handleMenuToggle}
@@ -128,7 +128,7 @@ const Header_05 = () => {
 
         {/* スマホ用メニュー */}
         <div
-          className={`absolute top-20 left-0 w-full h-screen bg-gray-800 bg-opacity-70 text-white md:hidden transition-opacity duration-300 ${
+          className={`absolute top-20 left-0 w-full h-screen bg-gray-800 bg-opacity-70 text-white lg:hidden transition-opacity duration-300 ${
             isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
           } ${isAnimating ? "pointer-events-auto" : ""}`}
         >

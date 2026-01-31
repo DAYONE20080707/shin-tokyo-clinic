@@ -30,12 +30,12 @@ const AboutSection_04 = ({
   }
 
   return (
-    <div className=" md:mt-16 flex flex-col md:flex-row justify-between gap-10 md:gap-20 pb-24">
-      <div className="md:max-w-[600px] ">
-        <h3 className="text-3xl md:text-[40px] font-light leading-[160%] mt-10 md:mt-0 tracking-[0.03em]">
+    <div className=" lg:mt-16 flex flex-col lg:flex-row justify-between gap-10 lg:gap-20 pb-24">
+      <div className="lg:max-w-[600px] ">
+        <h3 className="text-3xl lg:text-[40px] font-light leading-[160%] mt-10 lg:mt-0 tracking-[0.03em]">
           {convertNewLines(title)}
         </h3>
-        <p className="mt-10 !leading-[250%] md:text-lg whitespace-pre-line tracking-[0.03em]">
+        <p className="mt-10 !leading-[250%] lg:text-lg whitespace-pre-line tracking-[0.03em]">
           {description}
         </p>
         {(position || name) && (
@@ -53,7 +53,7 @@ const AboutSection_04 = ({
           />
         )}
       </div>
-      <div className="md:w-[36vw] md:max-w-[520px] h-[300px] md:h-auto relative">
+      <div className="lg:w-[36vw] lg:max-w-[520px] h-[300px] lg:h-auto relative">
         <Image
           src={imageUrl || "/top/message.png"}
           alt={name || "message"}

@@ -3,7 +3,7 @@ import PlanCard_04 from "./PlanCard_04";
 const PlanList_04 = () => {
   return (
     <div className="pb-24">
-      <div className="mt-10 md:mt-16">
+      <div className="mt-10 lg:mt-16">
           {/* PlanCard_04に各プランの情報を渡して表示 */}
           <PlanCard_04
             title="プラン_A"

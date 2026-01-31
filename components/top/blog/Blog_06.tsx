@@ -69,23 +69,23 @@ const Blog_06 = ({ limit = 9 }: BlogProps) => {
 
   return (
     <SectionContent>
-      <section className="md:max-w-[1200px] mx-auto md:flex justify-between gap-x-20">
-        <div className="md:w-[300px]">
+      <section className="lg:max-w-[1200px] mx-auto lg:flex justify-between gap-x-20">
+        <div className="lg:w-[300px]">
           <ContentHeadline subTitle="Blog" mainTitle="ブログ" />
-          <div className="mt-0 md:mt-16">
+          <div className="mt-0 lg:mt-16">
             <MoreButton className="text-accentColor border-accentColor" />
           </div>
         </div>
-        <div className="mt-10 md:mt-0 md:w-[820px] space-y-5">
+        <div className="mt-10 lg:mt-0 lg:w-[820px] space-y-5">
           {contents.map((post) => (
             <div
               key={post.id}
-              className="w-full md:flex md:space-x-6 border-b border-[#eeeeee] pb-5"
+              className="w-full lg:flex lg:space-x-6 border-b border-[#eeeeee] pb-5"
             >
                {post.date
                                ? format(new Date(post.date), "yyyy/MM/dd", { locale: ja })
                                : ""}
-              <p className="mt-1 md:mt-0 w-40 h-[25px] px-2 bg-accentColor rounded-[5px] text-white flex justify-center items-center text-xs ml-2">
+              <p className="mt-1 lg:mt-0 w-40 h-[25px] px-2 bg-accentColor rounded-[5px] text-white flex justify-center items-center text-xs ml-2">
                 {Array.isArray(post.category) && post.category.length > 0
                   ? post.category.join(", ")
                   : "カテゴリーなし"}

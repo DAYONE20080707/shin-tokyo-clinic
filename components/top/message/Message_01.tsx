@@ -13,7 +13,7 @@ const Message_01 = () => {
     <>
       <SectionContent>
         {/* widthがフルサイズでない場合は指定する */}
-        <section className=" md:max-w-[1200px] mx-auto ">
+        <section className=" lg:max-w-[1200px] mx-auto ">
           <ContentHeadline subTitle="Who we are" mainTitle="私たちについて" />
           <div className=" flex justify-start mt-16">
             <h3 className=" w-[500px] text-5xl ">見出しテキスト</h3>

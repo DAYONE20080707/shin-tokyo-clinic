@@ -24,12 +24,12 @@ const PlanCard = ({
   return (
     <div>
       <div className={`${bgColor} ${textColor} p-6 rounded-t-2xl flex flex-col items-center text-center`}>
-        <h3 className="text-lg md:text-2xl font-bold leading-relaxed md:leading-[38.40px] mb-1">{planName}</h3>
+        <h3 className="text-lg lg:text-2xl font-bold leading-relaxed lg:leading-[38.40px] mb-1">{planName}</h3>
         <p className="font-light">{description}</p>
-        <p className="my-4 text-[30px] md:text-[40px] font-bold ">
+        <p className="my-4 text-[30px] lg:text-[40px] font-bold ">
           <span className="text-lg font-extrabold">￥</span>{price}
         </p>
-        <Link href={link} className="w-full h-12 md:h-[58px] text-accentColor py-4 bg-white rounded-[30px] justify-center items-start font-semibold">申し込む</Link>
+        <Link href={link} className="w-full h-12 lg:h-[58px] text-accentColor py-4 bg-white rounded-[30px] justify-center items-start font-semibold">申し込む</Link>
       </div>
       <ul className="mt-[2px] bg-white border border-[#EFEFEF] p-6 font-light text-[#393939] space-y-4">
         {features.map((feature, index) => (

@@ -21,15 +21,15 @@ const PlanCard: React.FC<PlanCardProps> = ({
   return (
     <div>
       {/* プランの概要部分 */}
-      <div className={`${colorClass} text-white p-6 rounded-t-2xl flex flex-col items-center text-center ${isLargePadding ? 'py-[110px] md:py-[123px]' : ''}`}>
-        <h3 className="text-lg md:text-2xl font-bold leading-relaxed md:leading-[38.40px] mb-1">{title}</h3>
+      <div className={`${colorClass} text-white p-6 rounded-t-2xl flex flex-col items-center text-center ${isLargePadding ? 'py-[110px] lg:py-[123px]' : ''}`}>
+        <h3 className="text-lg lg:text-2xl font-bold leading-relaxed lg:leading-[38.40px] mb-1">{title}</h3>
 
         {/* descriptionがある場合のみ表示 */}
         {description && <p className="font-light">{description}</p>}
 
         {/* priceがある場合のみ表示 */}
         {price && (
-          <p className="my-4 text-[30px] md:text-[40px] font-bold">
+          <p className="my-4 text-[30px] lg:text-[40px] font-bold">
             <span className="text-lg font-extrabold">￥</span>{price}
           </p>
         )}

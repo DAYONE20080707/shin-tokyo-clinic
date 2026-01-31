@@ -12,7 +12,7 @@ const PlanOption = () => {
       <div className="grid grid-cols-1 md:grid-cols-5 mt-10 md:mt-16 gap-x-2 gap-y-10 md:gap-y-0">
         <div className="flex flex-col items-center bg-white py-4 px-6">
           <Image
-            src="/page/plan-option-01.png"
+            src="/price/price-option-01.png"
             alt="オプションイメージ"
             width={120}
             height={120}
@@ -25,7 +25,7 @@ const PlanOption = () => {
         </div>
         <div className="flex flex-col items-center bg-white py-4 px-6">
           <Image
-            src="/page/plan-option-01.png"
+            src="/price/price-option-01.png"
             alt="オプションイメージ"
             width={120}
             height={120}
@@ -38,7 +38,7 @@ const PlanOption = () => {
         </div>
         <div className="flex flex-col items-center bg-white py-4 px-6">
           <Image
-            src="/page/plan-option-01.png"
+            src="/price/price-option-01.png"
             alt="オプションイメージ"
             width={120}
             height={120}
@@ -51,7 +51,7 @@ const PlanOption = () => {
         </div>
         <div className="flex flex-col items-center bg-white py-4 px-6">
           <Image
-            src="/page/plan-option-01.png"
+            src="/price/price-option-01.png"
             alt="オプションイメージ"
             width={120}
             height={120}
@@ -64,7 +64,7 @@ const PlanOption = () => {
         </div>
         <div className="flex flex-col items-center bg-white py-4 px-6">
           <Image
-            src="/page/plan-option-01.png"
+            src="/price/price-option-01.png"
             alt="オプションイメージ"
             width={120}
             height={120}

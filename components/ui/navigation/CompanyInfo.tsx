@@ -6,10 +6,10 @@ export const CompanyInfo = [
       <Image
         src={
           type === "primary"
-            ? "/common/logo-header.png" // 1つ目のロゴパス（白色ロゴ）
+            ? "/common/logo-white.png" // 白色ロゴ
             : type === "secondary"
-            ? "/common/logo-square.png" // 2つ目のロゴパス（黒色ロゴ）
-            : "/common/logo.png" // 3つ目のロゴパス（テキストなし）
+            ? "/common/logo-square-primary.png" // 正方形・基本カラー
+            : "/common/logo-primary.png" // 基本カラー
         }
         alt="logo"
         width={200} // 適切な幅を指定

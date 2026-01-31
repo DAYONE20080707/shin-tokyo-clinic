@@ -86,7 +86,7 @@ const Header_05 = () => {
 
           {/* ハンバーガーメニューボタン */}
           <button
-            className={`block lg:hidden text-white transition-transform duration-300 ${
+            className={`block lg:hidden text-white transition-transform duration-300 z-[60] relative ${
               isMenuOpen ? "rotate-90" : "rotate-0"
             }`}
             onClick={handleMenuToggle}
@@ -128,11 +128,11 @@ const Header_05 = () => {
 
         {/* スマホ用メニュー */}
         <div
-          className={`absolute top-20 left-0 w-full h-screen bg-gray-800 bg-opacity-70 text-white lg:hidden transition-opacity duration-300 ${
+          className={`fixed -top-5 left-0 w-full h-[calc(100vh+20px)] bg-gray-800 bg-opacity-70 text-white lg:hidden transition-opacity duration-300 z-50 ${
             isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
           } ${isAnimating ? "pointer-events-auto" : ""}`}
         >
-          <ul className="flex flex-col items-center space-y-6 py-10">
+          <ul className="flex flex-col items-center space-y-6 pt-24 pb-10">
             {filteredMenu.map((item, index) => (
               <li key={index}>
                 <Link href={item.href}>

@@ -2,11 +2,10 @@
 
 "use client"
 
-import MoreLinkButton from "@/components/ui/button/MoreButton";
 import ContentHeadline from "@/components/ui/frame/ContentHeadline";
 import SectionContent from "@/components/ui/frame/SectionContent";
-import Image from "next/image";
 import HistoryCard from "@/components/ui/ItemCard/HistoryCard";
+import { historyData } from "@/data/historyData";
 
 // メッセージ
 const History_01 = () => {
@@ -23,26 +22,13 @@ const History_01 = () => {
           />
 
           <ul className="">
-            <HistoryCard
-              date="0000年00月"
-              description="沿革情報はいります沿革情報はいります沿革情報はいります沿革情報はいります"
-            />
-            <HistoryCard
-              date="0000年00月"
-              description="沿革情報はいります沿革情報はいります沿革情報はいります沿革情報はいります"
-            />
-            <HistoryCard
-              date="0000年00月"
-              description="沿革情報はいります沿革情報はいります沿革情報はいります沿革情報はいります"
-            />
-            <HistoryCard
-              date="0000年00月"
-              description="沿革情報はいります沿革情報はいります沿革情報はいります沿革情報はいります"
-            />
-            <HistoryCard
-              date="0000年00月"
-              description="沿革情報はいります沿革情報はいります沿革情報はいります沿革情報はいります"
-            />
+            {historyData.map((history, index) => (
+              <HistoryCard
+                key={index}
+                date={history.date}
+                description={history.description}
+              />
+            ))}
           </ul>
         </section>
       </SectionContent>

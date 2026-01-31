@@ -1,12 +1,8 @@
 // components/blog/blogDetail/BlogDetail_01.tsx
 
-"use client"
-
-import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { NavigationArrow } from "@/components/ui/icons/NavigationArrow"
-import { Cms } from "@/types"
 import { blogsFetch } from "@/lib/api/blogsFetch"
 import styles from "@/styles/microcms.module.css"
 
@@ -17,81 +13,30 @@ interface BlogDetailProps {
   draftKey?: string
 }
 
-const BlogDetail_01 = ({ params, draftKey }: BlogDetailProps) => {
+const BlogDetail_01 = async ({ params, draftKey }: BlogDetailProps) => {
   const { id } = params
-  const [post, setPost] = useState<Cms | null>(null)
-  const [prevPost, setPrevPost] = useState<Cms | null>(null)
-  const [nextPost, setNextPost] = useState<Cms | null>(null)
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState<string | null>(null)
 
-  useEffect(() => {
-    let mounted = true
+  const post = await blogsFetch.get(id, draftKey)
 
-    const fetchData = async () => {
-      try {
-        setLoading(true)
-        setError(null)
-
-        const currentPost = await blogsFetch.get(id, draftKey)
-        if (!mounted) return
-
-        if (!currentPost) {
-          setError("記事が見つかりませんでした")
-          return
-        }
-
-        setPost(currentPost)
-
-        const allPosts = await blogsFetch.list(100, draftKey)
-        if (!mounted) return
-
-        const sorted = allPosts.sort(
-          (a, b) =>
-            new Date(b.date ?? "").getTime() - new Date(a.date ?? "").getTime()
-        )
-
-        const index = sorted.findIndex((p) => p.id === id)
-        setPrevPost(index > 0 ? sorted[index - 1] : null)
-        setNextPost(index < sorted.length - 1 ? sorted[index + 1] : null)
-      } catch (err) {
-        console.error("Failed to fetch blog post:", err)
-        if (mounted) {
-          setError("記事の取得に失敗しました")
-        }
-      } finally {
-        if (mounted) {
-          setLoading(false)
-        }
-      }
-    }
-
-    fetchData()
-
-    return () => {
-      mounted = false
-    }
-  }, [id, draftKey])
-
-  if (loading) {
+  if (!post) {
     return (
       <div className="max-w-[1200px] mx-auto py-16 px-4">
         <div className="text-center">
-          <p>読み込み中...</p>
+          <p>記事が見つかりませんでした</p>
         </div>
       </div>
     )
   }
 
-  if (error || !post) {
-    return (
-      <div className="max-w-[1200px] mx-auto py-16 px-4">
-        <div className="text-center">
-          <p>{error || "記事が見つかりませんでした"}</p>
-        </div>
-      </div>
-    )
-  }
+  // 前後の記事を取得
+  const allPosts = await blogsFetch.list(100, draftKey)
+  const sorted = allPosts.sort(
+    (a, b) =>
+      new Date(b.date ?? "").getTime() - new Date(a.date ?? "").getTime()
+  )
+  const index = sorted.findIndex((p) => p.id === id)
+  const prevPost = index > 0 ? sorted[index - 1] : null
+  const nextPost = index < sorted.length - 1 ? sorted[index + 1] : null
 
   return (
     <div className="max-w-[1200px] mx-auto py-16 px-4">

@@ -16,7 +16,7 @@ const CaseDetailPage = async ({
   const { draftKey } = await searchParams
 
   const sections = componentsConfig.CaseDetail.sections
-  const defaultTemplate = sections.caseDetail.options[1].id
+  const defaultTemplate = sections.caseDetail.options[0].id
   const Component = sections.caseDetail.components[defaultTemplate]
 
   return Component

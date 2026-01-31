@@ -5,7 +5,7 @@
 import ContentHeadline from "@/components/ui/frame/ContentHeadline"
 import PageContent from "@/components/ui/frame/PageContent"
 import StrengthCard from "@/components/ui/ItemCard/StrengthCard_01"
-import { strengthData } from "@/components/data/top/StrengthData"
+import { strengthData } from "@/data/strengthData"
 import MoreLinkButton from "@/components/ui/button/MoreButton"
 import SectionContent from "@/components/ui/frame/SectionContent"
 import ContentHeadlineReverse from "@/components/ui/frame/ContentHeadlineReverse"

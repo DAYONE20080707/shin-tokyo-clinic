@@ -16,7 +16,7 @@ const NewsDetailPage = async ({
   const { draftKey } = await searchParams
 
   const sections = componentsConfig.NewsDetail.sections
-  const defaultTemplate = sections.newsDetail.options[1].id
+  const defaultTemplate = sections.newsDetail.options[0].id
   const Component = sections.newsDetail.components[defaultTemplate]
 
   return Component

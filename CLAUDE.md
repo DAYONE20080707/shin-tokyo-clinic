@@ -168,7 +168,17 @@ bgLight: "#f7fcff"      // 背景（薄い青）
 
 ## データ取得パターン
 
-microCMS からのデータ取得は専用関数を使用:
+### microCMS エンドポイント
+
+| エンドポイント | 用途 | 取得関数 |
+|---------------|------|----------|
+| `blogs` | ブログ記事 | `blogsFetch` |
+| `cases` | 導入事例 | `casesFetch` |
+| `news` | お知らせ | `newsFetch` |
+
+※ 上記3つ以外のエンドポイントは使用しない
+
+### 使用方法
 
 ```tsx
 // OK - 専用関数を使用
@@ -176,7 +186,10 @@ import { blogsFetch } from "@/lib/api/blogsFetch"
 import { newsFetch } from "@/lib/api/newsFetch"
 import { casesFetch } from "@/lib/api/casesFetch"
 
+// 一覧取得
 const data = await blogsFetch.list(limit)
+
+// 単体取得
 const item = await blogsFetch.get(id)
 
 // NG - 直接 microcms を呼ばない

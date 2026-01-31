@@ -3,7 +3,7 @@
 
 import ContentHeadline from "@/components/ui/frame/ContentHeadline";
 import ServiceCard from "@/components/ui/ItemCard/ServiceCard_01";
-import { serviceData } from "@/components/data/top/ServiceData";
+import { serviceData } from "@/data/serviceData";
 import MoreLinkButton from "@/components/ui/button/MoreButton";
 import SectionContent from "@/components/ui/frame/SectionContent";
 

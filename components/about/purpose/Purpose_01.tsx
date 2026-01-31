@@ -6,53 +6,9 @@ import ContentHeadline from "@/components/ui/frame/ContentHeadline"
 import SectionContent from "@/components/ui/frame/SectionContent"
 import Image from "next/image"
 import PurposeCard from "@/components/ui/ItemCard/PurposeCard"
+import { purposeData } from "@/data/purposeData"
 
 const Purpose_01 = () => {
-  const purposeData = {
-    mission: {
-      title: "Mission",
-      headline: "見出しテキスト\nはいります見出し",
-      description:
-        "メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。",
-    },
-    vision: {
-      title: "Vision",
-      headline: "見出しテキスト\nはいります見出し",
-      description:
-        "メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。",
-    },
-    values: {
-      title: "Value",
-      values: [
-        {
-          title: "見出しテキストはいります見出し",
-          description:
-            "メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。",
-        },
-        {
-          title: "見出しテキストはいります見出し",
-          description:
-            "メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。",
-        },
-        {
-          title: "見出しテキストはいります見出し",
-          description:
-            "メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。",
-        },
-        {
-          title: "見出しテキストはいります見出し",
-          description:
-            "メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。",
-        },
-        {
-          title: "見出しテキストはいります見出し",
-          description:
-            "メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。",
-        },
-      ],
-    },
-  }
-
   return (
     <SectionContent>
       <section className="lg:max-w-[1200px] mx-auto">

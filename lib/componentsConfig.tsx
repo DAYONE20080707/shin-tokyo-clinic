@@ -105,17 +105,14 @@ import LowerBlog_01 from "@/components/blog/blog/Blog_01"
 import LowerBlog_02 from "@/components/blog/blog/Blog_02"
 import LowerBlog_03 from "@/components/blog/blog/Blog_03"
 import BlogDetail_01 from "@/components/blog/blogDetail/BlogDetail_01"
-import BlogDetail_02 from "@/components/blog/blogDetail/BlogDetail_02"
 import LowerCase_01 from "@/components/case/case/LowerCase_01"
 import LowerCase_02 from "@/components/case/case/LowerCase_02"
 import LowerCase_03 from "@/components/case/case/LowerCase_03"
 import CaseDetail_01 from "@/components/case/caseDetail/CaseDetail_01"
-import CaseDetail_02 from "@/components/case/caseDetail/CaseDetail_02"
 import LowerNews_01 from "@/components/news/news/LowerNews_01"
 import LowerNews_02 from "@/components/news/news/LowerNews_02"
 import LowerNews_03 from "@/components/news/news/LowerNews_03"
 import NewsDetail_01 from "@/components/news/newsDetail/NewsDetail_01"
-import NewsDetail_02 from "@/components/news/newsDetail/NewsDetail_02"
 
 // セクション情報とコンポーネントのマッピングの型定義
 interface SectionOption {
@@ -1097,11 +1094,9 @@ export const componentsConfig: ComponentsConfig = {
         title: "記事詳細",
         options: [
           { id: "BlogDetail_01", src: "/admin/step-01.png", alt: "BlogDetail_01" },
-          { id: "BlogDetail_02", src: "/admin/step-02.png", alt: "BlogDetail_02" },
         ],
         components: {
           BlogDetail_01: <BlogDetail_01 params={{ id: "" }} />,
-          BlogDetail_02: <BlogDetail_02 params={{ id: "" }} />,
         },
       },
       footer: {
@@ -1254,11 +1249,9 @@ export const componentsConfig: ComponentsConfig = {
         title: "事例詳細",
         options: [
           { id: "CaseDetail_01", src: "/admin/step-01.png", alt: "CaseDetail_01" },
-          { id: "CaseDetail_02", src: "/admin/step-02.png", alt: "CaseDetail_02" },
         ],
         components: {
           CaseDetail_01: <CaseDetail_01 params={{ id: "" }} />,
-          CaseDetail_02: <CaseDetail_02 params={{ id: "" }} />,
         },
       },
       footer: {
@@ -1295,11 +1288,9 @@ export const componentsConfig: ComponentsConfig = {
         title: "お知らせ詳細",
         options: [
           { id: "NewsDetail_01", src: "/admin/step-01.png", alt: "NewsDetail_01" },
-          { id: "NewsDetail_02", src: "/admin/step-02.png", alt: "NewsDetail_02" },
         ],
         components: {
           NewsDetail_01: <NewsDetail_01 params={{ id: "" }} />,
-          NewsDetail_02: <NewsDetail_02 params={{ id: "" }} />,
         },
       },
       footer: {

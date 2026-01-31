@@ -1,5 +1,4 @@
 import { componentsConfig } from "@/lib/componentsConfig"
-import { blogsFetch } from "@/lib/api/blogsFetch"
 import React from "react"
 
 interface BlogDetailPageProps {
@@ -7,19 +6,6 @@ interface BlogDetailPageProps {
   searchParams: Promise<{
     draftKey?: string
   }>
-}
-
-// 静的サイト生成用のパラメータ生成
-export async function generateStaticParams() {
-  try {
-    const posts = await blogsFetch.list(100)
-    return posts.map((post) => ({
-      id: post.id,
-    }))
-  } catch (error) {
-    console.error("Failed to generate static params for blog", error)
-    return []
-  }
 }
 
 const BlogDetailPage = async ({
@@ -30,7 +16,7 @@ const BlogDetailPage = async ({
   const { draftKey } = await searchParams
 
   const sections = componentsConfig.BlogDetail.sections
-  const defaultTemplate = sections.blogDetail.options[1].id
+  const defaultTemplate = sections.blogDetail.options[0].id
   const Component = sections.blogDetail.components[defaultTemplate]
 
   return Component

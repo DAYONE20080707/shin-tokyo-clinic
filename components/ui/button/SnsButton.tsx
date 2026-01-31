@@ -4,7 +4,7 @@ export const SnsButton = [
     name: "Instagram",
     href: "/",
     src: "/sns/instagram.svg",
-    src_w: "/sns/instagram_w.svg",
+    src_w: "/sns/instagram-white.svg",
   },
   {
     name: "X",
@@ -15,7 +15,7 @@ export const SnsButton = [
   //   name: 'facebook',
   //   href: '/',
   //   src: '/sns/facebook.svg',
-  //   src_w: '/sns/facebook_w.svg',
+  //   src_w: '/sns/facebook-white.svg',
   // },
   // {
   //   name: 'Line',

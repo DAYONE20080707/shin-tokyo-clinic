@@ -69,7 +69,7 @@ const Purpose_01 = () => {
         </ul>
         <div className="w-full h-[300px] md:h-[523px] relative rounded overflow-hidden">
           <Image
-            src="/about/purpose.jpg"
+            src="/page/about-purpose.jpg"
             alt="message"
             fill
             className="object-cover"

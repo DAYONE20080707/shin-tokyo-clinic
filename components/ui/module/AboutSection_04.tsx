@@ -55,7 +55,7 @@ const AboutSection_04 = ({
       </div>
       <div className="md:w-[36vw] md:max-w-[520px] h-[300px] md:h-auto relative">
         <Image
-          src={imageUrl || "/top/message/message_img.png"}
+          src={imageUrl || "/top/message.png"}
           alt={name || "message"}
           fill
           className="object-cover"

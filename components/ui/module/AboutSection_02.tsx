@@ -33,7 +33,7 @@ const AboutSection_02 = ({
     <div className="flex flex-col-reverse md:flex-row justify-start md:space-x-20 pb-24">
       <div className="md:w-[36vw] md:max-w-[520px] h-[300px] md:h-auto relative mt-10 md:mt-0">
         <Image
-          src={imageUrl || "/top/message/message_img.png"}
+          src={imageUrl || "/top/message.png"}
           alt={name || "message"}
           fill
           className="object-cover w-full h-full"

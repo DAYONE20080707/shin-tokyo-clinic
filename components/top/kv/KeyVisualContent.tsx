@@ -17,11 +17,11 @@ const KeyVisualContent: React.FC<KeyVisualContentProps> = ({
   const [currentSlide, setCurrentSlide] = useState(0)
 
   const slides = [
-    { src: "/top/kv/kv_img1.jpg", alt: "KV Image 1" },
-    { src: "/top/kv/kv_img2.jpg", alt: "KV Image 2" },
-    { src: "/top/kv/kv_img3.jpg", alt: "KV Image 3" },
-    { src: "/top/kv/kv_img4.jpg", alt: "KV Image 4" },
-    { src: "/top/kv/kv_img5.jpg", alt: "KV Image 5" },
+    { src: "/top/kv-01.jpg", alt: "KV Image 1" },
+    { src: "/top/kv-02.jpg", alt: "KV Image 2" },
+    { src: "/top/kv-03.jpg", alt: "KV Image 3" },
+    { src: "/top/kv-04.jpg", alt: "KV Image 4" },
+    { src: "/top/kv-05.jpg", alt: "KV Image 5" },
   ]
 
   useEffect(() => {

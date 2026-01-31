@@ -8,7 +8,7 @@ const Lowerkv_02 = () => {
     <div
       className="h-[200px] md:h-[400px]"
       style={{
-        background: `linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(/common/lowerkv.jpg) lightgray 50% / cover no-repeat`,
+        background: `linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(/common/lower-kv-01.jpg) lightgray 50% / cover no-repeat`,
       }}
     >
       <div className="md:max-w-[1240px] mx-auto space-y-10 px-5 relative h-full flex items-center">

@@ -97,8 +97,8 @@ npm install
          header: {
            title: "ヘッダー",
            options: [
-             { id: "Header1", src: "/admin/1.png", alt: "Header1" },
-             { id: "Header2", src: "/admin/2.png", alt: "Header2" },
+             { id: "Header1", src: "/admin/step-01.png", alt: "Header1" },
+             { id: "Header2", src: "/admin/step-02.png", alt: "Header2" },
            ],
            components: {
              Header1: <Header1 />,

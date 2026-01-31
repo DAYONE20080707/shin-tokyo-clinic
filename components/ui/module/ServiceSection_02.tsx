@@ -52,7 +52,7 @@ const ServiceSection_02 = ({
       </div>
       <div className="md:w-1/2 relative min-h-[300px]">
         <Image
-          src={imageUrl || "/service/service2.jpg"}
+          src={imageUrl || "/service/service-02.jpg"}
           alt={jaTitle || "message"}
           className="object-cover w-full h-full rounded-[15px]"
         />

@@ -24,7 +24,7 @@ const Service_02 = () => {
           <div className="flex flex-col-reverse md:flex-row gap-10 md:gap-20">
             <div className="flex-1 flex items-center justify-center">
               <Image
-                src="/top/service/service_img.png"
+                src="/service/top.png"
                 alt="Service Image"
                 width={580}
                 height={853}

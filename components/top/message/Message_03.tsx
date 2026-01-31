@@ -29,7 +29,7 @@ const Message_03 = () => {
             </div>
             <div className=" w-[520px] h-[767px] relative">
               <Image
-                src="/top/message/message_img.png"
+                src="/top/message.png"
                 alt="message"
                 fill
                 className="object-cover"

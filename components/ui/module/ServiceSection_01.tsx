@@ -31,7 +31,7 @@ const ServiceSection_01 = ({
     <div className="flex flex-col md:flex-row justify-start gap-10 md:gap-20">
       <div className="md:w-1/2 relative min-h-[300px]">
         <Image
-          src={imageUrl || "/service/service1.jpg"}
+          src={imageUrl || "/service/service-01.jpg"}
           alt={jaTitle || "message"}
           fill
           className="object-cover w-full h-full rounded-[15px]"

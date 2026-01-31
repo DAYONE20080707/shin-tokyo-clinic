@@ -31,7 +31,7 @@ const Message_01 = () => {
         </section>
         <section className="w-[95%] h-[380px] mx-auto mt-24  flex justify-center relative">
           <Image
-            src="/top/message/message_img.png"
+            src="/top/message.png"
             alt="message"
             fill
             className="object-cover"

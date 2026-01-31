@@ -17,7 +17,7 @@ const Lowerkv_03 = () => {
 
       <div className="md:w-[50vw] md:absolute right-0 h-[200px] md:h-full md:top-0">
         <Image
-          src="/common/lowerkv2.jpg"
+          src="/common/lower-kv-02.jpg"
           alt="キービジュアル"
           width={800}
           height={400}

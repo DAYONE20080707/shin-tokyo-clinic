@@ -145,10 +145,10 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/1.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/2.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/3.png", alt: "Header_03" },
-          { id: "Header_04", src: "/admin/4.png", alt: "Header_04" },
+          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
+          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
+          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
+          { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
           Header_01: <Header_01 />,
@@ -160,12 +160,12 @@ export const componentsConfig: ComponentsConfig = {
       kv: {
         title: "キービジュアル",
         options: [
-          { id: "KeyVisual_01", src: "/admin/1.png", alt: "KeyVisual_01" },
-          { id: "KeyVisual_02", src: "/admin/2.png", alt: "KeyVisual_02" },
-          { id: "KeyVisual_03", src: "/admin/3.png", alt: "KeyVisual_03" },
-          { id: "KeyVisual_04", src: "/admin/4.png", alt: "KeyVisual_04" },
-          { id: "KeyVisual_05", src: "/admin/5.png", alt: "KeyVisual_05" },
-          { id: "KeyVisual_06", src: "/admin/6.png", alt: "KeyVisual_06" },
+          { id: "KeyVisual_01", src: "/admin/step-01.png", alt: "KeyVisual_01" },
+          { id: "KeyVisual_02", src: "/admin/step-02.png", alt: "KeyVisual_02" },
+          { id: "KeyVisual_03", src: "/admin/step-03.png", alt: "KeyVisual_03" },
+          { id: "KeyVisual_04", src: "/admin/step-04.png", alt: "KeyVisual_04" },
+          { id: "KeyVisual_05", src: "/admin/step-05.png", alt: "KeyVisual_05" },
+          { id: "KeyVisual_06", src: "/admin/step-06.png", alt: "KeyVisual_06" },
         ],
         components: {
           KeyVisual_01: <KeyVisual_01 />,
@@ -179,10 +179,10 @@ export const componentsConfig: ComponentsConfig = {
       about: {
         title: "私たちについて",
         options: [
-          { id: "About_01", src: "/admin/1.png", alt: "About_01" },
-          { id: "About_02", src: "/admin/2.png", alt: "About_02" },
-          { id: "About_03", src: "/admin/3.png", alt: "About_03" },
-          { id: "About_04", src: "/admin/4.png", alt: "About_04" },
+          { id: "About_01", src: "/admin/step-01.png", alt: "About_01" },
+          { id: "About_02", src: "/admin/step-02.png", alt: "About_02" },
+          { id: "About_03", src: "/admin/step-03.png", alt: "About_03" },
+          { id: "About_04", src: "/admin/step-04.png", alt: "About_04" },
         ],
         components: {
           About_01: <About_01 />,
@@ -195,10 +195,10 @@ export const componentsConfig: ComponentsConfig = {
       // message: {
       //   title: "メッセージ",
       //   options: [
-      //     { id: "Message_01", src: "/admin/1.png", alt: "Message_01" },
-      //     { id: "Message_02", src: "/admin/2.png", alt: "Message_02" },
-      //     { id: "Message_03", src: "/admin/3.png", alt: "Message_03" },
-      //     { id: "Message_04", src: "/admin/4.png", alt: "Message_04" },
+      //     { id: "Message_01", src: "/admin/step-01.png", alt: "Message_01" },
+      //     { id: "Message_02", src: "/admin/step-02.png", alt: "Message_02" },
+      //     { id: "Message_03", src: "/admin/step-03.png", alt: "Message_03" },
+      //     { id: "Message_04", src: "/admin/step-04.png", alt: "Message_04" },
       //   ],
       //   components: {
       //     Message_01: <Message_01 />,
@@ -210,10 +210,10 @@ export const componentsConfig: ComponentsConfig = {
       service: {
         title: "サービス",
         options: [
-          { id: "Service_01", src: "/admin/1.png", alt: "Service_01" },
-          { id: "Service_02", src: "/admin/2.png", alt: "Service_02" },
-          { id: "Service_03", src: "/admin/3.png", alt: "Service_03" },
-          { id: "Service_04", src: "/admin/4.png", alt: "Service_04" },
+          { id: "Service_01", src: "/admin/step-01.png", alt: "Service_01" },
+          { id: "Service_02", src: "/admin/step-02.png", alt: "Service_02" },
+          { id: "Service_03", src: "/admin/step-03.png", alt: "Service_03" },
+          { id: "Service_04", src: "/admin/step-04.png", alt: "Service_04" },
         ],
         components: {
           Service_01: <Service_01 />,
@@ -225,10 +225,10 @@ export const componentsConfig: ComponentsConfig = {
       // strength: {
       //   title: "私たちの強み",
       //   options: [
-      //     { id: "Strength_01", src: "/admin/1.png", alt: "Strength_01" },
-      //     { id: "Strength_02", src: "/admin/2.png", alt: "Strength_02" },
-      //     { id: "Strength_03", src: "/admin/3.png", alt: "Strength_03" },
-      //     { id: "Strength_04", src: "/admin/4.png", alt: "Strength_04" },
+      //     { id: "Strength_01", src: "/admin/step-01.png", alt: "Strength_01" },
+      //     { id: "Strength_02", src: "/admin/step-02.png", alt: "Strength_02" },
+      //     { id: "Strength_03", src: "/admin/step-03.png", alt: "Strength_03" },
+      //     { id: "Strength_04", src: "/admin/step-04.png", alt: "Strength_04" },
       //   ],
       //   components: {
       //     Strength_01: <Strength_01 />,
@@ -240,12 +240,12 @@ export const componentsConfig: ComponentsConfig = {
       case: {
         title: "導入事例",
         options: [
-          { id: "Case_01", src: "/admin/1.png", alt: "Case_01" },
-          { id: "Case_02", src: "/admin/2.png", alt: "Case_02" },
-          { id: "Case_03", src: "/admin/3.png", alt: "Case_03" },
-          { id: "Case_04", src: "/admin/4.png", alt: "Case_04" },
-          { id: "Case_05", src: "/admin/5.png", alt: "Case_05" },
-          { id: "Case_06", src: "/admin/6.png", alt: "Case_06" },
+          { id: "Case_01", src: "/admin/step-01.png", alt: "Case_01" },
+          { id: "Case_02", src: "/admin/step-02.png", alt: "Case_02" },
+          { id: "Case_03", src: "/admin/step-03.png", alt: "Case_03" },
+          { id: "Case_04", src: "/admin/step-04.png", alt: "Case_04" },
+          { id: "Case_05", src: "/admin/step-05.png", alt: "Case_05" },
+          { id: "Case_06", src: "/admin/step-06.png", alt: "Case_06" },
         ],
         components: {
           Case_01: <Case_01 />,
@@ -259,12 +259,12 @@ export const componentsConfig: ComponentsConfig = {
       blog: {
         title: "ブログ",
         options: [
-          { id: "Blog_01", src: "/admin/1.png", alt: "Blog_01" },
-          { id: "Blog_02", src: "/admin/2.png", alt: "Blog_02" },
-          { id: "Blog_03", src: "/admin/3.png", alt: "Blog_03" },
-          { id: "Blog_04", src: "/admin/4.png", alt: "Blog_04" },
-          { id: "Blog_05", src: "/admin/5.png", alt: "Blog_05" },
-          { id: "Blog_06", src: "/admin/5.png", alt: "Blog_06" },
+          { id: "Blog_01", src: "/admin/step-01.png", alt: "Blog_01" },
+          { id: "Blog_02", src: "/admin/step-02.png", alt: "Blog_02" },
+          { id: "Blog_03", src: "/admin/step-03.png", alt: "Blog_03" },
+          { id: "Blog_04", src: "/admin/step-04.png", alt: "Blog_04" },
+          { id: "Blog_05", src: "/admin/step-05.png", alt: "Blog_05" },
+          { id: "Blog_06", src: "/admin/step-05.png", alt: "Blog_06" },
         ],
         components: {
           Blog_01: <Blog_01 />,
@@ -278,10 +278,10 @@ export const componentsConfig: ComponentsConfig = {
       plan: {
         title: "料金プラン",
         options: [
-          { id: "Plan_01", src: "/admin/1.png", alt: "Plan_01" },
-          { id: "Plan_02", src: "/admin/2.png", alt: "Plan_02" },
-          { id: "Plan_03", src: "/admin/3.png", alt: "Plan_03" },
-          { id: "Plan_04", src: "/admin/4.png", alt: "Plan_04" },
+          { id: "Plan_01", src: "/admin/step-01.png", alt: "Plan_01" },
+          { id: "Plan_02", src: "/admin/step-02.png", alt: "Plan_02" },
+          { id: "Plan_03", src: "/admin/step-03.png", alt: "Plan_03" },
+          { id: "Plan_04", src: "/admin/step-04.png", alt: "Plan_04" },
         ],
         components: {
           Plan_01: <Plan_01 />,
@@ -293,8 +293,8 @@ export const componentsConfig: ComponentsConfig = {
       flow: {
         title: "ご利用の流れ",
         options: [
-          { id: "Flow_01", src: "/admin/1.png", alt: "Flow_01" },
-          { id: "Flow_02", src: "/admin/2.png", alt: "Flow_02" },
+          { id: "Flow_01", src: "/admin/step-01.png", alt: "Flow_01" },
+          { id: "Flow_02", src: "/admin/step-02.png", alt: "Flow_02" },
         ],
         components: {
           Flow_01: <Flow_01 />,
@@ -304,12 +304,12 @@ export const componentsConfig: ComponentsConfig = {
       news: {
         title: "お知らせ",
         options: [
-          { id: "News_01", src: "/admin/1.png", alt: "News_01" },
-          { id: "News_02", src: "/admin/2.png", alt: "News_02" },
-          { id: "News_03", src: "/admin/3.png", alt: "News_03" },
-          { id: "News_04", src: "/admin/4.png", alt: "News_04" },
-          { id: "News_05", src: "/admin/5.png", alt: "News_05" },
-          { id: "News_06", src: "/admin/6.png", alt: "News_06" },
+          { id: "News_01", src: "/admin/step-01.png", alt: "News_01" },
+          { id: "News_02", src: "/admin/step-02.png", alt: "News_02" },
+          { id: "News_03", src: "/admin/step-03.png", alt: "News_03" },
+          { id: "News_04", src: "/admin/step-04.png", alt: "News_04" },
+          { id: "News_05", src: "/admin/step-05.png", alt: "News_05" },
+          { id: "News_06", src: "/admin/step-06.png", alt: "News_06" },
         ],
         components: {
           News_01: <News_01 />,
@@ -323,8 +323,8 @@ export const componentsConfig: ComponentsConfig = {
       faq: {
         title: "よくある質問",
         options: [
-          { id: "Faq_01", src: "/admin/1.png", alt: "Faq_01" },
-          { id: "Faq_02", src: "/admin/2.png", alt: "Faq_02" },
+          { id: "Faq_01", src: "/admin/step-01.png", alt: "Faq_01" },
+          { id: "Faq_02", src: "/admin/step-02.png", alt: "Faq_02" },
         ],
         components: {
           Faq_01: <Faq_01 />,
@@ -335,8 +335,8 @@ export const componentsConfig: ComponentsConfig = {
       aside: {
         title: "ASIDE",
         options: [
-          { id: "Aside_01", src: "/admin/1.png", alt: "Aside_01" },
-          { id: "Aside_02", src: "/admin/2.png", alt: "Aside_02" },
+          { id: "Aside_01", src: "/admin/step-01.png", alt: "Aside_01" },
+          { id: "Aside_02", src: "/admin/step-02.png", alt: "Aside_02" },
         ],
         components: {
           Aside_01: <Aside_01 />,
@@ -346,11 +346,11 @@ export const componentsConfig: ComponentsConfig = {
       profile: {
         title: "会社概要",
         options: [
-          { id: "Profile_01", src: "/admin/1.png", alt: "Profile_01" },
-          { id: "Profile_02", src: "/admin/2.png", alt: "Profile_02" },
-          { id: "Profile_03", src: "/admin/3.png", alt: "Profile_03" },
-          { id: "Profile_04", src: "/admin/4.png", alt: "Profile_04" },
-          { id: "Profile_05", src: "/admin/5.png", alt: "Profile_05" },
+          { id: "Profile_01", src: "/admin/step-01.png", alt: "Profile_01" },
+          { id: "Profile_02", src: "/admin/step-02.png", alt: "Profile_02" },
+          { id: "Profile_03", src: "/admin/step-03.png", alt: "Profile_03" },
+          { id: "Profile_04", src: "/admin/step-04.png", alt: "Profile_04" },
+          { id: "Profile_05", src: "/admin/step-05.png", alt: "Profile_05" },
         ],
         components: {
           Profile_01: <Profile_01 />,
@@ -363,10 +363,10 @@ export const componentsConfig: ComponentsConfig = {
       cta: {
         title: "CTA",
         options: [
-          { id: "Cta_01", src: "/admin/1.png", alt: "Cta_01" },
-          { id: "Cta_02", src: "/admin/2.png", alt: "Cta_02" },
-          { id: "Cta_03", src: "/admin/3.png", alt: "Cta_03" },
-          { id: "Cta_04", src: "/admin/4.png", alt: "Cta_04" },
+          { id: "Cta_01", src: "/admin/step-01.png", alt: "Cta_01" },
+          { id: "Cta_02", src: "/admin/step-02.png", alt: "Cta_02" },
+          { id: "Cta_03", src: "/admin/step-03.png", alt: "Cta_03" },
+          { id: "Cta_04", src: "/admin/step-04.png", alt: "Cta_04" },
         ],
         components: {
           Cta_01: <Cta_01 />,
@@ -378,8 +378,8 @@ export const componentsConfig: ComponentsConfig = {
       footer: {
         title: "フッター",
         options: [
-          { id: "Footer1", src: "/admin/1.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/2.png", alt: "Footer2" },
+          { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
+          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,
@@ -393,10 +393,10 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/1.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/2.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/3.png", alt: "Header_03" },
-          { id: "Header_04", src: "/admin/4.png", alt: "Header_04" },
+          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
+          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
+          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
+          { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
           Header_01: <Header_01 />,
@@ -408,10 +408,10 @@ export const componentsConfig: ComponentsConfig = {
       lowerkv: {
         title: "下層キービジュアル",
         options: [
-          { id: "Lowerkv_01", src: "/admin/1.png", alt: "Lowerkv_01" },
-          { id: "Lowerkv_02", src: "/admin/2.png", alt: "Lowerkv_02" },
-          { id: "Lowerkv_03", src: "/admin/3.png", alt: "Lowerkv_03" },
-          { id: "Lowerkv_04", src: "/admin/4.png", alt: "Lowerkv_04" },
+          { id: "Lowerkv_01", src: "/admin/step-01.png", alt: "Lowerkv_01" },
+          { id: "Lowerkv_02", src: "/admin/step-02.png", alt: "Lowerkv_02" },
+          { id: "Lowerkv_03", src: "/admin/step-03.png", alt: "Lowerkv_03" },
+          { id: "Lowerkv_04", src: "/admin/step-04.png", alt: "Lowerkv_04" },
         ],
         components: {
           Lowerkv_01: <Lowerkv_01 />,
@@ -423,9 +423,9 @@ export const componentsConfig: ComponentsConfig = {
       blog: {
         title: "記事一覧",
         options: [
-          { id: "LowerBlog_01", src: "/admin/1.png", alt: "LowerBlog_01" },
-          { id: "LowerBlog_02", src: "/admin/2.png", alt: "LowerBlog_02" },
-          { id: "LowerBlog_03", src: "/admin/3.png", alt: "LowerBlog_03" },
+          { id: "LowerBlog_01", src: "/admin/step-01.png", alt: "LowerBlog_01" },
+          { id: "LowerBlog_02", src: "/admin/step-02.png", alt: "LowerBlog_02" },
+          { id: "LowerBlog_03", src: "/admin/step-03.png", alt: "LowerBlog_03" },
         ],
         components: {
           LowerBlog_01: <LowerBlog_01 />,
@@ -436,8 +436,8 @@ export const componentsConfig: ComponentsConfig = {
       footer: {
         title: "フッター",
         options: [
-          { id: "Footer1", src: "/admin/1.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/2.png", alt: "Footer2" },
+          { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
+          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,
@@ -451,10 +451,10 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/1.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/2.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/3.png", alt: "Header_03" },
-          { id: "Header_04", src: "/admin/4.png", alt: "Header_04" },
+          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
+          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
+          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
+          { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
           Header_01: <Header_01 />,
@@ -466,10 +466,10 @@ export const componentsConfig: ComponentsConfig = {
       lowerkv: {
         title: "下層キービジュアル",
         options: [
-          { id: "Lowerkv_01", src: "/admin/1.png", alt: "Lowerkv_01" },
-          { id: "Lowerkv_02", src: "/admin/2.png", alt: "Lowerkv_02" },
-          { id: "Lowerkv_03", src: "/admin/3.png", alt: "Lowerkv_03" },
-          { id: "Lowerkv_04", src: "/admin/4.png", alt: "Lowerkv_04" },
+          { id: "Lowerkv_01", src: "/admin/step-01.png", alt: "Lowerkv_01" },
+          { id: "Lowerkv_02", src: "/admin/step-02.png", alt: "Lowerkv_02" },
+          { id: "Lowerkv_03", src: "/admin/step-03.png", alt: "Lowerkv_03" },
+          { id: "Lowerkv_04", src: "/admin/step-04.png", alt: "Lowerkv_04" },
         ],
         components: {
           Lowerkv_01: <Lowerkv_01 />,
@@ -481,10 +481,10 @@ export const componentsConfig: ComponentsConfig = {
       about: {
         title: "私たちについて",
         options: [
-          { id: "LowerAbout_01", src: "/admin/1.png", alt: "LowerAbout_01" },
-          { id: "LowerAbout_02", src: "/admin/2.png", alt: "LowerAbout_02" },
-          { id: "LowerAbout_03", src: "/admin/3.png", alt: "LowerAbout_03" },
-          { id: "LowerAbout_04", src: "/admin/4.png", alt: "LowerAbout_04" },
+          { id: "LowerAbout_01", src: "/admin/step-01.png", alt: "LowerAbout_01" },
+          { id: "LowerAbout_02", src: "/admin/step-02.png", alt: "LowerAbout_02" },
+          { id: "LowerAbout_03", src: "/admin/step-03.png", alt: "LowerAbout_03" },
+          { id: "LowerAbout_04", src: "/admin/step-04.png", alt: "LowerAbout_04" },
         ],
         components: {
           LowerAbout_01: <LowerAbout_01 />,
@@ -495,14 +495,14 @@ export const componentsConfig: ComponentsConfig = {
       },
       purpose: {
         title: "私たちの想い",
-        options: [{ id: "Purpose_01", src: "/admin/1.png", alt: "Purpose_01" }],
+        options: [{ id: "Purpose_01", src: "/admin/step-01.png", alt: "Purpose_01" }],
         components: {
           Purpose_01: <Purpose_01 />,
         },
       },
       history: {
         title: "企業沿革",
-        options: [{ id: "History_01", src: "/admin/1.png", alt: "History_01" }],
+        options: [{ id: "History_01", src: "/admin/step-01.png", alt: "History_01" }],
         components: {
           History_01: <History_01 />,
         },
@@ -512,22 +512,22 @@ export const componentsConfig: ComponentsConfig = {
         options: [
           {
             id: "LowerMessage_01",
-            src: "/admin/1.png",
+            src: "/admin/step-01.png",
             alt: "LowerMessage_01",
           },
           {
             id: "LowerMessage_02",
-            src: "/admin/2.png",
+            src: "/admin/step-02.png",
             alt: "LowerMessage_02",
           },
           {
             id: "LowerMessage_03",
-            src: "/admin/3.png",
+            src: "/admin/step-03.png",
             alt: "LowerMessage_03",
           },
           {
             id: "LowerMessage_04",
-            src: "/admin/4.png",
+            src: "/admin/step-04.png",
             alt: "LowerMessage_04",
           },
         ],
@@ -541,10 +541,10 @@ export const componentsConfig: ComponentsConfig = {
       profile: {
         title: "会社概要",
         options: [
-          { id: "Profile_01", src: "/admin/1.png", alt: "Profile_01" },
-          { id: "Profile_02", src: "/admin/2.png", alt: "Profile_02" },
-          { id: "Profile_03", src: "/admin/3.png", alt: "Profile_03" },
-          { id: "Profile_04", src: "/admin/4.png", alt: "Profile_04" },
+          { id: "Profile_01", src: "/admin/step-01.png", alt: "Profile_01" },
+          { id: "Profile_02", src: "/admin/step-02.png", alt: "Profile_02" },
+          { id: "Profile_03", src: "/admin/step-03.png", alt: "Profile_03" },
+          { id: "Profile_04", src: "/admin/step-04.png", alt: "Profile_04" },
         ],
         components: {
           Profile_01: <Profile_01 />,
@@ -556,8 +556,8 @@ export const componentsConfig: ComponentsConfig = {
       footer: {
         title: "フッター",
         options: [
-          { id: "Footer1", src: "/admin/1.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/2.png", alt: "Footer2" },
+          { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
+          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,
@@ -571,10 +571,10 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/1.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/2.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/3.png", alt: "Header_03" },
-          { id: "Header_04", src: "/admin/4.png", alt: "Header_04" },
+          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
+          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
+          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
+          { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
           Header_01: <Header_01 />,
@@ -586,10 +586,10 @@ export const componentsConfig: ComponentsConfig = {
       lowerkv: {
         title: "下層キービジュアル",
         options: [
-          { id: "Lowerkv_01", src: "/admin/1.png", alt: "Lowerkv_01" },
-          { id: "Lowerkv_02", src: "/admin/2.png", alt: "Lowerkv_02" },
-          { id: "Lowerkv_03", src: "/admin/3.png", alt: "Lowerkv_03" },
-          { id: "Lowerkv_04", src: "/admin/4.png", alt: "Lowerkv_04" },
+          { id: "Lowerkv_01", src: "/admin/step-01.png", alt: "Lowerkv_01" },
+          { id: "Lowerkv_02", src: "/admin/step-02.png", alt: "Lowerkv_02" },
+          { id: "Lowerkv_03", src: "/admin/step-03.png", alt: "Lowerkv_03" },
+          { id: "Lowerkv_04", src: "/admin/step-04.png", alt: "Lowerkv_04" },
         ],
         components: {
           Lowerkv_01: <Lowerkv_01 />,
@@ -601,10 +601,10 @@ export const componentsConfig: ComponentsConfig = {
       plan: {
         title: "料金プラン",
         options: [
-          { id: "LowerPlan_01", src: "/admin/1.png", alt: "LowerPlan_01" },
-          { id: "LowerPlan_02", src: "/admin/2.png", alt: "LowerPlan_02" },
-          { id: "LowerPlan_03", src: "/admin/3.png", alt: "LowerPlan_03" },
-          { id: "LowerPlan_04", src: "/admin/4.png", alt: "LowerPlan_04" },
+          { id: "LowerPlan_01", src: "/admin/step-01.png", alt: "LowerPlan_01" },
+          { id: "LowerPlan_02", src: "/admin/step-02.png", alt: "LowerPlan_02" },
+          { id: "LowerPlan_03", src: "/admin/step-03.png", alt: "LowerPlan_03" },
+          { id: "LowerPlan_04", src: "/admin/step-04.png", alt: "LowerPlan_04" },
         ],
         components: {
           LowerPlan_01: <LowerPlan_01 />,
@@ -616,8 +616,8 @@ export const componentsConfig: ComponentsConfig = {
       flow: {
         title: "ご利用の流れ",
         options: [
-          { id: "Flow_01", src: "/admin/1.png", alt: "Flow_01" },
-          { id: "Flow_02", src: "/admin/2.png", alt: "Flow_02" },
+          { id: "Flow_01", src: "/admin/step-01.png", alt: "Flow_01" },
+          { id: "Flow_02", src: "/admin/step-02.png", alt: "Flow_02" },
         ],
         components: {
           Flow_01: <Flow_01 className="bg-bgLight" />,
@@ -627,10 +627,10 @@ export const componentsConfig: ComponentsConfig = {
       cta: {
         title: "CTA",
         options: [
-          { id: "Cta_01", src: "/admin/1.png", alt: "Cta_01" },
-          { id: "Cta_02", src: "/admin/2.png", alt: "Cta_02" },
-          { id: "Cta_03", src: "/admin/3.png", alt: "Cta_03" },
-          { id: "Cta_04", src: "/admin/4.png", alt: "Cta_04" },
+          { id: "Cta_01", src: "/admin/step-01.png", alt: "Cta_01" },
+          { id: "Cta_02", src: "/admin/step-02.png", alt: "Cta_02" },
+          { id: "Cta_03", src: "/admin/step-03.png", alt: "Cta_03" },
+          { id: "Cta_04", src: "/admin/step-04.png", alt: "Cta_04" },
         ],
         components: {
           Cta_01: <Cta_01 />,
@@ -642,8 +642,8 @@ export const componentsConfig: ComponentsConfig = {
       footer: {
         title: "フッター",
         options: [
-          { id: "Footer1", src: "/admin/1.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/2.png", alt: "Footer2" },
+          { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
+          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,
@@ -657,10 +657,10 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/1.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/2.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/3.png", alt: "Header_03" },
-          { id: "Header_04", src: "/admin/4.png", alt: "Header_04" },
+          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
+          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
+          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
+          { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
           Header_01: <Header_01 />,
@@ -672,10 +672,10 @@ export const componentsConfig: ComponentsConfig = {
       lowerkv: {
         title: "下層キービジュアル",
         options: [
-          { id: "Lowerkv_01", src: "/admin/1.png", alt: "Lowerkv_01" },
-          { id: "Lowerkv_02", src: "/admin/2.png", alt: "Lowerkv_02" },
-          { id: "Lowerkv_03", src: "/admin/3.png", alt: "Lowerkv_03" },
-          { id: "Lowerkv_04", src: "/admin/4.png", alt: "Lowerkv_04" },
+          { id: "Lowerkv_01", src: "/admin/step-01.png", alt: "Lowerkv_01" },
+          { id: "Lowerkv_02", src: "/admin/step-02.png", alt: "Lowerkv_02" },
+          { id: "Lowerkv_03", src: "/admin/step-03.png", alt: "Lowerkv_03" },
+          { id: "Lowerkv_04", src: "/admin/step-04.png", alt: "Lowerkv_04" },
         ],
         components: {
           Lowerkv_01: <Lowerkv_01 />,
@@ -687,8 +687,8 @@ export const componentsConfig: ComponentsConfig = {
       faq: {
         title: "よくある質問",
         options: [
-          { id: "LowerFaq_01", src: "/admin/1.png", alt: "LowerFaq_01" },
-          { id: "LowerFaq_02", src: "/admin/2.png", alt: "LowerFaq_02" },
+          { id: "LowerFaq_01", src: "/admin/step-01.png", alt: "LowerFaq_01" },
+          { id: "LowerFaq_02", src: "/admin/step-02.png", alt: "LowerFaq_02" },
         ],
         components: {
           LowerFaq_01: <LowerFaq_01 />,
@@ -698,10 +698,10 @@ export const componentsConfig: ComponentsConfig = {
       cta: {
         title: "CTA",
         options: [
-          { id: "Cta_01", src: "/admin/1.png", alt: "Cta_01" },
-          { id: "Cta_02", src: "/admin/2.png", alt: "Cta_02" },
-          { id: "Cta_03", src: "/admin/3.png", alt: "Cta_03" },
-          { id: "Cta_04", src: "/admin/4.png", alt: "Cta_04" },
+          { id: "Cta_01", src: "/admin/step-01.png", alt: "Cta_01" },
+          { id: "Cta_02", src: "/admin/step-02.png", alt: "Cta_02" },
+          { id: "Cta_03", src: "/admin/step-03.png", alt: "Cta_03" },
+          { id: "Cta_04", src: "/admin/step-04.png", alt: "Cta_04" },
         ],
         components: {
           Cta_01: <Cta_01 />,
@@ -713,8 +713,8 @@ export const componentsConfig: ComponentsConfig = {
       footer: {
         title: "フッター",
         options: [
-          { id: "Footer1", src: "/admin/1.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/2.png", alt: "Footer2" },
+          { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
+          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,
@@ -728,10 +728,10 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/1.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/2.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/3.png", alt: "Header_03" },
-          { id: "Header_04", src: "/admin/4.png", alt: "Header_04" },
+          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
+          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
+          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
+          { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
           Header_01: <Header_01 />,
@@ -743,10 +743,10 @@ export const componentsConfig: ComponentsConfig = {
       lowerkv: {
         title: "下層キービジュアル",
         options: [
-          { id: "Lowerkv_01", src: "/admin/1.png", alt: "Lowerkv_01" },
-          { id: "Lowerkv_02", src: "/admin/2.png", alt: "Lowerkv_02" },
-          { id: "Lowerkv_03", src: "/admin/3.png", alt: "Lowerkv_03" },
-          { id: "Lowerkv_04", src: "/admin/4.png", alt: "Lowerkv_04" },
+          { id: "Lowerkv_01", src: "/admin/step-01.png", alt: "Lowerkv_01" },
+          { id: "Lowerkv_02", src: "/admin/step-02.png", alt: "Lowerkv_02" },
+          { id: "Lowerkv_03", src: "/admin/step-03.png", alt: "Lowerkv_03" },
+          { id: "Lowerkv_04", src: "/admin/step-04.png", alt: "Lowerkv_04" },
         ],
         components: {
           Lowerkv_01: <Lowerkv_01 />,
@@ -757,7 +757,7 @@ export const componentsConfig: ComponentsConfig = {
       },
       contact: {
         title: "お問い合わせ",
-        options: [{ id: "Contact_01", src: "/admin/1.png", alt: "Contact_01" }],
+        options: [{ id: "Contact_01", src: "/admin/step-01.png", alt: "Contact_01" }],
         components: {
           Contact_01: <Contact_01 />,
         },
@@ -765,10 +765,10 @@ export const componentsConfig: ComponentsConfig = {
       cta: {
         title: "CTA",
         options: [
-          { id: "Cta_01", src: "/admin/1.png", alt: "Cta_01" },
-          { id: "Cta_02", src: "/admin/2.png", alt: "Cta_02" },
-          { id: "Cta_03", src: "/admin/3.png", alt: "Cta_03" },
-          { id: "Cta_04", src: "/admin/4.png", alt: "Cta_04" },
+          { id: "Cta_01", src: "/admin/step-01.png", alt: "Cta_01" },
+          { id: "Cta_02", src: "/admin/step-02.png", alt: "Cta_02" },
+          { id: "Cta_03", src: "/admin/step-03.png", alt: "Cta_03" },
+          { id: "Cta_04", src: "/admin/step-04.png", alt: "Cta_04" },
         ],
         components: {
           Cta_01: <Cta_01 />,
@@ -780,8 +780,8 @@ export const componentsConfig: ComponentsConfig = {
       footer: {
         title: "フッター",
         options: [
-          { id: "Footer1", src: "/admin/1.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/2.png", alt: "Footer2" },
+          { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
+          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,
@@ -795,10 +795,10 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/1.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/2.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/3.png", alt: "Header_03" },
-          { id: "Header_04", src: "/admin/4.png", alt: "Header_04" },
+          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
+          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
+          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
+          { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
           Header_01: <Header_01 />,
@@ -810,10 +810,10 @@ export const componentsConfig: ComponentsConfig = {
       lowerkv: {
         title: "下層キービジュアル",
         options: [
-          { id: "Lowerkv_01", src: "/admin/1.png", alt: "Lowerkv_01" },
-          { id: "Lowerkv_02", src: "/admin/2.png", alt: "Lowerkv_02" },
-          { id: "Lowerkv_03", src: "/admin/3.png", alt: "Lowerkv_03" },
-          { id: "Lowerkv_04", src: "/admin/4.png", alt: "Lowerkv_04" },
+          { id: "Lowerkv_01", src: "/admin/step-01.png", alt: "Lowerkv_01" },
+          { id: "Lowerkv_02", src: "/admin/step-02.png", alt: "Lowerkv_02" },
+          { id: "Lowerkv_03", src: "/admin/step-03.png", alt: "Lowerkv_03" },
+          { id: "Lowerkv_04", src: "/admin/step-04.png", alt: "Lowerkv_04" },
         ],
         components: {
           Lowerkv_01: <Lowerkv_01 />,
@@ -827,22 +827,22 @@ export const componentsConfig: ComponentsConfig = {
         options: [
           {
             id: "ServiceAbout_01",
-            src: "/admin/1.png",
+            src: "/admin/step-01.png",
             alt: "ServiceAbout_01",
           },
           {
             id: "ServiceAbout_02",
-            src: "/admin/2.png",
+            src: "/admin/step-02.png",
             alt: "ServiceAbout_02",
           },
           {
             id: "ServiceAbout_03",
-            src: "/admin/3.png",
+            src: "/admin/step-03.png",
             alt: "ServiceAbout_03",
           },
           {
             id: "ServiceAbout_04",
-            src: "/admin/4.png",
+            src: "/admin/step-04.png",
             alt: "ServiceAbout_04",
           },
         ],
@@ -856,10 +856,10 @@ export const componentsConfig: ComponentsConfig = {
       Cta1: {
         title: "CTA1",
         options: [
-          { id: "Cta_01", src: "/admin/1.png", alt: "Cta_01" },
-          { id: "Cta_02", src: "/admin/2.png", alt: "Cta_02" },
-          { id: "Cta_03", src: "/admin/3.png", alt: "Cta_03" },
-          { id: "Cta_04", src: "/admin/4.png", alt: "Cta_04" },
+          { id: "Cta_01", src: "/admin/step-01.png", alt: "Cta_01" },
+          { id: "Cta_02", src: "/admin/step-02.png", alt: "Cta_02" },
+          { id: "Cta_03", src: "/admin/step-03.png", alt: "Cta_03" },
+          { id: "Cta_04", src: "/admin/step-04.png", alt: "Cta_04" },
         ],
         components: {
           Cta_01: <Cta_01 />,
@@ -873,17 +873,17 @@ export const componentsConfig: ComponentsConfig = {
         options: [
           {
             id: "LowerService1_01",
-            src: "/admin/1.png",
+            src: "/admin/step-01.png",
             alt: "LowerService1_01",
           },
           {
             id: "LowerService1_02",
-            src: "/admin/2.png",
+            src: "/admin/step-02.png",
             alt: "LowerService1_02",
           },
           {
             id: "LowerService1_03",
-            src: "/admin/3.png",
+            src: "/admin/step-03.png",
             alt: "LowerService1_03",
           },
         ],
@@ -898,17 +898,17 @@ export const componentsConfig: ComponentsConfig = {
         options: [
           {
             id: "LowerService2_01",
-            src: "/admin/1.png",
+            src: "/admin/step-01.png",
             alt: "LowerService2_01",
           },
           {
             id: "LowerService2_02",
-            src: "/admin/2.png",
+            src: "/admin/step-02.png",
             alt: "LowerService2_02",
           },
           {
             id: "LowerService2_03",
-            src: "/admin/3.png",
+            src: "/admin/step-03.png",
             alt: "LowerService2_03",
           },
         ],
@@ -923,17 +923,17 @@ export const componentsConfig: ComponentsConfig = {
         options: [
           {
             id: "LowerService3_01",
-            src: "/admin/1.png",
+            src: "/admin/step-01.png",
             alt: "LowerService3_01",
           },
           {
             id: "LowerService3_02",
-            src: "/admin/2.png",
+            src: "/admin/step-02.png",
             alt: "LowerService3_02",
           },
           {
             id: "LowerService3_03",
-            src: "/admin/3.png",
+            src: "/admin/step-03.png",
             alt: "LowerService3_03",
           },
         ],
@@ -947,10 +947,10 @@ export const componentsConfig: ComponentsConfig = {
       cta2: {
         title: "CTA2",
         options: [
-          { id: "Cta_01", src: "/admin/1.png", alt: "Cta_01" },
-          { id: "Cta_02", src: "/admin/2.png", alt: "Cta_02" },
-          { id: "Cta_03", src: "/admin/3.png", alt: "Cta_03" },
-          { id: "Cta_04", src: "/admin/4.png", alt: "Cta_04" },
+          { id: "Cta_01", src: "/admin/step-01.png", alt: "Cta_01" },
+          { id: "Cta_02", src: "/admin/step-02.png", alt: "Cta_02" },
+          { id: "Cta_03", src: "/admin/step-03.png", alt: "Cta_03" },
+          { id: "Cta_04", src: "/admin/step-04.png", alt: "Cta_04" },
         ],
         components: {
           Cta_01: <Cta_01 />,
@@ -962,8 +962,8 @@ export const componentsConfig: ComponentsConfig = {
       footer: {
         title: "フッター",
         options: [
-          { id: "Footer1", src: "/admin/1.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/2.png", alt: "Footer2" },
+          { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
+          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,
@@ -977,10 +977,10 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/1.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/2.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/3.png", alt: "Header_03" },
-          { id: "Header_04", src: "/admin/4.png", alt: "Header_04" },
+          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
+          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
+          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
+          { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
           Header_01: <Header_01 />,
@@ -992,10 +992,10 @@ export const componentsConfig: ComponentsConfig = {
       lowerkv: {
         title: "下層キービジュアル",
         options: [
-          { id: "Lowerkv_01", src: "/admin/1.png", alt: "Lowerkv_01" },
-          { id: "Lowerkv_02", src: "/admin/2.png", alt: "Lowerkv_02" },
-          { id: "Lowerkv_03", src: "/admin/3.png", alt: "Lowerkv_03" },
-          { id: "Lowerkv_04", src: "/admin/4.png", alt: "Lowerkv_04" },
+          { id: "Lowerkv_01", src: "/admin/step-01.png", alt: "Lowerkv_01" },
+          { id: "Lowerkv_02", src: "/admin/step-02.png", alt: "Lowerkv_02" },
+          { id: "Lowerkv_03", src: "/admin/step-03.png", alt: "Lowerkv_03" },
+          { id: "Lowerkv_04", src: "/admin/step-04.png", alt: "Lowerkv_04" },
         ],
         components: {
           Lowerkv_01: <Lowerkv_01 />,
@@ -1006,7 +1006,7 @@ export const componentsConfig: ComponentsConfig = {
       },
       privacy: {
         title: "プライバシーポリシー",
-        options: [{ id: "Privacy_01", src: "/admin/1.png", alt: "Privacy_01" }],
+        options: [{ id: "Privacy_01", src: "/admin/step-01.png", alt: "Privacy_01" }],
         components: {
           Privacy_01: <Privacy_01 />,
         },
@@ -1014,8 +1014,8 @@ export const componentsConfig: ComponentsConfig = {
       footer: {
         title: "フッター",
         options: [
-          { id: "Footer1", src: "/admin/1.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/2.png", alt: "Footer2" },
+          { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
+          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,
@@ -1029,10 +1029,10 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/1.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/2.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/3.png", alt: "Header_03" },
-          { id: "Header_04", src: "/admin/4.png", alt: "Header_04" },
+          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
+          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
+          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
+          { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
           Header_01: <Header_01 />,
@@ -1044,10 +1044,10 @@ export const componentsConfig: ComponentsConfig = {
       lowerkv: {
         title: "下層キービジュアル",
         options: [
-          { id: "Lowerkv_01", src: "/admin/1.png", alt: "Lowerkv_01" },
-          { id: "Lowerkv_02", src: "/admin/2.png", alt: "Lowerkv_02" },
-          { id: "Lowerkv_03", src: "/admin/3.png", alt: "Lowerkv_03" },
-          { id: "Lowerkv_04", src: "/admin/4.png", alt: "Lowerkv_04" },
+          { id: "Lowerkv_01", src: "/admin/step-01.png", alt: "Lowerkv_01" },
+          { id: "Lowerkv_02", src: "/admin/step-02.png", alt: "Lowerkv_02" },
+          { id: "Lowerkv_03", src: "/admin/step-03.png", alt: "Lowerkv_03" },
+          { id: "Lowerkv_04", src: "/admin/step-04.png", alt: "Lowerkv_04" },
         ],
         components: {
           Lowerkv_01: <Lowerkv_01 />,
@@ -1058,7 +1058,7 @@ export const componentsConfig: ComponentsConfig = {
       },
       privacy: {
         title: "サイトポリシー",
-        options: [{ id: "Site_01", src: "/admin/1.png", alt: "Site_01" }],
+        options: [{ id: "Site_01", src: "/admin/step-01.png", alt: "Site_01" }],
         components: {
           Site_01: <Site_01 />,
         },
@@ -1066,8 +1066,8 @@ export const componentsConfig: ComponentsConfig = {
       footer: {
         title: "フッター",
         options: [
-          { id: "Footer1", src: "/admin/1.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/2.png", alt: "Footer2" },
+          { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
+          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,
@@ -1081,10 +1081,10 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/1.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/2.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/3.png", alt: "Header_03" },
-          { id: "Header_04", src: "/admin/4.png", alt: "Header_04" },
+          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
+          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
+          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
+          { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
           Header_01: <Header_01 />,
@@ -1096,8 +1096,8 @@ export const componentsConfig: ComponentsConfig = {
       blogDetail: {
         title: "記事詳細",
         options: [
-          { id: "BlogDetail_01", src: "/admin/1.png", alt: "BlogDetail_01" },
-          { id: "BlogDetail_02", src: "/admin/2.png", alt: "BlogDetail_02" },
+          { id: "BlogDetail_01", src: "/admin/step-01.png", alt: "BlogDetail_01" },
+          { id: "BlogDetail_02", src: "/admin/step-02.png", alt: "BlogDetail_02" },
         ],
         components: {
           BlogDetail_01: <BlogDetail_01 params={{ id: "" }} />,
@@ -1107,8 +1107,8 @@ export const componentsConfig: ComponentsConfig = {
       footer: {
         title: "フッター",
         options: [
-          { id: "Footer1", src: "/admin/1.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/2.png", alt: "Footer2" },
+          { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
+          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,
@@ -1122,10 +1122,10 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/1.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/2.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/3.png", alt: "Header_03" },
-          { id: "Header_04", src: "/admin/4.png", alt: "Header_04" },
+          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
+          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
+          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
+          { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
           Header_01: <Header_01 />,
@@ -1137,10 +1137,10 @@ export const componentsConfig: ComponentsConfig = {
       lowerkv: {
         title: "下層キービジュアル",
         options: [
-          { id: "Lowerkv_01", src: "/admin/1.png", alt: "Lowerkv_01" },
-          { id: "Lowerkv_02", src: "/admin/2.png", alt: "Lowerkv_02" },
-          { id: "Lowerkv_03", src: "/admin/3.png", alt: "Lowerkv_03" },
-          { id: "Lowerkv_04", src: "/admin/4.png", alt: "Lowerkv_04" },
+          { id: "Lowerkv_01", src: "/admin/step-01.png", alt: "Lowerkv_01" },
+          { id: "Lowerkv_02", src: "/admin/step-02.png", alt: "Lowerkv_02" },
+          { id: "Lowerkv_03", src: "/admin/step-03.png", alt: "Lowerkv_03" },
+          { id: "Lowerkv_04", src: "/admin/step-04.png", alt: "Lowerkv_04" },
         ],
         components: {
           Lowerkv_01: <Lowerkv_01 />,
@@ -1152,9 +1152,9 @@ export const componentsConfig: ComponentsConfig = {
       case: {
         title: "事例一覧",
         options: [
-          { id: "LowerCase_01", src: "/admin/1.png", alt: "LowerCase_01" },
-          { id: "LowerCase_02", src: "/admin/2.png", alt: "LowerCase_02" },
-          { id: "LowerCase_03", src: "/admin/3.png", alt: "LowerCase_03" },
+          { id: "LowerCase_01", src: "/admin/step-01.png", alt: "LowerCase_01" },
+          { id: "LowerCase_02", src: "/admin/step-02.png", alt: "LowerCase_02" },
+          { id: "LowerCase_03", src: "/admin/step-03.png", alt: "LowerCase_03" },
         ],
         components: {
           LowerCase_01: <LowerCase_01 />,
@@ -1165,8 +1165,8 @@ export const componentsConfig: ComponentsConfig = {
       footer: {
         title: "フッター",
         options: [
-          { id: "Footer1", src: "/admin/1.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/2.png", alt: "Footer2" },
+          { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
+          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,
@@ -1180,10 +1180,10 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/1.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/2.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/3.png", alt: "Header_03" },
-          { id: "Header_04", src: "/admin/4.png", alt: "Header_04" },
+          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
+          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
+          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
+          { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
           Header_01: <Header_01 />,
@@ -1195,10 +1195,10 @@ export const componentsConfig: ComponentsConfig = {
       lowerkv: {
         title: "下層キービジュアル",
         options: [
-          { id: "Lowerkv_01", src: "/admin/1.png", alt: "Lowerkv_01" },
-          { id: "Lowerkv_02", src: "/admin/2.png", alt: "Lowerkv_02" },
-          { id: "Lowerkv_03", src: "/admin/3.png", alt: "Lowerkv_03" },
-          { id: "Lowerkv_04", src: "/admin/4.png", alt: "Lowerkv_04" },
+          { id: "Lowerkv_01", src: "/admin/step-01.png", alt: "Lowerkv_01" },
+          { id: "Lowerkv_02", src: "/admin/step-02.png", alt: "Lowerkv_02" },
+          { id: "Lowerkv_03", src: "/admin/step-03.png", alt: "Lowerkv_03" },
+          { id: "Lowerkv_04", src: "/admin/step-04.png", alt: "Lowerkv_04" },
         ],
         components: {
           Lowerkv_01: <Lowerkv_01 />,
@@ -1210,9 +1210,9 @@ export const componentsConfig: ComponentsConfig = {
       news: {
         title: "お知らせ一覧",
         options: [
-          { id: "LowerNews_01", src: "/admin/1.png", alt: "LowerNews_01" },
-          { id: "LowerNews_02", src: "/admin/2.png", alt: "LowerNews_02" },
-          { id: "LowerNews_03", src: "/admin/3.png", alt: "LowerNews_03" },
+          { id: "LowerNews_01", src: "/admin/step-01.png", alt: "LowerNews_01" },
+          { id: "LowerNews_02", src: "/admin/step-02.png", alt: "LowerNews_02" },
+          { id: "LowerNews_03", src: "/admin/step-03.png", alt: "LowerNews_03" },
         ],
         components: {
           LowerNews_01: <LowerNews_01 />,
@@ -1223,8 +1223,8 @@ export const componentsConfig: ComponentsConfig = {
       footer: {
         title: "フッター",
         options: [
-          { id: "Footer1", src: "/admin/1.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/2.png", alt: "Footer2" },
+          { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
+          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,
@@ -1238,10 +1238,10 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/1.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/2.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/3.png", alt: "Header_03" },
-          { id: "Header_04", src: "/admin/4.png", alt: "Header_04" },
+          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
+          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
+          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
+          { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
           Header_01: <Header_01 />,
@@ -1253,8 +1253,8 @@ export const componentsConfig: ComponentsConfig = {
       caseDetail: {
         title: "事例詳細",
         options: [
-          { id: "CaseDetail_01", src: "/admin/1.png", alt: "CaseDetail_01" },
-          { id: "CaseDetail_02", src: "/admin/2.png", alt: "CaseDetail_02" },
+          { id: "CaseDetail_01", src: "/admin/step-01.png", alt: "CaseDetail_01" },
+          { id: "CaseDetail_02", src: "/admin/step-02.png", alt: "CaseDetail_02" },
         ],
         components: {
           CaseDetail_01: <CaseDetail_01 params={{ id: "" }} />,
@@ -1264,8 +1264,8 @@ export const componentsConfig: ComponentsConfig = {
       footer: {
         title: "フッター",
         options: [
-          { id: "Footer1", src: "/admin/1.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/2.png", alt: "Footer2" },
+          { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
+          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,
@@ -1279,10 +1279,10 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/1.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/2.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/3.png", alt: "Header_03" },
-          { id: "Header_04", src: "/admin/4.png", alt: "Header_04" },
+          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
+          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
+          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
+          { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
           Header_01: <Header_01 />,
@@ -1294,8 +1294,8 @@ export const componentsConfig: ComponentsConfig = {
       newsDetail: {
         title: "お知らせ詳細",
         options: [
-          { id: "NewsDetail_01", src: "/admin/1.png", alt: "NewsDetail_01" },
-          { id: "NewsDetail_02", src: "/admin/2.png", alt: "NewsDetail_02" },
+          { id: "NewsDetail_01", src: "/admin/step-01.png", alt: "NewsDetail_01" },
+          { id: "NewsDetail_02", src: "/admin/step-02.png", alt: "NewsDetail_02" },
         ],
         components: {
           NewsDetail_01: <NewsDetail_01 params={{ id: "" }} />,
@@ -1305,8 +1305,8 @@ export const componentsConfig: ComponentsConfig = {
       footer: {
         title: "フッター",
         options: [
-          { id: "Footer1", src: "/admin/1.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/2.png", alt: "Footer2" },
+          { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
+          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,

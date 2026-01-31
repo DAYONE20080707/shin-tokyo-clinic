@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { EnvelopeIcon } from "@heroicons/react/24/outline"
+import { Mail } from "lucide-react"
 
 const ContactButtonHeader = ({
   className = "",
@@ -20,7 +20,7 @@ const ContactButtonHeader = ({
           : " text-base tracking-[0.03em]"
       } ${className}`}
     >
-      <EnvelopeIcon className="w-4 h-4 mr-1 flex-shrink-0" />
+      <Mail className="w-4 h-4 mr-1 flex-shrink-0" />
       {children}
     </Link>
   )

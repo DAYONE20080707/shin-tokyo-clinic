@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { EnvelopeIcon } from "@heroicons/react/24/outline"
+import { Mail } from "lucide-react"
 
 const ContactButton = ({
   className = "",
@@ -18,7 +18,7 @@ const ContactButton = ({
         isEnglish ? "font-en text-lg tracking-[0.03em]" : " text-base tracking-[0.03em]"
       } ${className}`}
     >
-      <EnvelopeIcon className="w-4 h-4 mr-1" />
+      <Mail className="w-4 h-4 mr-1" />
       {children}
     </Link>
   )

@@ -1,5 +1,5 @@
 import { useState } from "react"
-import Image from "next/image"
+import { CircleHelp, MessageCircle } from "lucide-react"
 import { faqData, FaqData } from "@/data/faqData"
 
 const FaqList_02 = ({ hideTab = false }: { hideTab?: boolean }) => {
@@ -34,24 +34,12 @@ const FaqList_02 = ({ hideTab = false }: { hideTab?: boolean }) => {
         {faqData[activeCategory].items.map((item, index) => (
           <div key={index}>
             <div className="flex items-center px-6 bg-accentColor rounded-t-lg text-white text-lg font-semibold h-[106px] ">
-              <Image
-                src="/common/question-white.svg"
-                alt="?マーク"
-                width={24}
-                height={24}
-                className="mr-2"
-              />
+              <CircleHelp className="w-6 h-6 mr-2 text-white flex-shrink-0" />
               {item.question}
             </div>
             <div className="flex flex-col py-10 px-6 font-light bg-bgLight rounded-b-lg">
               <div className="flex items-center">
-                <Image
-                  src="/common/answer-red.svg"
-                  alt="回答マーク"
-                  width={24}
-                  height={24}
-                  className="mr-2"
-                />
+                <MessageCircle className="w-6 h-6 mr-2 text-[#d93d69] flex-shrink-0" />
                 <h3 className="text-[#d93d69] text-lg font-semibold">
                   {item.answerTitle}
                 </h3>

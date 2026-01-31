@@ -1,5 +1,5 @@
 import { useState } from "react"
-import Image from "next/image"
+import { CircleHelp, MessageCircle, Plus, Minus } from "lucide-react"
 import { faqData, FaqData } from "@/data/faqData"
 
 const FaqList_01 = ({ hideTab = false }: { hideTab?: boolean }) => {
@@ -40,49 +40,18 @@ const FaqList_01 = ({ hideTab = false }: { hideTab?: boolean }) => {
               onClick={() => setOpenIndex(openIndex === index ? null : index)}
             >
               <div className="flex font-semibold text-lg">
-                <Image
-                  src="/common/question-blue.svg"
-                  alt="?マーク"
-                  width={24}
-                  height={24}
-                  className="mr-2"
-                />
+                <CircleHelp className="w-6 h-6 mr-2 text-accentColor flex-shrink-0" />
                 {item.question}
               </div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="28"
-                height="28"
-                viewBox="0 0 28 28"
-                fill="none"
-                className={`transition-transform duration-300 ${
-                  openIndex === index ? "rotate-90" : ""
-                }`}
-              >
-                <path
-                  d="M2 14H26"
-                  stroke="#4270ED"
-                  strokeWidth="3"
-                  strokeLinecap="round"
-                  className={openIndex === index ? "hidden" : ""}
-                />
-                <path
-                  d="M14 26L14 2"
-                  stroke="#4270ED"
-                  strokeWidth="3"
-                  strokeLinecap="round"
-                />
-              </svg>
+              {openIndex === index ? (
+                <Minus className="w-7 h-7 text-accentColor flex-shrink-0" strokeWidth={3} />
+              ) : (
+                <Plus className="w-7 h-7 text-accentColor flex-shrink-0" strokeWidth={3} />
+              )}
             </div>
             {openIndex === index && (
               <div className="py-6 px-10 bg-white border flex">
-                <Image
-                  src="/common/answer-red.svg"
-                  alt="?マーク"
-                  width={24}
-                  height={24}
-                  className="mr-2"
-                />
+                <MessageCircle className="w-6 h-6 mr-2 text-[#d93d69] flex-shrink-0" />
                 {item.answer}
               </div>
             )}

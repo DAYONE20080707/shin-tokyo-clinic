@@ -8,7 +8,7 @@ import Link from "next/link"
 import { Cms } from "@/types"
 import ContentHeadline from "@/components/ui/frame/ContentHeadline"
 import MoreButton from "@/components/ui/button/MoreButton"
-import { ChevronRightIcon } from "@heroicons/react/24/outline"
+import { ChevronRight } from "lucide-react"
 import { newsFetch } from "@/lib/api/newsFetch"
 import { format } from "date-fns"
 import { ja } from "date-fns/locale"
@@ -106,7 +106,7 @@ const News_04 = ({ limit = 3 }: NewsProps) => {
                 </p>
                 <div className="mt-6 flex items-center text-accentColor font-semibold">
                   もっと見る
-                  <ChevronRightIcon className="ml-1 w-4 h-6" />
+                  <ChevronRight className="ml-1 w-4 h-6" />
                 </div>
               </div>
             </Link>

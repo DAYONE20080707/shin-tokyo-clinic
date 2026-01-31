@@ -1,7 +1,7 @@
 // components/ui/main/module/Breadcrumb.tsx
 
 import Link from "next/link"
-import { ChevronRight } from "react-feather"
+import { ChevronRight } from "lucide-react"
 
 interface BreadcrumbProps {
   mainTitle: React.ReactNode

@@ -11,7 +11,6 @@ import CompanyInfo from "@/components/ui/navigation/CompanyInfo"
 import HeaderContent from "../ui/frame/HeaderContent"
 import SnsIconButton from "@/components/ui/button/SnsIconButton"
 import { SnsButton } from "@/components/ui/button/SnsButton"
-import ContactButtonHeader from "../ui/button/ContactButtonHeader"
 
 const Header_01 = () => {
   const { companyName } = CompanyInfo[0]
@@ -83,7 +82,7 @@ const Header_01 = () => {
               />
             ))}
           </div>
-          <ContactButtonHeader className="" />
+          <ContactButton variant="square" />
         </div>
         {/* ハンバーガーメニューボタン */}
         <button
@@ -128,7 +127,7 @@ const Header_01 = () => {
           </div>
           {/* ContactButton */}
           <li>
-            <ContactButton className="w-full py-4 font-normal" />
+            <ContactButton variant="square" className="w-full py-4 font-normal" />
           </li>
         </ul>
       </div>

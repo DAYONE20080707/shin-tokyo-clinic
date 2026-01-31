@@ -6,7 +6,7 @@ import Image from "next/image";
 import Menu from "@/components/ui/navigation/Menu";
 import Sns from "@/components/ui/button/SnsButton";
 import TelButton from "@/components/ui/button/TelButton";
-import ContactButton from "@/components/ui/button/ContactButtonHeader";
+import ContactButton from "@/components/ui/button/ContactButton";
 import CompanyInfo from "@/components/ui/navigation/CompanyInfo";
 
 // ヘッダー
@@ -30,7 +30,7 @@ const Header_04 = () => {
           <div className="hidden lg:flex flex-col justify-between items-end h-full">
             <div className="flex items-center justify-center w-full">
               <TelButton />
-              <ContactButton className="h-10" />
+              <ContactButton variant="square" className="h-10" />
             </div>
             <ul className="hidden lg:flex items-center space-x-10 font-semibold  ">
               {Menu.map((item, index) => (
@@ -90,7 +90,7 @@ const Header_04 = () => {
             <TelButton className="h-[72px]" />
           </div>
           <div className="flex justify-center items-center w-[260px] mx-auto mt-2">
-            <ContactButton className="h-[72px]" />
+            <ContactButton variant="square" className="h-[72px]" />
           </div>
         </div>
       </header>

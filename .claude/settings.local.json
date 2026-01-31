@@ -6,7 +6,12 @@
       "Bash(npm run build:*)",
       "Bash(npm run lint:*)",
       "Bash(npx tsc:*)",
-      "Bash(xargs -I {} sh -c 'echo \"\"\"\"=== {} ===\"\"\"\" && ls -la {}')"
+      "Bash(xargs -I {} sh -c 'echo \"\"\"\"=== {} ===\"\"\"\" && ls -la {}')",
+      "Bash(ls:*)",
+      "Bash(git -C /Users/tsukimori.hayato/Documents/GitHub/website_system ls-files:*)",
+      "Bash(npm install:*)",
+      "Bash(npx next lint)",
+      "Bash(npx eslint:*)"
     ]
   }
 }

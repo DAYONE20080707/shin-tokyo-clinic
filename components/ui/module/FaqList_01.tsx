@@ -1,6 +1,8 @@
+"use client"
+
 import { useState } from "react"
 import { CircleHelp, MessageCircle, Plus, Minus } from "lucide-react"
-import { faqData, FaqData } from "@/data/faqData"
+import { faqData } from "@/data/faqData"
 
 const FaqList_01 = ({ hideTab = false }: { hideTab?: boolean }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null)

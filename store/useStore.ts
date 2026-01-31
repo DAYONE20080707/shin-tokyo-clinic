@@ -19,7 +19,7 @@ const localStorageStore = {
       return null
     }
   },
-  setItem: (name: string, value: any) => {
+  setItem: (name: string, value: { state: StoreState; version?: number }) => {
     localStorage.setItem(name, JSON.stringify(value))
   },
   removeItem: (name: string) => {

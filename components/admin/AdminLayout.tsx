@@ -6,9 +6,15 @@ import { useStore } from "@/store/useStore"
 import { componentsConfig } from "@/lib/componentsConfig"
 import Navigation from "@/components/admin/Navigation"
 
+interface SidebarContentProps {
+  selectSection: (section: string, value: string) => void
+  selectedSections: Record<string, string>
+  pageName: keyof typeof componentsConfig
+}
+
 interface AdminLayoutProps {
   children: ReactNode
-  sidebarContent: (props: any) => ReactNode
+  sidebarContent: (props: SidebarContentProps) => ReactNode
   pageName: keyof typeof componentsConfig
 }
 

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
-import { microcms } from '@/lib/microcms'
+import { casesFetch } from '@/lib/api/casesFetch'
 import { Work } from '@/types'
 
 interface TopWorkProps {
@@ -14,28 +14,27 @@ const TopWorkCard = ({ limit = 5 }: TopWorkProps) => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
+    let mounted = true
     const getWorks = async () => {
       try {
-        const data = await microcms.get({
-          endpoint: 'cases',
-          queries: { limit },
-        })
-        if (data && Array.isArray(data.contents)) {
-          setContents(data.contents)
-        } else {
-          console.error('Unexpected data format:', data)
+        const data = await casesFetch.list(limit)
+        if (mounted && data) {
+          setContents(data as Work[])
         }
       } catch (error) {
         console.error('Failed to fetch cases:', error)
       }
-      setLoading(false)
+      if (mounted) setLoading(false)
     }
 
     getWorks()
+    return () => {
+      mounted = false
+    }
   }, [limit])
 
   if (loading) {
-    return <h1>Loading...</h1>
+    return <p className="text-center py-8">Loading...</p>
   }
 
   if (!contents || contents.length === 0) {

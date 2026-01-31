@@ -5,6 +5,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useState, useEffect, useRef } from "react"
+import type { Swiper as SwiperType } from "swiper"
 // import { microcms } from "@/lib/microcms";
 import { Cms } from "@/types"
 import ContentHeadline from "@/components/ui/frame/ContentHeadline"
@@ -28,7 +29,7 @@ const Case_02 = ({ limit = 5 }: CaseProps) => {
   const [contents, setContents] = useState<Cms[]>([])
   const [loading, setLoading] = useState(true)
   const [isPlaying, setIsPlaying] = useState(true)
-  const swiperRef = useRef<any>(null)
+  const swiperRef = useRef<SwiperType | null>(null)
 
   useEffect(() => {
     // --- 旧 microcms 実装 ---

@@ -2,6 +2,7 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
+import type { Swiper as SwiperType } from "swiper"
 import Image from "next/image"
 import Link from "next/link"
 // import { microcms } from "@/lib/microcms"
@@ -27,7 +28,7 @@ const News_02 = ({ limit = 5 }: NewsProps) => {
   const [contents, setContents] = useState<Cms[]>([])
   const [loading, setLoading] = useState(true)
   const [isPlaying, setIsPlaying] = useState(true)
-  const swiperRef = useRef<any>(null)
+  const swiperRef = useRef<SwiperType | null>(null)
 
   useEffect(() => {
     // 旧データ取得処理

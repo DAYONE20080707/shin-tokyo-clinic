@@ -4,13 +4,7 @@ export const CompanyInfo = [
   {
     companyName: (type: "primary" | "secondary" | "tertiary") => (
       <Image
-        src={
-          type === "primary"
-            ? "/common/logo-white.png" // 白色ロゴ
-            : type === "secondary"
-            ? "/common/logo-square-primary.png" // 正方形・基本カラー
-            : "/common/logo-primary.png" // 基本カラー
-        }
+        src="/common/logo01.png"
         alt="東京駅こどもの成長クリニック"
         width={240}
         height={70}

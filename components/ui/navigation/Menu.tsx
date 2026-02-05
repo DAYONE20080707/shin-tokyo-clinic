@@ -1,40 +1,39 @@
 //components/ui/navigation/Menu.tsx
-// Figma: 東京駅こどもの成長クリニック メニュー
 export const Menu = [
   {
-    name: "お知らせ",
+    name: "Treatment",
+    nameJa: "診療案内",
+    href: "/treatment",
+  },
+  {
+    name: "About",
+    nameJa: "当院について",
+    href: "/about",
+  },
+  {
+    name: "Facility",
+    nameJa: "院内の様子",
+    href: "/facility",
+  },
+  {
+    name: "Flow",
+    nameJa: "ご予約の流れ",
+    href: "/#flow",
+  },
+  {
+    name: "News",
     nameJa: "お知らせ",
     href: "/news",
   },
   {
-    name: "診療案内",
-    nameJa: "診療案内",
-    href: "/service",
-  },
-  {
-    name: "医師紹介",
-    nameJa: "医師紹介",
-    href: "/doctor",
-  },
-  {
-    name: "当院の特徴",
-    nameJa: "当院の特徴",
-    href: "/feature",
-  },
-  {
-    name: "医院の様子",
-    nameJa: "医院の様子",
-    href: "/facility",
-  },
-  {
-    name: "よくあるご質問",
-    nameJa: "よくあるご質問",
+    name: "FAQ",
+    nameJa: "よくある質問",
     href: "/faq",
   },
   {
-    name: "アクセス",
-    nameJa: "アクセス",
-    href: "/access",
+    name: "Contact",
+    nameJa: "お問い合わせ",
+    href: "/contact",
   },
 ]
 

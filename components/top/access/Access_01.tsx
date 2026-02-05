@@ -38,7 +38,7 @@ const Access_01 = () => {
             {/* ロゴ */}
             <div className="flex flex-col gap-4">
               <Image
-                src="/common/logo-primary.png"
+                src="/common/logo01.png"
                 alt="東京駅こどもの成長クリニック"
                 width={240}
                 height={70}

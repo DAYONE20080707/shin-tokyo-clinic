@@ -1,101 +1,185 @@
-"use client";
+"use client"
 
-import { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import Menu from "@/components/ui/navigation/Menu";
-import Sns from "@/components/ui/button/SnsButton";
-import TelButton from "@/components/ui/button/TelButton";
-import ContactButton from "@/components/ui/button/ContactButton";
-import CompanyInfo from "@/components/ui/navigation/CompanyInfo";
+import { useState } from "react"
+import Link from "next/link"
+import Image from "next/image"
+import Menu from "@/components/ui/navigation/Menu"
+import CompanyInfo from "@/components/ui/navigation/CompanyInfo"
 
 // ヘッダー
 const Header_04 = () => {
   // ハンバーガーメニューの開閉状態を管理するstate
-  const [MenuOpen, setMenuOpen] = useState(false);
+  const [MenuOpen, setMenuOpen] = useState(false)
 
   // メニュー開閉のトグル関数
   const toggleMenu = () => {
-    setMenuOpen(!MenuOpen);
-  };
+    setMenuOpen(!MenuOpen)
+  }
 
-  const { companyName } = CompanyInfo[0];
   return (
-    <div className="h-[98px]">
-      <header className="w-full h-20 lg:h-[98px] text-[#393939] tracking-wide px-4 lg:px-0 fixed top-0 left-0 z-10 bg-white">
-        <div className="lg:max-w-screen-xl h-full mx-auto flex items-center justify-between ">
-          <div className="flex items-center space-x-10 ">
-            <Link href="/">{CompanyInfo[0].companyName("primary")}</Link>
+    <header className="w-full h-[75px] lg:h-auto tracking-wide px-4 lg:px-0 fixed top-0 left-0 z-50 bg-white">
+      <div className="h-full lg:max-w-[1200px] lg:mx-auto lg:px-5 flex items-center justify-between lg:py-6">
+        {/* ロゴ */}
+        <Link href="/" className="w-[200px] lg:w-[350px]">
+          <Image
+            src="/common/logo01.png"
+            alt="シン・東京駅こどもの成長クリニック"
+            width={350}
+            height={70}
+            className="object-contain"
+          />
+        </Link>
+
+        {/* PC用ナビゲーション */}
+        <div className="hidden lg:flex flex-col items-end gap-4">
+          {/* 上部ボタン */}
+          <div className="flex gap-1">
+            <Link
+              href="/#access"
+              className="bg-accentColor text-white text-sm font-bold rounded-full px-6 py-1 flex items-center gap-1 hover:opacity-80 transition-opacity"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="20"
+                viewBox="0 0 16 20"
+                fill="currentColor"
+              >
+                <path d="M8 0C3.58 0 0 3.58 0 8C0 14 8 20 8 20C8 20 16 14 16 8C16 3.58 12.42 0 8 0ZM8 11C6.34 11 5 9.66 5 8C5 6.34 6.34 5 8 5C9.66 5 11 6.34 11 8C11 9.66 9.66 11 8 11Z" />
+              </svg>
+              アクセス
+            </Link>
+            <Link
+              href="/contact"
+              className="bg-accentColor text-white text-sm font-bold rounded-full px-6 py-1 flex items-center gap-1 hover:opacity-80 transition-opacity"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="13"
+                viewBox="0 0 18 13"
+                fill="currentColor"
+              >
+                <path d="M16 0H2C0.9 0 0.01 0.9 0.01 2L0 11C0 12.1 0.9 13 2 13H16C17.1 13 18 12.1 18 11V2C18 0.9 17.1 0 16 0ZM16 4L9 8L2 4V2L9 6L16 2V4Z" />
+              </svg>
+              お問い合わせ
+            </Link>
           </div>
-          <div className="hidden lg:flex flex-col justify-between items-end h-full">
-            <div className="flex items-center justify-center w-full">
-              <TelButton />
-              <ContactButton variant="square" className="h-10" />
-            </div>
-            <ul className="hidden lg:flex items-center space-x-10 font-semibold  ">
+
+          {/* メニュー */}
+          <nav>
+            <ul className="flex items-center gap-10">
               {Menu.map((item, index) => (
-                <li key={index} className="py-4">
-                  <Link href={item.href}>
-                    <div>{item.name}</div>
+                <li key={index}>
+                  <Link
+                    href={item.href}
+                    className="text-sm text-black font-semibold hover:text-accentColor transition-colors tracking-[0.03em]"
+                  >
+                    {item.nameJa}
                   </Link>
                 </li>
               ))}
             </ul>
+          </nav>
+        </div>
+
+        {/* ハンバーガーメニューボタン（SP） */}
+        <button
+          className="lg:hidden w-10 h-10 flex items-center justify-center cursor-pointer"
+          onClick={toggleMenu}
+          aria-label="メニューを開く"
+        >
+          <div className="w-10 h-10 bg-accentColor rounded flex flex-col justify-center items-center gap-1.5">
+            <div className="w-5 h-0.5 bg-white"></div>
+            <div className="w-5 h-0.5 bg-white"></div>
+            <div className="w-5 h-0.5 bg-white"></div>
           </div>
-          {/* ハンバーガーメニューボタン */}
-          <div
-            className="lg:hidden w-10 lg:w-20 h-20 flex items-center ustify-end lg:justify-center cursor-pointer"
+        </button>
+      </div>
+
+      {/* ハンバーガーメニュー（SP） */}
+      <div
+        className={`fixed z-50 top-0 right-0 h-screen w-full bg-white shadow-lg transform transition-transform duration-300 ${
+          MenuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        {/* 閉じるボタン */}
+        <div className="flex justify-end p-4">
+          <button
+            aria-label="メニューを閉じる"
+            onClick={toggleMenu}
+            className="w-10 h-10 bg-accentColor rounded flex items-center justify-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+        {/* メニューアイテム */}
+        <ul className="flex flex-col items-center gap-6 mt-8">
+          {Menu.map((item, index) => (
+            <li key={index}>
+              <Link
+                href={item.href}
+                className="text-lg font-semibold text-black"
+                onClick={toggleMenu}
+              >
+                {item.nameJa}
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+        {/* ボタン */}
+        <div className="flex flex-col items-center gap-3 mt-10 px-10">
+          <Link
+            href="/#access"
+            className="w-full bg-accentColor text-white text-base font-bold rounded-full py-4 flex items-center justify-center gap-2"
             onClick={toggleMenu}
           >
-            <Image
-              src="/common/Menu.png"
-              alt="メニューボタン"
-              width={38}
-              height={38}
-            />
-          </div>
-        </div>
-
-        {/* ハンバーガーメニュー */}
-        <div
-          className={`fixed z-10 top-0 right-0 h-screen w-full lg:w-[500px] bg-bgBlack text-white shadow-lg transform transition-transform duration-300 ${
-            MenuOpen ? "translate-x-0" : "translate-x-full"
-          }`}
-        >
-          {/* 閉じるボタン */}
-          <div className="flex justify-end p-4">
-            <button
-              aria-label="メニューを閉じる"
-              onClick={toggleMenu}
-              className="w-10 h-10"
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="20"
+              viewBox="0 0 16 20"
+              fill="currentColor"
             >
-              <div className="w-[38px] h-[38px] relative">
-                <div className="w-[53.74px] bg-white h-[1px] left-0 top-0 absolute origin-top-left rotate-45 border border-white"></div>
-                <div className="w-[53.74px] bg-white h-[1px] left-[38px] top-0 absolute origin-top-left rotate-[135deg] border border-white"></div>
-              </div>
-            </button>
-          </div>
-
-          {/* メニューアイテム */}
-          <ul className="flex flex-col items-center space-y-6 mb-16">
-            {Menu.map((item, index) => (
-              <li key={index}>
-                <Link href={item.href} className="text-lg font-semibold">
-                  {item.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <div className="flex justify-center items-center w-[260px] mx-auto ">
-            <TelButton className="h-[72px]" />
-          </div>
-          <div className="flex justify-center items-center w-[260px] mx-auto mt-2">
-            <ContactButton variant="square" className="h-[72px]" />
-          </div>
+              <path d="M8 0C3.58 0 0 3.58 0 8C0 14 8 20 8 20C8 20 16 14 16 8C16 3.58 12.42 0 8 0ZM8 11C6.34 11 5 9.66 5 8C5 6.34 6.34 5 8 5C9.66 5 11 6.34 11 8C11 9.66 9.66 11 8 11Z" />
+            </svg>
+            アクセス
+          </Link>
+          <Link
+            href="/contact"
+            className="w-full bg-accentColor text-white text-base font-bold rounded-full py-4 flex items-center justify-center gap-2"
+            onClick={toggleMenu}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="13"
+              viewBox="0 0 18 13"
+              fill="currentColor"
+            >
+              <path d="M16 0H2C0.9 0 0.01 0.9 0.01 2L0 11C0 12.1 0.9 13 2 13H16C17.1 13 18 12.1 18 11V2C18 0.9 17.1 0 16 0ZM16 4L9 8L2 4V2L9 6L16 2V4Z" />
+            </svg>
+            お問い合わせ
+          </Link>
         </div>
-      </header>
-    </div>
-  );
-};
+      </div>
+    </header>
+  )
+}
 
-export default Header_04;
+export default Header_04

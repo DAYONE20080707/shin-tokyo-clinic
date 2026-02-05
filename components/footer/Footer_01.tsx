@@ -26,7 +26,7 @@ const Footer_01 = () => {
           <div className="flex flex-col gap-3">
             <div className="w-[200px] lg:w-[240px]">
               <Image
-                src="/common/logo-primary.png"
+                src="/common/logo01.png"
                 alt="東京駅こどもの成長クリニック"
                 width={240}
                 height={70}

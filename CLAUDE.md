@@ -65,6 +65,18 @@ npm run lint         # ESLint 実行
 - **CMS**: microCMS（blogsFetch, newsFetch, casesFetch 経由）
 - **フォーム通知**: react-hot-toast
 - **メール**: nodemailer
+- **フォント**: Zen Kaku Gothic New（Figmaデザインに準拠）
+
+## デザイン設定
+
+**フォント・カラーはFigmaデザインに合わせること**
+
+| 項目 | 値 | 用途 |
+|------|-----|------|
+| フォント | Zen Kaku Gothic New | 日本語メイン |
+| primaryColor | #347694 | 見出し・テキスト |
+| accentColor | #F8AD69 | ボタン背景（電話・詳しく見る等） |
+| baseColor | #393939 | 本文テキスト |
 
 ## ディレクトリ構造
 

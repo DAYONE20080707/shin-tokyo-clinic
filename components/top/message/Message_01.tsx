@@ -41,7 +41,7 @@ const Message_01 = () => {
             {/* 本文 */}
             <div className="text-[#393939] text-sm lg:text-base leading-[2.5] tracking-[0.03em] space-y-4">
               <p>
-                当院は2026年〇月に「シン・東京駅こどもの成長クリニック」をオープンしました。
+                当院は2026年2月に「シン・東京駅こどもの成長クリニック」をオープンしました。
               </p>
               <p>
                 当院では風邪などの一般小児科の診療に加え、こどもの成長・発育に合わせた成長ホルモン外来や頭のかたち外来などの診療も行っております。
@@ -60,8 +60,7 @@ const Message_01 = () => {
 
             {/* 署名 */}
             <p className="text-[#393939] text-lg lg:text-[22px] leading-[2.5] tracking-[0.03em] text-right mt-6">
-              院長 松田 健志
-            </p>
+シン・東京駅こどもの成長クリニック 院長</p>
           </div>
         </div>
       </div>

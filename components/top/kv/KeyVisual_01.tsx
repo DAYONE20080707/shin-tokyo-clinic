@@ -1,54 +1,44 @@
 // components/kv/KeyVisual_01.tsx
+// Figma: 東京駅こどもの成長クリニック KV（メインビジュアル）
 
 "use client"
 
+import Image from "next/image"
 import FirstViewContent from "@/components/top/kv/FirstViewContent"
-import TopPageHeadline from "@/components/ui/frame/TopPageHeadline_01"
-import KeyVisualContent from "@/components/top/kv/KeyVisualContent"
-import ScrollButton from "@/components/ui/button/ScrollButton"
-import MoreLinkButton from "@/components/ui/button/MoreButton"
 
 // キービジュアル
 const KeyVisual_01 = () => {
   return (
-    <>
-      <FirstViewContent className="relative">
-        {/* widthがフルサイズでない場合は指定する */}
-        <section className="relative h-screen">
-          {/* KeyVisualContentに高さを指定 */}
-          <KeyVisualContent className="h-full" />
-        </section>
-        <div className="absolute left-1/2 -translate-x-1/2 bottom-20 w-full lg:max-w-[1240px] px-5">
-          <TopPageHeadline
-            mainTitle={
-              <>
-                <span className="">
-                  日本語見出し文日本語見出し文はいります
-                </span>
-              </>
-            }
-            subtitleTop={
-              <>
-                <span>Lorem Ipsum</span>
-                <br />
-                <span>Lorem Ipsum</span>
-              </>
-            }
-            description={
-              <>
-                <span className="">
-                  日本語見出し文日本語見出し文はいります日本語見出し文日本語見出し文はいります日本語見出し文日本語見出し文はいります
-                </span>
-              </>
-            }
-            className="  text-white "
+    <FirstViewContent className="relative">
+      <section className="relative px-5 lg:px-20 pb-10 lg:pb-20">
+        {/* 背景画像コンテナ - 角丸 */}
+        <div className="relative w-full h-[60vh] lg:h-[80vh] rounded-[40px] lg:rounded-[80px] overflow-hidden">
+          {/* 背景画像 */}
+          <Image
+            src="/images/mv-img.jpg"
+            alt="地域のお子様・ご家族のかかりつけ医に"
+            fill
+            priority
+            className="object-cover object-center"
           />
-          <div className="mt-[58px]">
-            <ScrollButton color="white" />
+
+          {/* グラデーションオーバーレイ（下部を暗く） */}
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20" />
+
+          {/* テキストコンテンツ */}
+          <div className="absolute left-5 lg:left-24 bottom-10 lg:bottom-20 max-w-[600px]">
+            <h1 className="text-white font-bold text-3xl lg:text-[50px] leading-[1.4] tracking-[0.05em] mb-4">
+              地域のお子様・ご家族の
+              <br />
+              かかりつけ医に
+            </h1>
+            <p className="text-white text-sm lg:text-lg leading-[1.6] tracking-[0.05em]">
+              見出しテキストはいります見出しはいります見出しテキストはいります見出しはいります
+            </p>
           </div>
         </div>
-      </FirstViewContent>
-    </>
+      </section>
+    </FirstViewContent>
   )
 }
 

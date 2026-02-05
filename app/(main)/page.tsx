@@ -56,6 +56,7 @@ import Profile_03 from "@/components/top/profile/Profile_03"
 import Profile_04 from "@/components/top/profile/Profile_04"
 import Flow_01 from "@/components/top/flow/Flow_01"
 import Flow_02 from "@/components/top/flow/Flow_02"
+import Access_01 from "@/components/top/access/Access_01"
 import Cta_01 from "@/components/ui/module/cta/Cta_01"
 import Cta_02 from "@/components/ui/module/cta/Cta_02"
 import Cta_03 from "@/components/ui/module/cta/Cta_03"
@@ -64,23 +65,19 @@ import Aside_01 from "@/components/ui/module/aside/Aside_01"
 import Aside_02 from "@/components/ui/module/aside/Aside_02"
 
 // メインページ
+// Figmaデザイン順: KV → 選ばれる理由 → 診療案内 → 院長挨拶 → 当院の特徴 → 医院の様子 → 予約の流れ → FAQ → アクセス
 const HomePage = () => {
   return (
     <div>
       <KeyVisual_01 />
-      <About_01 />
-      <Strength_01 />
-      <Message_01 />
-      <Service_01 />
       <News_01 />
-      <Case_01 />
-      <Blog_01 />
-      <Plan_01 />
-      <Faq_01 />
+      <About_01 />
+      <Service_01 />
+      <Message_01 />
       <Profile_01 />
       <Flow_01 />
-      <Cta_01 />
-      <Aside_01 />
+      <Faq_01 />
+      <Access_01 />
     </div>
   )
 }

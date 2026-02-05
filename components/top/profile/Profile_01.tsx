@@ -1,71 +1,74 @@
-// components/profile/Profile_01.tsx
+// components/top/profile/Profile_01.tsx
 "use client"
 
-import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import ContentHeadline from "@/components/ui/frame/ContentHeadline"
-import ProfileCard from "@/components/ui/ItemCard/ProfileCard_01"
-import SectionContent from "@/components/ui/frame/SectionContent"
+import { ChevronRight } from "lucide-react"
 
 const Profile_01 = () => {
+  const facilityImages = [
+    { src: "/images/facility-img01.jpg", alt: "医院内観1" },
+    { src: "/images/facility-img02.jpg", alt: "医院内観2" },
+    { src: "/images/facility-img03.jpg", alt: "医院内観3" },
+  ]
+
   return (
-    <>
-      <SectionContent className="bg-bgLight">
-        <section className="lg:max-w-[1200px] mx-auto">
-          <ContentHeadline
-            subTitle="Profile"
-            mainTitle="会社概要"
-            subTitleClassName="text-center"
-            titleClassName="text-center"
-          />
-          <div className="mt-16 bg-white grid lg:grid-cols-2 gap-x-20 p-10">
-            <div>
-              <ProfileCard label="社名" value="企業名" />
-              <ProfileCard label="設立" value="0000年00月00日" />
-              <ProfileCard label="資本金" value="000円" />
-              <ProfileCard
-                label="所在地"
-                value={`000-000\n○○県○○市○○町00-00\n○○○○○ビル00F`}
-              />
-              <ProfileCard label="電話番号" value="000-000-0000" />
-              <ProfileCard label="FAX" value="000-000-0000" />
-              <ProfileCard label="代表者" value="氏名　氏名" />
-              <ProfileCard label="URL" value="example@aa.aaaa" />
+    <section className="bg-[#f3fbfa] py-16 lg:py-24 overflow-hidden">
+      <div className="lg:max-w-[1560px] mx-auto px-5 lg:px-0 lg:pl-[calc((100%-1200px)/2)]">
+        <div className="flex flex-col lg:flex-row lg:gap-[120px] lg:items-start">
+          {/* 左側：テキストコンテンツ */}
+          <div className="lg:w-[350px] lg:flex-shrink-0">
+            {/* 見出し */}
+            <div className="mb-8 lg:mb-16">
+              <p className="text-lg font-bold tracking-[0.03em] font-en text-[#38a1db]">
+                Facility
+              </p>
+              <h2 className="text-[32px] leading-[1.5] mt-2 tracking-[0.05em] font-bold text-[#38a1db]">
+                医院の様子
+              </h2>
             </div>
-            <div>
-              <ProfileCard
-                label="役員"
-                value={`役職　○○○○○○\n役職　○○○○○○\n役職　○○○○○○`}
-              />
-              <ProfileCard label="従業員" value="0000名" />
-              <ProfileCard label="事業内容" value={`○○○○○○○○○○\n○○○○○○○○○`} />
-              <ProfileCard label="主要取引先" value={`○○○○○○○○○○\n○○○○○○○○○`} />
-              <ProfileCard
-                label="主要取引銀行"
-                value={`○○○○○○○○○○\n○○○○○○○○○`}
-              />
+
+            {/* 説明文 */}
+            <div className="mb-10">
+              <p className="text-xl font-bold text-[#393939] leading-[1.7] mb-4">
+                テキストが入ります。
+              </p>
+              <p className="text-base font-medium text-[#393939] leading-[1.7]">
+                メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。
+              </p>
             </div>
+
+            {/* ボタン */}
+            <Link
+              href="/about"
+              className="inline-flex items-center justify-between w-full lg:w-[350px] bg-[#f5a623] hover:bg-[#e6991e] transition-colors text-white font-bold text-base rounded-full px-6 py-4"
+            >
+              <span>詳しく見る</span>
+              <span className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
+                <ChevronRight className="w-4 h-4 text-[#f5a623]" />
+              </span>
+            </Link>
           </div>
-          <div className="mt-16">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.827853707453!2d139.76454987585436!3d35.68124052997326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sfr!4v1728031590235!5m2!1sja!2sfr"
-              width="1200"
-              height="400"
-              style={{ border: "0" }}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="w-full max-w-[600px] lg:max-w-[1200px]"
-            />
-            <p className="mt-4 font-light">
-              000-000
-              <br />
-              ○○県○○市○○町00-00○○○○○ビル00F
-            </p>
+
+          {/* 右側：画像ギャラリー */}
+          <div className="mt-10 lg:mt-0 flex gap-5 lg:gap-10 overflow-x-auto lg:overflow-visible pb-4 lg:pb-0 -mx-5 px-5 lg:mx-0 lg:px-0 lg:flex-1">
+            {facilityImages.map((image, index) => (
+              <div
+                key={index}
+                className="flex-shrink-0 w-[280px] lg:w-[380px] h-[200px] lg:h-[280px] relative rounded-[10px] overflow-hidden"
+              >
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            ))}
           </div>
-        </section>
-      </SectionContent>
-    </>
+        </div>
+      </div>
+    </section>
   )
 }
 

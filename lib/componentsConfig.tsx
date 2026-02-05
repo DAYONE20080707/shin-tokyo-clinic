@@ -59,6 +59,7 @@ import Profile_04 from "@/components/top/profile/Profile_04"
 import Profile_05 from "@/components/top/profile/Profile_05"
 import Flow_01 from "@/components/top/flow/Flow_01"
 import Flow_02 from "@/components/top/flow/Flow_02"
+import Access_01 from "@/components/top/access/Access_01"
 import Cta_01 from "@/components/ui/module/cta/Cta_01"
 import Cta_02 from "@/components/ui/module/cta/Cta_02"
 import Cta_03 from "@/components/ui/module/cta/Cta_03"
@@ -328,7 +329,15 @@ export const componentsConfig: ComponentsConfig = {
           Faq_02: <Faq_02 />,
         },
       },
-
+      access: {
+        title: "アクセス",
+        options: [
+          { id: "Access_01", src: "/admin/step-01.png", alt: "Access_01" },
+        ],
+        components: {
+          Access_01: <Access_01 />,
+        },
+      },
       aside: {
         title: "ASIDE",
         options: [

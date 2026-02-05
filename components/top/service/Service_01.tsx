@@ -1,49 +1,123 @@
-// components/service/Service_01.tsx
-"use client";
+// components/top/service/Service_01.tsx
+// 診療案内セクション
 
-import ContentHeadline from "@/components/ui/frame/ContentHeadline";
-import ServiceCard from "@/components/ui/ItemCard/ServiceCard_01";
-import { serviceData } from "@/data/serviceData";
-import SectionContent from "@/components/ui/frame/SectionContent";
+"use client"
+
+import Image from "next/image"
+import Link from "next/link"
+import SectionContent from "@/components/ui/frame/SectionContent"
+import { ChevronRight } from "lucide-react"
+
+// 診療メニューデータ
+const treatments = [
+  {
+    id: 1,
+    title: "一般小児外来",
+    icon: "/images/treatment-icon01.svg",
+    bgColor: "#e6eef8",
+    href: "/treatment/pediatric",
+  },
+  {
+    id: 2,
+    title: "低身長外来",
+    icon: "/images/treatment-icon02.svg",
+    bgColor: "#edebfa",
+    href: "/treatment/height",
+  },
+  {
+    id: 3,
+    title: "あたまのかたち外来",
+    icon: "/images/treatment-icon03.svg",
+    bgColor: "#f7efe8",
+    href: "/treatment/head-shape",
+  },
+  {
+    id: 4,
+    title: "乳幼児健診",
+    icon: "/images/treatment-icon04.svg",
+    bgColor: "#fdeef8",
+    href: "/treatment/checkup",
+  },
+  {
+    id: 5,
+    title: "予防接種",
+    icon: "/images/treatment-icon05.svg",
+    bgColor: "#fff6c9",
+    href: "/treatment/vaccination",
+  },
+  {
+    id: 6,
+    title: "でべそ外来",
+    icon: "/images/treatment-icon06.svg",
+    bgColor: "#fff0e1",
+    href: "/treatment/umbilical",
+  },
+  {
+    id: 7,
+    title: "夜尿症外来",
+    icon: "/images/treatment-icon07.svg",
+    bgColor: "#eaf5f3",
+    href: "/treatment/bedwetting",
+  },
+]
 
 const Service_01 = () => {
-  // 表示するサービス数をserviceDataのIDを指定して表示
-  const serviceIdsToDisplay = [1, 2, 3, 4, 5];
-
-  // 指定したIDに基づいてデータをフィルタリング
-  const servicesToDisplay = serviceData.filter((service) =>
-    serviceIdsToDisplay.includes(service.id)
-  );
-
   return (
-    <>
-      <SectionContent>
-        <section className="lg:max-w-[1200px] mx-auto space-y-10">
-          <ContentHeadline
-            subTitle="Service"
-            mainTitle="事業内容"
-            subTitleClassName="text-center"
-            titleClassName="text-center"
-          />
+    <SectionContent id="service" className="bg-white">
+      <section className="w-full lg:max-w-[1200px] mx-auto">
+        {/* セクションヘッダー */}
+        <div className="mb-16">
+          <p className="font-bold text-lg tracking-[0.03em] text-[#38a1db] font-en">
+            Treatment
+          </p>
+          <h2 className="text-[32px] lg:text-[32px] font-bold leading-[1.5] tracking-[0.05em] text-[#38a1db] mt-2">
+            診療案内
+          </h2>
+        </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-            {servicesToDisplay.map((service) => (
-              <ServiceCard
-                key={service.id}
-                id={service.id}
-                subTitle={service.subTitle}
-                title={service.title}
-                description={service.description}
-                image={service.image} // 画像パスを渡す
-                href={service.href} // リンク先を渡す
-                className=" space-y-4"
-              />
-            ))}
-          </div>
-        </section>
-      </SectionContent>
-    </>
-  );
-};
+        {/* 診療メニューカード */}
+        <div className="flex flex-wrap justify-center gap-10 mb-16">
+          {treatments.map((treatment) => (
+            <Link
+              key={treatment.id}
+              href={treatment.href}
+              className="w-full sm:w-[calc(50%-20px)] lg:w-[270px] rounded-[20px] p-6 flex flex-col items-center gap-4 transition-transform hover:scale-105"
+              style={{ backgroundColor: treatment.bgColor }}
+            >
+              {/* アイコン */}
+              <div className="relative w-[150px] h-[100px] flex items-center justify-center">
+                <Image
+                  src={treatment.icon}
+                  alt={treatment.title}
+                  width={150}
+                  height={100}
+                  className="object-contain"
+                />
+              </div>
 
-export default Service_01;
+              {/* タイトル */}
+              <p className="text-xl font-bold leading-[1.7] text-baseColor text-center">
+                {treatment.title}
+              </p>
+            </Link>
+          ))}
+        </div>
+
+        {/* 詳しく見るボタン */}
+        <div className="flex justify-center">
+          <Link
+            href="/treatment"
+            className="flex items-center justify-between w-[350px] px-6 py-4 bg-[#f5a623] rounded-[40px] text-white font-bold text-base leading-[1.7] transition-opacity hover:opacity-80"
+          >
+            <span>詳しく見る</span>
+            <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
+              <ChevronRight className="w-4 h-4 text-[#f5a623]" />
+            </div>
+          </Link>
+        </div>
+      </section>
+    </SectionContent>
+  )
+}
+
+export default Service_01

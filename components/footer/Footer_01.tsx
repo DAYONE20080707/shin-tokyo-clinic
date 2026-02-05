@@ -1,82 +1,108 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import Image from "next/image"
-import Menu from "@/components/ui/navigation/Menu"
-import Sns from "@/components/ui/button/SnsButton"
-import FooterLinks from "@/components/ui/navigation/FooterLinks"
-import CompanyInfo from "@/components/ui/navigation/CompanyInfo"
-import ContactButton from "@/components/ui/button/ContactButton"
+import Link from "next/link";
+import Image from "next/image";
+import { Calendar, Ruler, Phone } from "lucide-react";
+
+// フッターメニュー
+const footerMenu = [
+  { name: "お知らせ", href: "/news" },
+  { name: "診療案内", href: "/service" },
+  { name: "医師紹介", href: "/doctor" },
+  { name: "当院の特徴", href: "/feature" },
+  { name: "医院の様子", href: "/gallery" },
+  { name: "よくあるご質問", href: "/faq" },
+  { name: "アクセス", href: "/access" },
+];
 
 // フッター
 const Footer_01 = () => {
-  const { companyName, companyNameText, companyPostalCode, companyAddress } =
-    CompanyInfo[0]
   return (
-    <footer className="bg-white border-t py-10 lg:py-24 px-4 lg:px-0">
-      <div className="lg:max-w-[1240px] mx-auto lg:px-5">
-        <div className="lg:flex justify-between items-center">
-          <div className="space-y-3">
-            <h4 className="w-[100px]">
-              {CompanyInfo[0].companyName("tertiary")}
-            </h4>
-            <p>{companyNameText}</p>
-            <p>{companyPostalCode}{companyAddress}</p>
+    <footer className="bg-white py-10 lg:py-[120px] px-4 lg:px-0">
+      <div className="lg:max-w-[1200px] mx-auto">
+        {/* 上部 */}
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
+          {/* 左側: ロゴ・企業情報 */}
+          <div className="flex flex-col gap-3">
+            <div className="w-[200px] lg:w-[240px]">
+              <Image
+                src="/common/logo-primary.png"
+                alt="東京駅こどもの成長クリニック"
+                width={240}
+                height={70}
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <p className="text-base font-medium text-[#393939] leading-[1.6]">
+              シン・東京駅こどもの成長クリニック
+            </p>
+            <div className="text-base font-normal text-[#393939] leading-[1.6]">
+              <p>〒103-0028 東京都中央区八重洲1-6-17</p>
+              <p>大久保ビルディング9階</p>
+            </div>
           </div>
-          <div className="flex flex-col lg:items-end mt-5 lg:mt-0">
-            <ul className="lg:flex items-center lg:space-x-10 font-light space-y-5 lg:space-y-0">
-              <li>
-                <Link href="/">
-                  <div>トップページ</div>
-                </Link>
-              </li>
-              {Menu.map((item, index) => (
-                <li key={index}>
-                  <Link href={item.href}>
-                    <div>{item.nameJa}</div>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <div className="mt-7">
-              <ContactButton className="">お問い合わせ</ContactButton>
+
+          {/* 右側: メニュー・ボタン */}
+          <div className="flex flex-col items-start lg:items-end gap-6 lg:gap-7">
+            {/* メニュー */}
+            <nav>
+              <ul className="flex flex-wrap lg:flex-nowrap items-center gap-4 lg:gap-10 text-base font-medium text-[#393939] leading-[1.6]">
+                {footerMenu.map((item, index) => (
+                  <li key={index}>
+                    <Link
+                      href={item.href}
+                      className="hover:text-[#38a1db] transition-colors"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+
+            {/* ボタン */}
+            <div className="flex flex-col lg:flex-row gap-2">
+              <Link
+                href="/reservation/insurance"
+                className="flex items-center justify-center gap-1 px-6 lg:px-10 py-4 bg-[#ffd89b] rounded-[30px] w-full lg:w-[250px] hover:opacity-90 transition-opacity"
+              >
+                <Calendar className="w-5 h-5 text-white" />
+                <span className="text-base font-bold text-white tracking-[0.05em]">
+                  保険診療予約
+                </span>
+              </Link>
+              <Link
+                href="/reservation/growth"
+                className="flex items-center justify-center gap-1 px-6 lg:px-10 py-4 bg-[#73c6be] rounded-[30px] w-full lg:w-[250px] hover:opacity-90 transition-opacity"
+              >
+                <Ruler className="w-5 h-5 text-white" />
+                <span className="text-base font-bold text-white tracking-[0.05em]">
+                  低身長治療予約
+                </span>
+              </Link>
+              <Link
+                href="tel:00-000-0000"
+                className="flex items-center justify-center gap-2 px-6 lg:px-10 py-4 bg-[#f8ad69] rounded-[30px] w-full lg:w-[250px] hover:opacity-90 transition-opacity"
+              >
+                <Phone className="w-5 h-5 text-white" />
+                <span className="text-base font-bold text-white tracking-[0.03em]">
+                  00-000-0000
+                </span>
+              </Link>
             </div>
           </div>
         </div>
-        <div className="lg:flex justify-between items-center !border-t border-baseColor mt-4 pt-4 ">
-          <ul className="flex items-center justify-start font-semibold  space-x-5 lg:space-x-0">
-            {Sns.map((item, index) => (
-              <li
-                key={index}
-                className="w-5 h-5 lg:w-[60px] lg:h-[60px] flex items-center justify-center"
-              >
-                <Link href={item.href} className="">
-                  <Image
-                    src={item.src}
-                    alt={item.name}
-                    width={30}
-                    height={30}
-                  />
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <ul className="lg:flex items-center lg:space-x-10 font-light mt-5 lg:mt-0 space-y-5 lg:space-y-0">
-            {FooterLinks.map((item, index) => (
-              <li key={index}>
-                <Link href={item.href}>
-                  <div>{item.name}</div>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <small className="mt-4 flex justify-end items-center lg:text-base">
-        &copy;0000aaaaa. ALL Rights Reserved.
-        </small>
+
+        {/* 区切り線 */}
+        <div className="w-full h-px bg-[#d9d9d9] my-4" />
+
+        {/* コピーライト */}
+        <p className="text-base font-medium text-[#393939] text-center leading-[1.6]">
+          Copyright&copy;2026シン・東京駅こどもの成長クリニック
+        </p>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer_01
+export default Footer_01;

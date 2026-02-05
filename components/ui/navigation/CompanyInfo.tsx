@@ -11,18 +11,18 @@ export const CompanyInfo = [
             ? "/common/logo-square-primary.png" // 正方形・基本カラー
             : "/common/logo-primary.png" // 基本カラー
         }
-        alt="logo"
-        width={200} // 適切な幅を指定
-        height={40} // 適切な高さを指定
+        alt="東京駅こどもの成長クリニック"
+        width={240}
+        height={70}
         className="w-full h-full object-contain"
       />
     ),
-    companyNameText: "企業名企業名企業名企業名企業名",
-    companyPostalCode: "000-000",
-    companyAddress: "○○県○○市○○町00-00○○○○○ビル00F",
-    companyTel: "000-000-0000",
+    companyNameText: "東京駅こどもの成長クリニック",
+    companyPostalCode: "000-0000",
+    companyAddress: "東京都中央区○○町00-00○○○○○ビル00F",
+    companyTel: "00-000-0000",
     companyTelHref: "tel:0000000000",
-    companyEmail: "info@company.co.jp",
+    companyEmail: "info@clinic.co.jp",
   },
 ]
 

@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
+import { CalendarCheck, Ruler, MapPin } from "lucide-react"
 import Menu from "@/components/ui/navigation/Menu"
 import CompanyInfo from "@/components/ui/navigation/CompanyInfo"
 
@@ -35,34 +36,25 @@ const Header_04 = () => {
           {/* 上部ボタン */}
           <div className="flex gap-1">
             <Link
-              href="/#access"
-              className="bg-accentColor text-white text-sm font-bold rounded-full px-6 py-1 flex items-center gap-1 hover:opacity-80 transition-opacity"
+              href="#"
+              className="bg-[#ffd89b] text-white text-xl font-bold rounded-full px-4 py-2 flex items-center justify-center gap-1 hover:opacity-80 transition-opacity w-[240px]"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="20"
-                viewBox="0 0 16 20"
-                fill="currentColor"
-              >
-                <path d="M8 0C3.58 0 0 3.58 0 8C0 14 8 20 8 20C8 20 16 14 16 8C16 3.58 12.42 0 8 0ZM8 11C6.34 11 5 9.66 5 8C5 6.34 6.34 5 8 5C9.66 5 11 6.34 11 8C11 9.66 9.66 11 8 11Z" />
-              </svg>
-              アクセス
+              <CalendarCheck className="w-6 h-6" strokeWidth={2} />
+              保険診療予約
             </Link>
             <Link
-              href="/contact"
-              className="bg-accentColor text-white text-sm font-bold rounded-full px-6 py-1 flex items-center gap-1 hover:opacity-80 transition-opacity"
+              href="#"
+              className="bg-[#73c6be] text-white text-xl font-bold rounded-full px-4 py-2 flex items-center justify-center gap-1 hover:opacity-80 transition-opacity w-[240px]"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="13"
-                viewBox="0 0 18 13"
-                fill="currentColor"
-              >
-                <path d="M16 0H2C0.9 0 0.01 0.9 0.01 2L0 11C0 12.1 0.9 13 2 13H16C17.1 13 18 12.1 18 11V2C18 0.9 17.1 0 16 0ZM16 4L9 8L2 4V2L9 6L16 2V4Z" />
-              </svg>
-              お問い合わせ
+              <Ruler className="w-5 h-5" strokeWidth={2} />
+              低身長治療予約
+            </Link>
+            <Link
+              href="/#access"
+              className="bg-[#38a1db] text-white text-sm font-bold rounded-full px-6 py-1 flex items-center justify-center gap-1 hover:opacity-80 transition-opacity w-[150px]"
+            >
+              <MapPin className="w-4 h-4" strokeWidth={2} />
+              アクセス
             </Link>
           </div>
 
@@ -145,36 +137,28 @@ const Header_04 = () => {
         {/* ボタン */}
         <div className="flex flex-col items-center gap-3 mt-10 px-10">
           <Link
-            href="/#access"
-            className="w-full bg-accentColor text-white text-base font-bold rounded-full py-4 flex items-center justify-center gap-2"
+            href="#"
+            className="w-full bg-[#ffd89b] text-white text-base font-bold rounded-full py-4 flex items-center justify-center gap-2"
             onClick={toggleMenu}
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="20"
-              viewBox="0 0 16 20"
-              fill="currentColor"
-            >
-              <path d="M8 0C3.58 0 0 3.58 0 8C0 14 8 20 8 20C8 20 16 14 16 8C16 3.58 12.42 0 8 0ZM8 11C6.34 11 5 9.66 5 8C5 6.34 6.34 5 8 5C9.66 5 11 6.34 11 8C11 9.66 9.66 11 8 11Z" />
-            </svg>
-            アクセス
+            <CalendarCheck className="w-6 h-6" strokeWidth={2} />
+            保険診療予約
           </Link>
           <Link
-            href="/contact"
-            className="w-full bg-accentColor text-white text-base font-bold rounded-full py-4 flex items-center justify-center gap-2"
+            href="#"
+            className="w-full bg-[#73c6be] text-white text-base font-bold rounded-full py-4 flex items-center justify-center gap-2"
             onClick={toggleMenu}
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="13"
-              viewBox="0 0 18 13"
-              fill="currentColor"
-            >
-              <path d="M16 0H2C0.9 0 0.01 0.9 0.01 2L0 11C0 12.1 0.9 13 2 13H16C17.1 13 18 12.1 18 11V2C18 0.9 17.1 0 16 0ZM16 4L9 8L2 4V2L9 6L16 2V4Z" />
-            </svg>
-            お問い合わせ
+            <Ruler className="w-5 h-5" strokeWidth={2} />
+            低身長治療予約
+          </Link>
+          <Link
+            href="/#access"
+            className="w-full bg-[#38a1db] text-white text-base font-bold rounded-full py-4 flex items-center justify-center gap-2"
+            onClick={toggleMenu}
+          >
+            <MapPin className="w-5 h-5" strokeWidth={2} />
+            アクセス
           </Link>
         </div>
       </div>

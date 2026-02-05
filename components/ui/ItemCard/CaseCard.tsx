@@ -3,14 +3,14 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { casesFetch } from '@/lib/api/casesFetch'
-import { Work } from '@/types'
+import { Cms } from '@/types'
 
 interface TopWorkProps {
   limit?: number // オプショナルなプロパティ
 }
 
 const TopWorkCard = ({ limit = 5 }: TopWorkProps) => {
-  const [contents, setContents] = useState<Work[]>([])
+  const [contents, setContents] = useState<Cms[]>([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const TopWorkCard = ({ limit = 5 }: TopWorkProps) => {
       try {
         const data = await casesFetch.list(limit)
         if (mounted && data) {
-          setContents(data as Work[])
+          setContents(data)
         }
       } catch (error) {
         console.error('Failed to fetch cases:', error)
@@ -43,7 +43,7 @@ const TopWorkCard = ({ limit = 5 }: TopWorkProps) => {
 
   return (
     <div className="flex overflow-x-auto space-x-4"> {/* 横スクロールを有効化 */}
-      {contents.map((post: Work) => (
+      {contents.map((post: Cms) => (
         <div
           key={post.id}
           className="bg-white text-black rounded-2xl py-10 px-5 lg:p-16 flex-shrink-0 w-[600px] lg:flex justify-between"

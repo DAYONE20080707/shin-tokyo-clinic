@@ -110,9 +110,9 @@ const News_01 = ({ limit = 6 }: NewsProps) => {
                     <p className="text-sm lg:text-base text-[#38a1db] font-medium font-en">
                       {formatDate(post.publishedAt || post.createdAt)}
                     </p>
-                    {post.category && (
+                    {Array.isArray(post.category) && post.category.length > 0 && (
                       <span className="inline-flex items-center justify-center px-3 lg:px-4 py-1 text-xs font-bold text-[#38a1db] border border-[#38a1db] rounded-full">
-                        {post.category.name}
+                        {post.category[0]}
                       </span>
                     )}
                   </div>

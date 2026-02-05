@@ -1,3 +1,42 @@
+# ⚠️⚠️⚠️ 最重要：これを最初に読め ⚠️⚠️⚠️
+
+## Figma MCP接続方法（環境別）
+
+### ターミナル版 Claude Code
+```
+ToolSearch(query: "figma") を実行 ← これだけでOK
+```
+- MCPは内蔵済み、mcp.json設定不要
+
+### VSCode拡張版
+```
+claude mcp add figma --transport http https://api.figma.com/mcp
+```
+- 初回のみMCP追加が必要
+- 追加後は get_screenshot / get_design_context が使える
+
+## ✅ 接続後の手順（共通）
+
+```
+1. get_screenshot でデザイン確認
+2. get_design_context でコード取得
+3. 両方を照合してコーディング
+```
+
+---
+
+## 必須ルール一覧
+
+| ルール | 内容 |
+|--------|------|
+| Figma MCP | `ToolSearch(query: "figma")` でロード（上記参照） |
+| ブレイクポイント | `lg:` のみ使用（`md:` `sm:` 禁止） |
+| コンポーネント | 既存ファイルを編集、新規作成禁止 |
+| エンドポイント | blogs, news, cases のみ使用 |
+| レイヤー順序 | Figmaの上から下 = 実装順序 |
+
+---
+
 # CLAUDE.md - プロジェクトルール
 
 ## プロジェクト概要

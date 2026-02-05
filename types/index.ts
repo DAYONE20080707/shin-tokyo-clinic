@@ -2,6 +2,8 @@
 export type Cms = {
   id: string
   date?: string
+  createdAt: string
+  publishedAt?: string
   title: string
   description?: string
   content: string

@@ -21,10 +21,10 @@ const lato = Lato({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | チョイスWeb制作",
-    default: "チョイスのWeb制作は",
+    template: "%s | シン・東京駅こどもの成長クリニック",
+    default: "シン・東京駅こどもの成長クリニック｜東京駅徒歩1分の小児科",
   },
-  description: "チョイスは、",
+  description: "東京駅八重洲北口から徒歩1分。一般小児科、低身長外来、あたまのかたち外来、乳幼児健診、予防接種など、お子さまの成長・発育をサポートします。地域のかかりつけ医として、お気軽にご相談ください。",
   icons: {
     icon: "/common/favicon.png",
   },

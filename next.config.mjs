@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
-
 const basePath = "/test20251026"
 const isExport = process.env.EXPORT === "true"
-
 const nextConfig = {
+  transpilePackages: ['swiper'],
   // basePathとassetPrefixは静的エクスポート時のみ適用
   ...(isExport && {
     basePath: basePath,
@@ -21,7 +20,7 @@ const nextConfig = {
           loaderFile: "./lib/imageLoader.js",
         }
       : {
-          domains: ["images.microcms-assets.io"], // 外部の画像ドメインを追加
+          domains: ["images.microcms-assets.io"],
         }),
   },
   env: {
@@ -29,5 +28,4 @@ const nextConfig = {
     EXPORT: isExport ? "true" : "false",
   },
 }
-
 export default nextConfig

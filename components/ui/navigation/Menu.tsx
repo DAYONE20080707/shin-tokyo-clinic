@@ -3,17 +3,17 @@ export const Menu = [
   {
     name: "Treatment",
     nameJa: "診療案内",
-    href: "/treatment",
+    href: "/coming-soon",
   },
   {
     name: "About",
     nameJa: "当院について",
-    href: "/about",
+    href: "/coming-soon",
   },
   {
     name: "Facility",
     nameJa: "院内の様子",
-    href: "/facility",
+    href: "/coming-soon",
   },
   {
     name: "Flow",
@@ -23,17 +23,17 @@ export const Menu = [
   {
     name: "News",
     nameJa: "お知らせ",
-    href: "/news",
+    href: "/coming-soon",
   },
   {
     name: "FAQ",
     nameJa: "よくある質問",
-    href: "/faq",
+    href: "/coming-soon",
   },
   {
     name: "Contact",
     nameJa: "お問い合わせ",
-    href: "/contact",
+    href: "/coming-soon",
   },
 ]
 

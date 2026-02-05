@@ -13,13 +13,21 @@ const KeyVisual_01 = () => {
       <section className="relative px-5 lg:px-20 pb-10 lg:pb-20 pt-[85px] lg:pt-[160px]">
         {/* 背景画像コンテナ - 角丸 */}
         <div className="relative w-full h-[60vh] lg:h-[80vh] rounded-[40px] lg:rounded-[80px] overflow-hidden">
-          {/* 背景画像 */}
+          {/* 背景画像 - SP */}
+          <Image
+            src="/images/sp-mv-img.jpg"
+            alt="地域のお子様・ご家族のかかりつけ医に"
+            fill
+            priority
+            className="object-cover object-center lg:hidden"
+          />
+          {/* 背景画像 - PC */}
           <Image
             src="/images/mv-img.jpg"
             alt="地域のお子様・ご家族のかかりつけ医に"
             fill
             priority
-            className="object-cover object-center"
+            className="object-cover object-center hidden lg:block"
           />
 
           {/* グラデーションオーバーレイ（下部を暗く） */}

@@ -23,7 +23,7 @@ const ContactButton = ({
 
   return (
     <Link
-      href="/contact"
+      href="/coming-soon"
       className={`bg-accentColor text-white cursor-pointer flex items-center justify-center w-full ${variantStyles[variant]} ${
         isEnglish ? "font-en text-lg tracking-[0.03em]" : " text-base tracking-[0.03em]"
       } ${className}`}

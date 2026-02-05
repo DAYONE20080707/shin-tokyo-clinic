@@ -18,7 +18,6 @@ const Profile_01 = () => {
         <div className="flex flex-col lg:flex-row lg:gap-[120px] lg:items-start">
           {/* 左側：テキストコンテンツ */}
           <div className="lg:w-[350px] lg:flex-shrink-0">
-            {/* 見出し */}
             <div className="mb-8 lg:mb-16">
               <p className="text-lg font-bold tracking-[0.03em] font-en text-primaryColor">
                 Facility
@@ -27,8 +26,6 @@ const Profile_01 = () => {
                 医院の様子
               </h2>
             </div>
-
-            {/* 説明文 */}
             <div className="mb-10">
               <p className="text-xl font-bold text-[#393939] leading-[1.7] mb-4">
                 テキストが入ります。
@@ -37,10 +34,8 @@ const Profile_01 = () => {
                 メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。
               </p>
             </div>
-
-            {/* ボタン */}
             <Link
-              href="/about"
+              href="/coming-soon"
               className="inline-flex items-center justify-between w-full lg:w-[350px] bg-[#f5a623] hover:bg-[#e6991e] transition-colors text-white font-bold text-base rounded-full px-6 py-4"
             >
               <span>詳しく見る</span>
@@ -50,21 +45,23 @@ const Profile_01 = () => {
             </Link>
           </div>
 
-          {/* 右側：画像ギャラリー */}
-          <div className="mt-10 lg:mt-0 flex gap-5 lg:gap-10 overflow-x-auto lg:overflow-visible pb-4 lg:pb-0 -mx-5 px-5 lg:mx-0 lg:px-0 lg:flex-1">
-            {facilityImages.map((image, index) => (
-              <div
-                key={index}
-                className="flex-shrink-0 w-[280px] lg:w-[380px] h-[200px] lg:h-[280px] relative rounded-[10px] overflow-hidden"
-              >
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            ))}
+          {/* 右側：画像3枚並び */}
+          <div className="mt-10 lg:mt-0 lg:flex-1">
+            <div className="flex gap-5 lg:gap-10 overflow-x-auto lg:overflow-visible">
+              {facilityImages.map((image, index) => (
+                <div
+                  key={index}
+                  className="w-[280px] lg:w-[350px] flex-shrink-0 h-[200px] lg:h-[280px] relative rounded-[10px] overflow-hidden"
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -15,49 +15,49 @@ const treatments = [
     title: "一般小児外来",
     icon: "/images/treatment-icon01.svg",
     bgColor: "#e6eef8",
-    href: "/treatment/pediatric",
+    href: "/coming-soon",
   },
   {
     id: 2,
     title: "低身長外来",
     icon: "/images/treatment-icon02.svg",
     bgColor: "#edebfa",
-    href: "/treatment/height",
+    href: "/coming-soon",
   },
   {
     id: 3,
     title: "あたまのかたち外来",
     icon: "/images/treatment-icon03.svg",
     bgColor: "#f7efe8",
-    href: "/treatment/head-shape",
+    href: "/coming-soon",
   },
   {
     id: 4,
     title: "乳幼児健診",
     icon: "/images/treatment-icon04.svg",
     bgColor: "#fdeef8",
-    href: "/treatment/checkup",
+    href: "/coming-soon",
   },
   {
     id: 5,
     title: "予防接種",
     icon: "/images/treatment-icon05.svg",
     bgColor: "#fff6c9",
-    href: "/treatment/vaccination",
+    href: "/coming-soon",
   },
   {
     id: 6,
     title: "でべそ外来",
     icon: "/images/treatment-icon06.svg",
     bgColor: "#fff0e1",
-    href: "/treatment/umbilical",
+    href: "/coming-soon",
   },
   {
     id: 7,
     title: "夜尿症外来",
     icon: "/images/treatment-icon07.svg",
     bgColor: "#eaf5f3",
-    href: "/treatment/bedwetting",
+    href: "/coming-soon",
   },
 ]
 
@@ -106,7 +106,7 @@ const Service_01 = () => {
         {/* 詳しく見るボタン */}
         <div className="flex justify-center">
           <Link
-            href="/treatment"
+            href="/coming-soon"
             className="flex items-center justify-between w-[350px] px-6 py-4 bg-[#f5a623] rounded-[40px] text-white font-bold text-base leading-[1.7] transition-opacity hover:opacity-80"
           >
             <span>詳しく見る</span>

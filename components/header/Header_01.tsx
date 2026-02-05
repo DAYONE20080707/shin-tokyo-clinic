@@ -12,13 +12,13 @@ import HeaderContent from "../ui/frame/HeaderContent"
 
 // メニュー項目定義
 const menuItems = [
-  { name: "お知らせ", href: "/news" },
-  { name: "診療案内", href: "/service" },
-  { name: "医師紹介", href: "/doctor" },
-  { name: "当院の特徴", href: "/feature" },
-  { name: "医院の様子", href: "/facility" },
-  { name: "よくあるご質問", href: "/faq" },
-  { name: "アクセス", href: "/access" },
+  { name: "お知らせ", href: "/coming-soon" },
+  { name: "診療案内", href: "/coming-soon" },
+  { name: "医師紹介", href: "/coming-soon" },
+  { name: "当院の特徴", href: "/coming-soon" },
+  { name: "医院の様子", href: "/coming-soon" },
+  { name: "よくあるご質問", href: "/coming-soon" },
+  { name: "アクセス", href: "/coming-soon" },
 ]
 
 // CTAボタン定義
@@ -26,13 +26,13 @@ const ctaButtons = [
   {
     label: "保険診療予約",
     icon: "/images/navi-icon01.svg",
-    href: "#",
+    href: "/coming-soon",
     bgColor: "bg-[#ffd89b]",
   },
   {
     label: "低身長治療予約",
     icon: "/images/navi-icon02.svg",
-    href: "#",
+    href: "/coming-soon",
     bgColor: "bg-[#73c6be]",
   },
 ]

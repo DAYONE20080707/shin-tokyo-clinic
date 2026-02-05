@@ -6,13 +6,13 @@ import { Calendar, Ruler, Phone } from "lucide-react";
 
 // フッターメニュー
 const footerMenu = [
-  { name: "お知らせ", href: "/news" },
-  { name: "診療案内", href: "/service" },
-  { name: "医師紹介", href: "/doctor" },
-  { name: "当院の特徴", href: "/feature" },
-  { name: "医院の様子", href: "/gallery" },
-  { name: "よくあるご質問", href: "/faq" },
-  { name: "アクセス", href: "/access" },
+  { name: "お知らせ", href: "/coming-soon" },
+  { name: "診療案内", href: "/coming-soon" },
+  { name: "医師紹介", href: "/coming-soon" },
+  { name: "当院の特徴", href: "/coming-soon" },
+  { name: "医院の様子", href: "/coming-soon" },
+  { name: "よくあるご質問", href: "/coming-soon" },
+  { name: "アクセス", href: "/coming-soon" },
 ];
 
 // フッター
@@ -63,7 +63,7 @@ const Footer_01 = () => {
             {/* ボタン */}
             <div className="flex flex-col lg:flex-row gap-2">
               <Link
-                href="/reservation/insurance"
+                href="/coming-soon"
                 className="flex items-center justify-center gap-1 px-6 lg:px-10 py-4 bg-[#ffd89b] rounded-[30px] w-full lg:w-[250px] hover:opacity-90 transition-opacity"
               >
                 <Calendar className="w-5 h-5 text-white" />
@@ -72,7 +72,7 @@ const Footer_01 = () => {
                 </span>
               </Link>
               <Link
-                href="/reservation/growth"
+                href="/coming-soon"
                 className="flex items-center justify-center gap-1 px-6 lg:px-10 py-4 bg-[#73c6be] rounded-[30px] w-full lg:w-[250px] hover:opacity-90 transition-opacity"
               >
                 <Ruler className="w-5 h-5 text-white" />

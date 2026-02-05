@@ -7,7 +7,7 @@ import SectionContent from "@/components/ui/frame/SectionContent"
 // お問い合わせ完了
 const ComingSoonPage = () => {
   return (
-    <PageContent variant="dot">
+    <PageContent variant="primary">
       <div className="mx-auto max-w-[1200px]">
         <Breadcrumb
           mainTitle="Coming Soon"

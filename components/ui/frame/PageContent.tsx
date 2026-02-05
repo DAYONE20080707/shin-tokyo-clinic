@@ -7,7 +7,7 @@ interface PageContentProps {
   children: ReactNode
   className?: string
   style?: React.CSSProperties
-  variant?: "default" | "dot" | "light"
+  variant?: "default" | "dot" | "light" | "primary"
 }
 
 const PageContent: React.FC<PageContentProps> = ({
@@ -31,6 +31,12 @@ const PageContent: React.FC<PageContentProps> = ({
     if (variant === "light") {
       return {
         backgroundColor: "#f7fcff",
+        ...style,
+      }
+    }
+    if (variant === "primary") {
+      return {
+        backgroundColor: "#347694",
         ...style,
       }
     }

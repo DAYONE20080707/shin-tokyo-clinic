@@ -7,11 +7,11 @@ const ComingSoon = () => {
       <div>
         <div className="flex flex-col items-center gap-10 py-16 lg:pb-[157px] lg:pt-[137px] px-5">
           <Clock
-            className=" w-20 lg:w-[120px] h-auto text-accentColor"
+            className=" w-20 lg:w-[120px] h-auto text-white"
             strokeWidth={1}
           />
 
-          <h2 className=" text-2xl lg:text-[40px] font-medium tracking-wider text-accentColor leading-[160%]">
+          <h2 className=" text-2xl lg:text-[40px] font-medium tracking-wider text-white leading-[160%]">
             Coming Soon
             <br className="lg:hidden" />
           </h2>

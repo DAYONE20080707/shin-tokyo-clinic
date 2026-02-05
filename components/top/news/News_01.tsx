@@ -86,7 +86,7 @@ const News_01 = ({ limit = 6 }: NewsProps) => {
             {contents.map((post) => (
               <Link
                 key={post.id}
-                href={`/news/${post.id}`}
+                href="/coming-soon"
                 className="flex gap-4 py-6 border-b border-primaryColor hover:opacity-80 transition-opacity"
               >
                 {/* サムネイル */}

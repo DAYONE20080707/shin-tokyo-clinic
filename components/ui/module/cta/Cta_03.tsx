@@ -28,7 +28,7 @@ const Cta_03 = () => {
             <p className="lg:text-lg my-3 lg:my-6 leading-[160%]">人事・経営に関することや、就職支援については<br />
             お気軽にご相談ください。</p>
             <div className="flex justify-center">
-            <MoreLinkButton href="/contact" variant="black" className="lg:!w-[350px]">Contact us</MoreLinkButton>
+            <MoreLinkButton href="/coming-soon" variant="black" className="lg:!w-[350px]">Contact us</MoreLinkButton>
             </div>
           </div>
         </section>

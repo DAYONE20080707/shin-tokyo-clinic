@@ -20,10 +20,10 @@ const Profile_01 = () => {
           <div className="lg:w-[350px] lg:flex-shrink-0">
             {/* 見出し */}
             <div className="mb-8 lg:mb-16">
-              <p className="text-lg font-bold tracking-[0.03em] font-en text-[#38a1db]">
+              <p className="text-lg font-bold tracking-[0.03em] font-en text-primaryColor">
                 Facility
               </p>
-              <h2 className="text-[32px] leading-[1.5] mt-2 tracking-[0.05em] font-bold text-[#38a1db]">
+              <h2 className="text-[32px] leading-[1.5] mt-2 tracking-[0.05em] font-bold text-primaryColor">
                 医院の様子
               </h2>
             </div>

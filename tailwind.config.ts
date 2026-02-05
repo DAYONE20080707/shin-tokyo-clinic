@@ -27,7 +27,8 @@ const config = {
 en: ["var(--font-en)", "sans-serif"],
       },
       colors: {
-        accentColor: "#4270ED",
+        accentColor: "#F8AD69",
+        primaryColor: "#347694",
         baseColor: "#393939",
         borderGray: "#393939",
         bgBlack: "#333333",

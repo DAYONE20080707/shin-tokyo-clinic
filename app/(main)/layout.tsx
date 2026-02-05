@@ -46,7 +46,7 @@ const RightSidebar = () => {
       {/* 電話番号 */}
       <Link
         href="tel:0362819234"
-        className="w-[80px] h-[220px] bg-[#f8ad69] rounded-l-[10px] flex flex-col items-center justify-center text-white hover:opacity-90 transition-opacity py-[10px] px-[10px]"
+        className="w-[80px] h-[220px] bg-accentColor rounded-l-[10px] flex flex-col items-center justify-center text-white hover:opacity-90 transition-opacity py-[10px] px-[10px]"
       >
         <Image
           src="/common/sidebar-icon03.svg"

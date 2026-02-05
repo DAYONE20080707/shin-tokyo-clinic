@@ -108,7 +108,7 @@ const FaqAccordion_01 = ({ items }: FaqAccordion_01Props) => {
                     {item.question}
                   </span>
                 </div>
-                <div className="flex-shrink-0 text-[#38a1db]">
+                <div className="flex-shrink-0 text-primaryColor">
                   {openIndex === index ? (
                     <Minus className="w-6 h-6" strokeWidth={2.5} />
                   ) : (

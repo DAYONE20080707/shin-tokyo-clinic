@@ -15,7 +15,8 @@ const flowSteps: FlowStep[] = [
     step: "STEP",
     number: "01",
     title: "自宅からWeb予約を行う。（デジスマ登録必要）",
-    description: "初診の方でもWeb予約可能です。診察希望時間までに予約を実施してください。",
+    description:
+      "初診の方でもWeb予約可能です。診察希望時間までに予約を実施してください。",
   },
   {
     step: "STEP",
@@ -48,7 +49,8 @@ const flowSteps: FlowStep[] = [
     step: "STEP",
     number: "05",
     title: "診察",
-    description: "問診表を参考に医師が診察を行います。必要時検査等を実施します。",
+    description:
+      "問診表を参考に医師が診察を行います。必要時検査等を実施します。",
   },
   {
     step: "STEP",
@@ -67,10 +69,10 @@ const Flow_01 = ({ className = "" }) => {
       <div className="lg:max-w-[1200px] mx-auto px-5">
         {/* 見出し */}
         <div className="text-center mb-12 lg:mb-16">
-          <p className="text-lg font-bold tracking-[0.03em] font-en text-[#38a1db]">
+          <p className="text-lg font-bold tracking-[0.03em] font-en text-primaryColor">
             Step
           </p>
-          <h2 className="text-[32px] leading-[1.5] mt-2 tracking-[0.05em] font-bold text-[#38a1db]">
+          <h2 className="text-[32px] leading-[1.5] mt-2 tracking-[0.05em] font-bold text-primaryColor">
             予約の流れ
           </h2>
         </div>
@@ -93,7 +95,7 @@ const Flow_01 = ({ className = "" }) => {
 
                 {/* コンテンツ */}
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold text-[#347694] leading-[1.7] mb-2">
+                  <h3 className="text-xl font-bold text-primaryColor  leading-[1.7] mb-2">
                     {step.title}
                   </h3>
                   {Array.isArray(step.description) ? (

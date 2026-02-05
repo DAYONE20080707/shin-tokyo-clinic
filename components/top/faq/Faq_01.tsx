@@ -49,10 +49,10 @@ const Faq_01 = () => {
       <section className="lg:max-w-[1200px] mx-auto">
         {/* 見出し */}
         <div className="mb-16">
-          <p className="text-lg font-bold tracking-[0.03em] font-en text-[#38a1db]">
+          <p className="text-lg font-bold tracking-[0.03em] font-en text-primaryColor">
             FAQ
           </p>
-          <h2 className="text-[32px] leading-[1.5] tracking-[0.05em] font-bold text-[#38a1db] font-zenKaku">
+          <h2 className="text-[32px] leading-[1.5] tracking-[0.05em] font-bold text-primaryColor font-zenKaku">
             よくある質問
           </h2>
         </div>
@@ -87,12 +87,12 @@ const Faq_01 = () => {
                   <div className="flex-shrink-0 ml-4">
                     {isOpen ? (
                       <Minus
-                        className="w-6 h-6 text-[#38a1db]"
+                        className="w-6 h-6 text-primaryColor"
                         strokeWidth={2}
                       />
                     ) : (
                       <Plus
-                        className="w-6 h-6 text-[#38a1db]"
+                        className="w-6 h-6 text-primaryColor"
                         strokeWidth={2}
                       />
                     )}

@@ -1,8 +1,8 @@
 // components/top/access/Access_01.tsx
 
-import Image from "next/image";
-import SectionContent from "@/components/ui/frame/SectionContent";
-import { MapPin } from "lucide-react";
+import Image from "next/image"
+import SectionContent from "@/components/ui/frame/SectionContent"
+import { MapPin } from "lucide-react"
 
 // 診療スケジュールデータ
 const scheduleData = [
@@ -24,9 +24,9 @@ const scheduleData = [
     schedule: ["●", "●", "×", "×", "●", "●", "×", "×"],
     type: "normal",
   },
-];
+]
 
-const days = ["月", "火", "水", "木", "金", "土", "日", "祝"];
+const days = ["月", "火", "水", "木", "金", "土", "日", "祝"]
 
 const Access_01 = () => {
   return (
@@ -48,7 +48,7 @@ const Access_01 = () => {
 
             {/* スケジュール */}
             <div className="flex flex-col gap-4">
-              <p className="text-lg font-bold tracking-[0.03em] font-en text-[#347694]">
+              <p className="text-lg font-bold tracking-[0.03em] font-en text-primaryColor ">
                 Schedule
               </p>
 
@@ -91,8 +91,8 @@ const Access_01 = () => {
                             status === "×"
                               ? "text-gray-400"
                               : status === "★"
-                              ? "text-[#347694]"
-                              : "text-[#347694]"
+                                ? "text-primaryColor "
+                                : "text-primaryColor "
                           }`}
                         >
                           {status}
@@ -124,7 +124,7 @@ const Access_01 = () => {
 
                 {/* 住所 */}
                 <div className="pt-6 flex items-start gap-1">
-                  <MapPin className="w-4 h-4 text-[#347694] flex-shrink-0 mt-0.5" />
+                  <MapPin className="w-4 h-4 text-primaryColor  flex-shrink-0 mt-0.5" />
                   <div className="text-base text-[#393939] leading-[1.6] font-zenKaku">
                     <p>
                       〒103-0028 東京都中央区八重洲1-6-17　大久保ビルディング9階
@@ -152,7 +152,7 @@ const Access_01 = () => {
         </div>
       </section>
     </SectionContent>
-  );
-};
+  )
+}
 
-export default Access_01;
+export default Access_01

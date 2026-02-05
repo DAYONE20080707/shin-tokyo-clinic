@@ -70,10 +70,10 @@ const News_01 = ({ limit = 6 }: NewsProps) => {
       <div className="lg:max-w-[1200px] mx-auto">
         {/* セクションヘッダー */}
         <div className="mb-10 lg:mb-16">
-          <p className="font-bold text-lg tracking-[0.03em] text-[#38a1db] font-en">
+          <p className="font-bold text-lg tracking-[0.03em] text-primaryColor font-en">
             News
           </p>
-          <h2 className="text-2xl lg:text-[32px] font-bold leading-[1.5] tracking-[0.05em] text-[#38a1db] mt-2">
+          <h2 className="text-2xl lg:text-[32px] font-bold leading-[1.5] tracking-[0.05em] text-primaryColor mt-2">
             病院からの
             <br className="lg:hidden" />
             お知らせ
@@ -87,7 +87,7 @@ const News_01 = ({ limit = 6 }: NewsProps) => {
               <Link
                 key={post.id}
                 href={`/news/${post.id}`}
-                className="flex gap-4 py-6 border-b border-[#38a1db] hover:opacity-80 transition-opacity"
+                className="flex gap-4 py-6 border-b border-primaryColor hover:opacity-80 transition-opacity"
               >
                 {/* サムネイル */}
                 <div className="relative w-[120px] lg:w-[150px] h-[80px] lg:h-[100px] flex-shrink-0 rounded-[10px] overflow-hidden">
@@ -107,11 +107,11 @@ const News_01 = ({ limit = 6 }: NewsProps) => {
                 <div className="flex flex-col gap-2 flex-1 min-w-0">
                   {/* 日付とカテゴリ */}
                   <div className="flex items-center gap-2 flex-wrap">
-                    <p className="text-sm lg:text-base text-[#38a1db] font-medium font-en">
+                    <p className="text-sm lg:text-base text-primaryColor font-medium font-en">
                       {formatDate(post.publishedAt || post.createdAt)}
                     </p>
                     {Array.isArray(post.category) && post.category.length > 0 && (
-                      <span className="inline-flex items-center justify-center px-3 lg:px-4 py-1 text-xs font-bold text-[#38a1db] border border-[#38a1db] rounded-full">
+                      <span className="inline-flex items-center justify-center px-3 lg:px-4 py-1 text-xs font-bold text-primaryColor border border-primaryColor rounded-full">
                         {post.category[0]}
                       </span>
                     )}

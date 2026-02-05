@@ -13,7 +13,7 @@ const Message_01 = () => {
       id="greeting"
     >
       <div className="lg:max-w-[1200px] mx-auto">
-        <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 items-center">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 items-start">
           {/* 画像 */}
           <div className="w-full lg:w-[380px] shrink-0">
             <div className="relative aspect-[520/682] rounded-[20px] overflow-hidden">
@@ -30,10 +30,10 @@ const Message_01 = () => {
           <div className="w-full lg:w-[600px]">
             {/* 見出し */}
             <div className="mb-10 lg:mb-16">
-              <p className="text-[#38a1db] text-sm lg:text-lg font-bold tracking-[0.03em] font-en">
+              <p className="text-primaryColor text-sm lg:text-lg font-bold tracking-[0.03em] font-en">
                 Greeting
               </p>
-              <h2 className="text-[#38a1db] text-2xl lg:text-[32px] font-bold leading-[1.5] tracking-[0.05em] mt-2">
+              <h2 className="text-primaryColor text-2xl lg:text-[32px] font-bold leading-[1.5] tracking-[0.05em] mt-2">
                 院長のご挨拶
               </h2>
             </div>

@@ -35,7 +35,7 @@ const Lowerkv_05 = ({
       <div className="absolute top-10 left-0 w-[200px] lg:w-[400px] h-[200px] lg:h-[400px] bg-[#73c6be]/30 rounded-full -translate-x-1/2 -translate-y-1/2" />
 
       {/* 装飾図形 - オレンジ色 */}
-      <div className="absolute bottom-0 right-0 w-[150px] lg:w-[300px] h-[150px] lg:h-[300px] bg-[#f8ad69]/30 rounded-full translate-x-1/3 translate-y-1/3" />
+      <div className="absolute bottom-0 right-0 w-[150px] lg:w-[300px] h-[150px] lg:h-[300px] bg-accentColor/30 rounded-full translate-x-1/3 translate-y-1/3" />
 
       {/* コンテンツ */}
       <div className="relative z-10 pt-24 lg:pt-32 pb-6 lg:pb-10">
@@ -62,7 +62,7 @@ const Lowerkv_05 = ({
         {/* タイトル */}
         <div className="lg:max-w-[1200px] mx-auto px-5 lg:px-[120px] mt-10 lg:mt-20 pb-16 lg:pb-24">
           <h1>
-            <span className="block text-[#347694] font-poppins text-base lg:text-lg font-bold tracking-wide mb-2">
+            <span className="block text-primaryColor  font-poppins text-base lg:text-lg font-bold tracking-wide mb-2">
               {subTitle}
             </span>
             <span className="block text-[#393939] text-3xl lg:text-[64px] font-medium leading-tight">

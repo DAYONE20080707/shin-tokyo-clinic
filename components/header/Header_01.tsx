@@ -107,7 +107,7 @@ const Header_01 = () => {
               {/* 電話ボタン */}
               <Link
                 href="tel:0000000000"
-                className="bg-[#38a1db] flex gap-1 items-center justify-center px-6 py-1 rounded-full w-[150px]"
+                className="bg-primaryColor flex gap-1 items-center justify-center px-6 py-1 rounded-full w-[150px]"
               >
                 <Phone className="w-5 h-5 text-white" strokeWidth={2} />
                 <span className="text-white font-bold text-sm tracking-wide">
@@ -183,7 +183,7 @@ const Header_01 = () => {
           ))}
           <Link
             href="tel:0000000000"
-            className="bg-[#38a1db] flex gap-2 items-center justify-center px-4 py-3 rounded-full"
+            className="bg-primaryColor flex gap-2 items-center justify-center px-4 py-3 rounded-full"
             onClick={handleMenuToggle}
           >
             <Phone className="w-5 h-5 text-white" strokeWidth={2} />

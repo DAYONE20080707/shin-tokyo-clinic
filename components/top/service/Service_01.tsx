@@ -67,10 +67,10 @@ const Service_01 = () => {
       <section className="w-full lg:max-w-[1200px] mx-auto">
         {/* セクションヘッダー */}
         <div className="mb-16">
-          <p className="font-bold text-lg tracking-[0.03em] text-[#38a1db] font-en">
+          <p className="font-bold text-lg tracking-[0.03em] text-primaryColor font-en">
             Treatment
           </p>
-          <h2 className="text-[32px] lg:text-[32px] font-bold leading-[1.5] tracking-[0.05em] text-[#38a1db] mt-2">
+          <h2 className="text-[32px] lg:text-[32px] font-bold leading-[1.5] tracking-[0.05em] text-primaryColor mt-2">
             診療案内
           </h2>
         </div>

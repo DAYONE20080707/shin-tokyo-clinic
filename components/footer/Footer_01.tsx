@@ -51,7 +51,7 @@ const Footer_01 = () => {
                   <li key={index}>
                     <Link
                       href={item.href}
-                      className="hover:text-[#38a1db] transition-colors"
+                      className="hover:text-primaryColor transition-colors"
                     >
                       {item.name}
                     </Link>
@@ -82,7 +82,7 @@ const Footer_01 = () => {
               </Link>
               <Link
                 href="tel:00-000-0000"
-                className="flex items-center justify-center gap-2 px-6 lg:px-10 py-4 bg-[#f8ad69] rounded-[30px] w-full lg:w-[250px] hover:opacity-90 transition-opacity"
+                className="flex items-center justify-center gap-2 px-6 lg:px-10 py-4 bg-accentColor rounded-[30px] w-full lg:w-[250px] hover:opacity-90 transition-opacity"
               >
                 <Phone className="w-5 h-5 text-white" />
                 <span className="text-base font-bold text-white tracking-[0.03em]">

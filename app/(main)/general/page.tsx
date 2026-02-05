@@ -22,8 +22,10 @@ const GeneralPage = () => {
   const symptomDetails = [
     {
       title: "発熱",
-      description: "かぜなどのウイルス感染症をはじめ、さまざまな原因で起こります。",
-      diseases: "かぜ、インフルエンザ、RSウイルス感染症、突発性発疹、尿路感染症 など\n※年齢や全身状態に応じて診察します。",
+      description:
+        "かぜなどのウイルス感染症をはじめ、さまざまな原因で起こります。",
+      diseases:
+        "かぜ、インフルエンザ、RSウイルス感染症、突発性発疹、尿路感染症 など\n※年齢や全身状態に応じて診察します。",
     },
     {
       title: "咳・鼻水・のどの痛み",
@@ -33,7 +35,8 @@ const GeneralPage = () => {
     {
       title: "下痢・嘔吐・腹痛",
       description: "小児に多い胃腸のトラブルです。",
-      diseases: "ウイルス性胃腸炎、細菌性腸炎、便秘症、食事による影響 など\n※脱水に注意が必要です。",
+      diseases:
+        "ウイルス性胃腸炎、細菌性腸炎、便秘症、食事による影響 など\n※脱水に注意が必要です。",
     },
     {
       title: "発疹・湿疹・皮膚のトラブル",
@@ -43,7 +46,8 @@ const GeneralPage = () => {
     {
       title: "ゼーゼーする・息が苦しそう",
       description: "気道が狭くなっている可能性があります。",
-      diseases: "気管支喘息、細気管支炎、気管支炎 など\n※呼吸が苦しそうな場合は早めに受診してください。",
+      diseases:
+        "気管支喘息、細気管支炎、気管支炎 など\n※呼吸が苦しそうな場合は早めに受診してください。",
     },
     {
       title: "耳の痛み・耳だれ",
@@ -57,7 +61,8 @@ const GeneralPage = () => {
     },
     {
       title: "元気がない・食欲がない",
-      description: "はっきりした症状がなくても、体調不良のサインの場合があります。",
+      description:
+        "はっきりした症状がなくても、体調不良のサインの場合があります。",
       diseases: "感染症の初期、脱水、貧血 など",
     },
   ]
@@ -66,19 +71,23 @@ const GeneralPage = () => {
   const inspections = [
     {
       title: "検査名が入ります",
-      description: "説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。",
+      description:
+        "説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。",
     },
     {
       title: "検査名が入ります",
-      description: "説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。",
+      description:
+        "説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。",
     },
     {
       title: "検査名が入ります",
-      description: "説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。",
+      description:
+        "説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。",
     },
     {
       title: "検査名が入ります",
-      description: "説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。",
+      description:
+        "説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。",
     },
   ]
 
@@ -112,7 +121,7 @@ const GeneralPage = () => {
 
         {/* 装飾図形 */}
         <div className="absolute top-10 left-0 w-[200px] lg:w-[400px] h-[200px] lg:h-[400px] bg-[#73c6be]/30 rounded-full -translate-x-1/2 -translate-y-1/2" />
-        <div className="absolute bottom-0 right-0 w-[150px] lg:w-[300px] h-[150px] lg:h-[300px] bg-[#f8ad69]/30 rounded-full translate-x-1/3 translate-y-1/3" />
+        <div className="absolute bottom-0 right-0 w-[150px] lg:w-[300px] h-[150px] lg:h-[300px] bg-accentColor/30 rounded-full translate-x-1/3 translate-y-1/3" />
 
         {/* コンテンツ */}
         <div className="relative z-10 pt-24 lg:pt-32 pb-6 lg:pb-10">
@@ -130,7 +139,7 @@ const GeneralPage = () => {
           {/* タイトル */}
           <div className="lg:max-w-[1200px] mx-auto px-5 lg:px-[120px] mt-10 lg:mt-20 pb-16 lg:pb-24">
             <h1>
-              <span className="block text-[#347694] text-base lg:text-lg font-bold tracking-wide mb-2 font-en">
+              <span className="block text-primaryColor  text-base lg:text-lg font-bold tracking-wide mb-2 font-en">
                 Pediatric
               </span>
               <span className="block text-[#393939] text-3xl lg:text-[64px] font-medium leading-tight">
@@ -146,7 +155,7 @@ const GeneralPage = () => {
         <div className="lg:max-w-[1200px] mx-auto flex flex-col lg:flex-row gap-10 lg:gap-[120px] items-start">
           {/* テキスト */}
           <div className="flex-1">
-            <h2 className="text-[#347694] text-2xl lg:text-[32px] font-bold leading-[1.5] tracking-wide mb-10">
+            <h2 className="text-primaryColor  text-2xl lg:text-[32px] font-bold leading-[1.5] tracking-wide mb-10">
               一般小児外来について
             </h2>
             <div className="text-[#393939] text-base lg:text-lg leading-[2.5] space-y-6">
@@ -189,7 +198,7 @@ const GeneralPage = () => {
             <div className="w-9 h-9 bg-[#347694] rounded-full flex items-center justify-center">
               <span className="text-white text-lg">🔬</span>
             </div>
-            <h2 className="text-[#347694] text-2xl lg:text-[32px] font-bold tracking-wide">
+            <h2 className="text-primaryColor  text-2xl lg:text-[32px] font-bold tracking-wide">
               当院で行える検査
             </h2>
           </div>
@@ -200,7 +209,7 @@ const GeneralPage = () => {
           <div className="space-y-6">
             {inspections.map((item, index) => (
               <div key={index} className="bg-white rounded-[10px] p-6">
-                <h3 className="text-[#347694] text-lg lg:text-xl font-bold mb-2">
+                <h3 className="text-primaryColor  text-lg lg:text-xl font-bold mb-2">
                   {item.title}
                 </h3>
                 <p className="text-[#393939] text-sm lg:text-base leading-[1.7]">
@@ -220,7 +229,7 @@ const GeneralPage = () => {
             <div className="w-9 h-9 bg-[#347694] rounded-full flex items-center justify-center">
               <span className="text-white text-lg">😷</span>
             </div>
-            <h2 className="text-[#347694] text-2xl lg:text-[32px] font-bold tracking-wide">
+            <h2 className="text-primaryColor  text-2xl lg:text-[32px] font-bold tracking-wide">
               主な症状や病気
             </h2>
           </div>
@@ -282,7 +291,7 @@ const GeneralPage = () => {
             <div className="w-9 h-9 bg-[#347694] rounded-full flex items-center justify-center">
               <span className="text-white text-lg">🩺</span>
             </div>
-            <h2 className="text-[#347694] text-2xl lg:text-[32px] font-bold">
+            <h2 className="text-primaryColor  text-2xl lg:text-[32px] font-bold">
               「このような場合は早めに受診を」
             </h2>
           </div>

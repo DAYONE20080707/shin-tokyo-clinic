@@ -37,10 +37,10 @@ const About_01 = () => {
       <section className="w-full lg:max-w-[1200px] mx-auto">
         {/* セクションヘッダー */}
         <div className="mb-16">
-          <p className="font-bold text-lg tracking-[0.03em] text-[#38a1db] font-en">
+          <p className="font-bold text-lg tracking-[0.03em] text-primaryColor font-en">
             Feature
           </p>
-          <h2 className="text-[32px] lg:text-[32px] font-bold leading-[1.5] tracking-[0.05em] text-[#38a1db] mt-2">
+          <h2 className="text-[32px] lg:text-[32px] font-bold leading-[1.5] tracking-[0.05em] text-primaryColor mt-2">
             当院の特徴
           </h2>
         </div>
@@ -48,10 +48,7 @@ const About_01 = () => {
         {/* 特徴カード */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           {features.map((feature, index) => (
-            <div
-              key={index}
-              className="flex flex-col gap-4"
-            >
+            <div key={index} className="flex flex-col gap-4">
               {/* 画像 */}
               <div className="relative w-full h-[250px] rounded-[20px] overflow-hidden">
                 <Image
@@ -65,16 +62,16 @@ const About_01 = () => {
               {/* テキストコンテンツ */}
               <div className="flex flex-col gap-1">
                 {/* 番号 */}
-                <p className="font-bold text-2xl tracking-[0.03em] text-[#347694] font-en">
+                <p className="font-bold text-2xl tracking-[0.03em] text-primaryColor  font-en">
                   {feature.number}
                 </p>
 
                 {/* タイトルと説明 */}
                 <div className="flex flex-col gap-1">
-                  <h3 className="text-xl font-bold leading-[1.7] text-[#347694]">
+                  <h3 className="text-xl font-bold leading-[1.7] text-primaryColor ">
                     {feature.title}
                   </h3>
-                  <p className="text-base leading-[1.7] text-baseColor">
+                  <p className="text-base leading-[1.7] text">
                     {feature.description}
                   </p>
                 </div>

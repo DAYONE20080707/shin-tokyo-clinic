@@ -3,7 +3,6 @@
 import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { CalendarCheck, Ruler, MapPin } from "lucide-react"
 import Menu from "@/components/ui/navigation/Menu"
 import CompanyInfo from "@/components/ui/navigation/CompanyInfo"
 
@@ -37,24 +36,24 @@ const Header_04 = () => {
           <div className="flex gap-1">
             <Link
               href="#"
-              className="bg-[#ffd89b] text-white text-xl font-bold rounded-full px-4 py-2 flex items-center justify-center gap-1 hover:opacity-80 transition-opacity w-[240px]"
+              className="bg-[#ffd89b] text-white text-lg font-bold rounded-full px-4 py-2 flex items-center justify-center gap-2 hover:opacity-80 transition-opacity w-[220px]"
             >
-              <CalendarCheck className="w-6 h-6" strokeWidth={2} />
+              <Image src="/common/navi-icon01.svg" alt="" width={24} height={24} className="w-6 h-6" />
               保険診療予約
             </Link>
             <Link
               href="#"
-              className="bg-[#73c6be] text-white text-xl font-bold rounded-full px-4 py-2 flex items-center justify-center gap-1 hover:opacity-80 transition-opacity w-[240px]"
+              className="bg-[#73c6be] text-white text-lg font-bold rounded-full px-4 py-2 flex items-center justify-center gap-2 hover:opacity-80 transition-opacity w-[220px]"
             >
-              <Ruler className="w-5 h-5" strokeWidth={2} />
+              <Image src="/common/navi-icon02.svg" alt="" width={20} height={20} className="w-5 h-5 scale-y-[-1]" />
               低身長治療予約
             </Link>
             <Link
-              href="/#access"
-              className="bg-[#38a1db] text-white text-sm font-bold rounded-full px-6 py-1 flex items-center justify-center gap-1 hover:opacity-80 transition-opacity w-[150px]"
+              href="tel:0362819234"
+              className="bg-[#F8AD69] text-white text-lg font-bold rounded-full px-4 py-2 flex items-center justify-center gap-2 hover:opacity-80 transition-opacity w-[220px]"
             >
-              <MapPin className="w-4 h-4" strokeWidth={2} />
-              アクセス
+              <Image src="/common/navi-icon03.svg" alt="" width={20} height={20} className="w-5 h-5" />
+              03-6281-9234
             </Link>
           </div>
 
@@ -141,7 +140,7 @@ const Header_04 = () => {
             className="w-full bg-[#ffd89b] text-white text-base font-bold rounded-full py-4 flex items-center justify-center gap-2"
             onClick={toggleMenu}
           >
-            <CalendarCheck className="w-6 h-6" strokeWidth={2} />
+            <Image src="/common/navi-icon01.svg" alt="" width={24} height={24} className="w-6 h-6" />
             保険診療予約
           </Link>
           <Link
@@ -149,16 +148,16 @@ const Header_04 = () => {
             className="w-full bg-[#73c6be] text-white text-base font-bold rounded-full py-4 flex items-center justify-center gap-2"
             onClick={toggleMenu}
           >
-            <Ruler className="w-5 h-5" strokeWidth={2} />
+            <Image src="/common/navi-icon02.svg" alt="" width={20} height={20} className="w-5 h-5 scale-y-[-1]" />
             低身長治療予約
           </Link>
           <Link
-            href="/#access"
-            className="w-full bg-[#38a1db] text-white text-base font-bold rounded-full py-4 flex items-center justify-center gap-2"
+            href="tel:0362819234"
+            className="w-full bg-[#F8AD69] text-white text-base font-bold rounded-full py-4 flex items-center justify-center gap-2"
             onClick={toggleMenu}
           >
-            <MapPin className="w-5 h-5" strokeWidth={2} />
-            アクセス
+            <Image src="/common/navi-icon03.svg" alt="" width={20} height={20} className="w-5 h-5" />
+            03-6281-9234
           </Link>
         </div>
       </div>

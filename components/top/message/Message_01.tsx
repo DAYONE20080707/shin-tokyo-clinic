@@ -15,8 +15,8 @@ const Message_01 = () => {
       <div className="lg:max-w-[1200px] mx-auto">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 items-center">
           {/* 画像 */}
-          <div className="w-full lg:w-[520px] shrink-0">
-            <div className="relative aspect-[520/480] rounded-[20px] overflow-hidden">
+          <div className="w-full lg:w-[380px] shrink-0">
+            <div className="relative aspect-[520/682] rounded-[20px] overflow-hidden">
               <Image
                 src="/images/greeting-img.jpg"
                 alt="院長 松田 健志"

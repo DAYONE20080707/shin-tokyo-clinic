@@ -15,10 +15,12 @@ const HomePage = () => {
     <div>
       <KeyVisual_01 />
       <News_01 />
-      <About_01 />
+
       <Service_01 />
       <Message_01 />
+      <About_01 />
       <Profile_01 />
+
       <Flow_01 />
       <Faq_01 />
       <Access_01 />

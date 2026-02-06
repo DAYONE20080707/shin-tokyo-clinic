@@ -1,7 +1,7 @@
 // components/top/profile/Profile_01.tsx
 "use client"
 
-import { useEffect, useRef, useState, useCallback } from "react"
+import { useRef, useState, useCallback } from "react"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
 
@@ -152,29 +152,37 @@ const Profile_01 = () => {
                   医院の様子
                 </h2>
               </div>
-              <div className="mb-10">
-                <p className="text-xl font-bold text-[#393939] leading-[1.7] mb-4">
-                  テキストが入ります。
-                </p>
-                <p className="text-base font-medium text-[#393939] leading-[1.7]">
-                  メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。メッセージはいります。
-                </p>
+              {/* PCのみボタン表示 */}
+              <div className="hidden lg:block lg:mt-10">
+                <Link
+                  href="/coming-soon"
+                  className="inline-flex items-center justify-between w-[350px] bg-[#f5a623] hover:bg-[#e6991e] transition-colors text-white font-bold text-base rounded-full px-6 py-4"
+                >
+                  <span>詳しく見る</span>
+                  <span className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
+                    <ChevronRight className="w-4 h-4 text-[#f5a623]" />
+                  </span>
+                </Link>
               </div>
-              <Link
-                href="/coming-soon"
-                className="inline-flex items-center justify-between w-full lg:w-[350px] bg-[#f5a623] hover:bg-[#e6991e] transition-colors text-white font-bold text-base rounded-full px-6 py-4"
-              >
-                <span>詳しく見る</span>
-                <span className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
-                  <ChevronRight className="w-4 h-4 text-[#f5a623]" />
-                </span>
-              </Link>
             </div>
 
             {/* 右側：画像スライダー */}
             <div className="mt-10 lg:mt-0 lg:flex-1 -mx-5 lg:mx-0">
               <InfiniteSlider />
             </div>
+          </div>
+
+          {/* SPのみボタン表示（スライダーの下） */}
+          <div className="lg:hidden mt-10">
+            <Link
+              href="/coming-soon"
+              className="inline-flex items-center justify-between w-full bg-[#f5a623] hover:bg-[#e6991e] transition-colors text-white font-bold text-base rounded-full px-6 py-4"
+            >
+              <span>詳しく見る</span>
+              <span className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
+                <ChevronRight className="w-4 h-4 text-[#f5a623]" />
+              </span>
+            </Link>
           </div>
         </div>
       </section>

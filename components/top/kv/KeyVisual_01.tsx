@@ -10,7 +10,7 @@ import FirstViewContent from "@/components/top/kv/FirstViewContent"
 const KeyVisual_01 = () => {
   return (
     <FirstViewContent className="relative">
-      <section className="relative px-5 lg:px-20 pb-10 lg:pb-20 pt-[85px] lg:pt-[160px]">
+      <section className="relative px-5 lg:px-20 pb-10 lg:pb-20 pt-[42px] lg:pt-[80px]">
         {/* 背景画像コンテナ - 角丸 */}
         <div className="relative w-full h-[60vh] lg:h-[80vh] rounded-[40px] lg:rounded-[80px] overflow-hidden">
           {/* 背景画像 - SP */}
@@ -35,14 +35,11 @@ const KeyVisual_01 = () => {
 
           {/* テキストコンテンツ */}
           <div className="absolute left-5 lg:left-24 bottom-10 lg:bottom-20 max-w-[600px]">
-            <h1 className="text-white font-bold text-3xl lg:text-[50px] leading-[1.4] tracking-[0.05em] mb-4">
-              地域のお子様・ご家族の
+            <h1 className="text-white font-bold text-3xl lg:text-[50px] leading-[1.4] tracking-[0.05em]">
+              お子様・ご家族の
               <br />
-              かかりつけ医に
+              成長に寄り添う小児科クリニック
             </h1>
-            <p className="text-white text-sm lg:text-lg leading-[1.6] tracking-[0.05em]">
-              見出しテキストはいります見出しはいります見出しテキストはいります見出しはいります
-            </p>
           </div>
         </div>
       </section>

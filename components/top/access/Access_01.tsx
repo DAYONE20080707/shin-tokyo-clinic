@@ -15,7 +15,7 @@ const scheduleData = [
 
   {
     label: "午後",
-    time: "15:00〜18:00",
+    time: "14:00〜18:00",
     schedule: ["●", "●", "×", "×", "●", "●", "×", "×"],
     type: "normal",
   },

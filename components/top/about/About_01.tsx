@@ -11,22 +11,16 @@ const features = [
   {
     number: "01",
     title: "東京駅八重洲北口徒歩１分",
-    description:
-      "テキスト入ります。テキスト入ります。テキスト入ります。テキスト入ります。テキスト入ります。テキスト入ります。テキスト入ります。テキスト入ります。テキスト入ります。テキスト入ります。",
     image: "/images/feature-img01.jpg",
   },
   {
     number: "02",
-    title: "完全予約制/待ち時間短縮",
-    description:
-      "テキスト入ります。テキスト入ります。テキスト入ります。テキスト入ります。テキスト入ります。テキスト入ります。テキスト入ります。テキスト入ります。テキスト入ります。テキスト入ります。",
+    title: "小児科専門医による診療",
     image: "/images/feature-img02.jpg",
   },
   {
     number: "03",
     title: "保険診療・自由診療対応",
-    description:
-      "テキスト入ります。テキスト入ります。テキスト入ります。テキスト入ります。テキスト入ります。テキスト入ります。テキスト入ります。テキスト入ります。テキスト入ります。テキスト入ります。",
     image: "/images/feature-img03.jpg",
   },
 ]
@@ -66,15 +60,10 @@ const About_01 = () => {
                   {feature.number}
                 </p>
 
-                {/* タイトルと説明 */}
-                <div className="flex flex-col gap-1">
-                  <h3 className="text-xl font-bold leading-[1.7] text-primaryColor ">
-                    {feature.title}
-                  </h3>
-                  <p className="text-base leading-[1.7] text">
-                    {feature.description}
-                  </p>
-                </div>
+                {/* タイトル */}
+                <h3 className="text-xl font-bold leading-[1.7] text-primaryColor ">
+                  {feature.title}
+                </h3>
               </div>
             </div>
           ))}

@@ -17,7 +17,7 @@ const HomePage = () => {
       <News_01 />
 
       <Service_01 />
-      {/* <Message_01 /> */}
+      <Message_01 />
       <About_01 />
       <Profile_01 />
 

@@ -73,9 +73,7 @@ const News_01 = ({ limit = 6 }: NewsProps) => {
           <p className="font-bold text-lg tracking-[0.03em] text-primaryColor font-en">
             News
           </p>
-          <h2 className="text-2xl lg:text-[32px] font-bold leading-[1.5] tracking-[0.05em] text-primaryColor mt-2">
-            病院からの
-            <br className="lg:hidden" />
+          <h2 className="text-[32px] lg:text-[32px] font-bold leading-[1.5] tracking-[0.05em] text-primaryColor mt-2">
             お知らせ
           </h2>
         </div>

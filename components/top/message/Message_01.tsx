@@ -57,9 +57,10 @@ const Message_01 = () => {
               </p>
             </div>
 
-            {/* 署名 */}
+            {/* 署名
             <p className="text-[#393939] text-lg lg:text-[22px] leading-[2.5] tracking-[0.03em] text-right mt-6">
 シン・東京駅こどもの成長クリニック 院長</p>
+            */}
           </div>
         </div>
       </div>

@@ -14,26 +14,26 @@ const flowSteps: FlowStep[] = [
   {
     step: "STEP",
     number: "01",
-    title: "自宅からWeb予約を行う。（デジスマ登録必要）",
+    title: "Web予約を行う。（デジスマ登録必要）",
     description:
       "初診の方でもWeb予約可能です。診察希望時間までに予約を実施してください。",
   },
   {
     step: "STEP",
     number: "02",
-    title: "自宅から事前にWeb問診に回答する",
+    title: "事前にWeb問診に回答する",
     description: [
-      "予約が完了するとWeb問診の入力へ進むことができます。院内滞在時間短縮のため、事前のWeb問診のご協力をお願いします。",
+      "予約が完了するとWeb問診の入力へ進むことができます。院内滞在時間短縮のため、事前のWeb問診のご協力をお願いいたします。",
       "当院ではWeb問診を終えている方を優先してご案内するため、Web問診を行っていない場合は診察の順番が前後する可能性がございます。",
     ],
   },
   {
     step: "STEP",
     number: "03",
-    title: "病院へ受診",
+    title: "当院受診",
     description: [
-      "予約の時間に到着できるようにお越しください。10分以上遅れる場合はお電話でご連絡ください。",
-      "エレベーターで9階まで上がり、降りて右側に入口がございます。",
+      "予約の時間に到着できるようにお越しください。10分以上遅れる場合はお電話ください。",
+      "エレベーターで9階まで上がり、降りて右手に入口がございます。",
     ],
   },
   {
@@ -48,17 +48,19 @@ const flowSteps: FlowStep[] = [
   {
     step: "STEP",
     number: "05",
-    title: "診察",
-    description:
-      "問診表を参考に医師が診察を行います。必要時検査等を実施します。",
+    title: "診察・検査",
+    description: [
+      "問診票をもとに、医師による診察を実施します。",
+      "必要に応じて、レントゲン検査や血液検査なども実施いたします。",
+    ],
   },
   {
     step: "STEP",
     number: "06",
     title: "お会計",
     description: [
-      "診察が終わったら、受付でお会計をし処方箋をお渡しします。",
-      "デジスマでクレジットカードの登録を事前にしていただきますとクリニックでの会計は発生いたしません。",
+      "診察が終わりましたら、会計をし処方箋をお渡しさせていただきます。",
+      "デジスマアプリで事前にクレジットカードを登録することで、自動でキャッシュレス決済をしてそのまま帰宅することができます。",
     ],
   },
 ]
@@ -82,32 +84,51 @@ const Flow_01 = ({ className = "" }) => {
           {flowSteps.map((step, index) => (
             <div key={index}>
               {/* ステップカード */}
-              <div className="bg-[#f3fbfa] rounded-[10px] p-6 flex flex-col lg:flex-row gap-4 lg:gap-4 items-start lg:items-center">
-                {/* ステップ番号 */}
-                <div className="bg-[#73c6be] rounded-[5px] w-[88px] h-[88px] flex flex-col items-center justify-center flex-shrink-0">
-                  <span className="text-white font-bold text-sm tracking-[0.03em] font-en">
-                    {step.step}
-                  </span>
-                  <span className="text-white font-bold text-2xl tracking-[0.03em] font-en">
-                    {step.number}
-                  </span>
+              <div className="bg-[#f3fbfa] rounded-[10px] p-4 lg:p-6">
+                {/* SP: ボックス+見出し横並び / PC: ボックス+コンテンツ横並び */}
+                <div className="flex flex-row gap-3 lg:gap-4 items-center">
+                  {/* ステップ番号 */}
+                  <div className="bg-[#73c6be] rounded-[5px] w-[56px] h-[56px] lg:w-[88px] lg:h-[88px] flex flex-col items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-xs lg:text-sm tracking-[0.03em] font-en">
+                      {step.step}
+                    </span>
+                    <span className="text-white font-bold text-lg lg:text-2xl tracking-[0.03em] font-en">
+                      {step.number}
+                    </span>
+                  </div>
+
+                  {/* SP: 見出しのみ / PC: 見出し+本文 */}
+                  <div className="flex-1">
+                    <h3 className="text-base lg:text-xl font-bold text-primaryColor leading-[1.4] lg:mb-1">
+                      {step.title}
+                    </h3>
+                    {/* PC: 本文 */}
+                    <div className="hidden lg:block">
+                      {Array.isArray(step.description) ? (
+                        <div className="text-[15px] font-medium text-[#393939] leading-[1.5]">
+                          {step.description.map((text, i) => (
+                            <p key={i}>{text}</p>
+                          ))}
+                        </div>
+                      ) : (
+                        <p className="text-[15px] font-medium text-[#393939] leading-[1.5]">
+                          {step.description}
+                        </p>
+                      )}
+                    </div>
+                  </div>
                 </div>
 
-                {/* コンテンツ */}
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold text-primaryColor  leading-[1.7] mb-2">
-                    {step.title}
-                  </h3>
+                {/* SP: 本文（ボックス+見出しの下） */}
+                <div className="lg:hidden mt-3">
                   {Array.isArray(step.description) ? (
-                    <div className="text-base font-medium text-[#393939] leading-[1.7]">
+                    <div className="text-sm font-medium text-[#393939] leading-[1.5]">
                       {step.description.map((text, i) => (
-                        <p key={i} className={i > 0 ? "mt-0" : ""}>
-                          {text}
-                        </p>
+                        <p key={i}>{text}</p>
                       ))}
                     </div>
                   ) : (
-                    <p className="text-base font-medium text-[#393939] leading-[1.7]">
+                    <p className="text-sm font-medium text-[#393939] leading-[1.5]">
                       {step.description}
                     </p>
                   )}

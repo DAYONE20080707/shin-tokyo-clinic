@@ -1,7 +1,7 @@
 import "./globals.css"
 import type { Metadata, Viewport } from "next"
 import ToastProvider from "@/components/providers/ToastProvider"
-import { Zen_Kaku_Gothic_New, Lato } from "next/font/google"
+import { Zen_Kaku_Gothic_New, Poppins } from "next/font/google"
 import { GoogleTagManager } from "@/components/ui/module/GoogleTagManager"
 
 // Zen Kaku Gothic New フォントの設定
@@ -12,8 +12,8 @@ const zenKakuGothicNew = Zen_Kaku_Gothic_New({
 })
 
 // 英字 フォントの設定
-const lato = Lato({
-  weight: ["300", "400", "700", "900"],
+const poppins = Poppins({
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
   display: "swap",
   variable: "--font-en",
@@ -46,7 +46,7 @@ interface RootLayoutProps {
 const RootLayout = async ({ children }: RootLayoutProps) => {
   return (
     <html lang="ja">
-      <body className={`${zenKakuGothicNew.className} text-baseColor ${lato.variable}`}>
+      <body className={`${zenKakuGothicNew.className} text-baseColor ${poppins.variable}`}>
         <GoogleTagManager gtmId="GTM-XYZ" />
         <ToastProvider />
         {children}

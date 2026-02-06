@@ -1,9 +1,5 @@
-import Header_01 from "@/components/header/Header_01"
-import Header_02 from "@/components/header/Header_02"
-import Header_03 from "@/components/header/Header_03"
 import Header_04 from "@/components/header/Header_04"
 import Footer1 from "@/components/footer/Footer_01"
-import Footer2 from "@/components/footer/Footer_02"
 import KeyVisual_01 from "@/components/top/kv/KeyVisual_01"
 import About_01 from "@/components/top/about/About_01"
 import Message_01 from "@/components/top/message/Message_01"
@@ -97,15 +93,9 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
           { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
-          Header_01: <Header_01 />,
-          Header_02: <Header_02 />,
-          Header_03: <Header_03 />,
           Header_04: <Header_04 />,
         },
       },
@@ -220,11 +210,9 @@ export const componentsConfig: ComponentsConfig = {
         title: "フッター",
         options: [
           { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,
-          Footer2: <Footer2 />,
         },
       },
     },
@@ -234,15 +222,9 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
           { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
-          Header_01: <Header_01 />,
-          Header_02: <Header_02 />,
-          Header_03: <Header_03 />,
           Header_04: <Header_04 />,
         },
       },
@@ -278,11 +260,9 @@ export const componentsConfig: ComponentsConfig = {
         title: "フッター",
         options: [
           { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,
-          Footer2: <Footer2 />,
         },
       },
     },
@@ -292,15 +272,9 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
           { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
-          Header_01: <Header_01 />,
-          Header_02: <Header_02 />,
-          Header_03: <Header_03 />,
           Header_04: <Header_04 />,
         },
       },
@@ -376,11 +350,9 @@ export const componentsConfig: ComponentsConfig = {
         title: "フッター",
         options: [
           { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,
-          Footer2: <Footer2 />,
         },
       },
     },
@@ -390,15 +362,9 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
           { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
-          Header_01: <Header_01 />,
-          Header_02: <Header_02 />,
-          Header_03: <Header_03 />,
           Header_04: <Header_04 />,
         },
       },
@@ -460,11 +426,9 @@ export const componentsConfig: ComponentsConfig = {
         title: "フッター",
         options: [
           { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,
-          Footer2: <Footer2 />,
         },
       },
     },
@@ -474,15 +438,9 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
           { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
-          Header_01: <Header_01 />,
-          Header_02: <Header_02 />,
-          Header_03: <Header_03 />,
           Header_04: <Header_04 />,
         },
       },
@@ -531,11 +489,9 @@ export const componentsConfig: ComponentsConfig = {
         title: "フッター",
         options: [
           { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,
-          Footer2: <Footer2 />,
         },
       },
     },
@@ -545,15 +501,9 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
           { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
-          Header_01: <Header_01 />,
-          Header_02: <Header_02 />,
-          Header_03: <Header_03 />,
           Header_04: <Header_04 />,
         },
       },
@@ -598,11 +548,9 @@ export const componentsConfig: ComponentsConfig = {
         title: "フッター",
         options: [
           { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,
-          Footer2: <Footer2 />,
         },
       },
     },
@@ -612,15 +560,9 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
           { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
-          Header_01: <Header_01 />,
-          Header_02: <Header_02 />,
-          Header_03: <Header_03 />,
           Header_04: <Header_04 />,
         },
       },
@@ -727,11 +669,9 @@ export const componentsConfig: ComponentsConfig = {
         title: "フッター",
         options: [
           { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,
-          Footer2: <Footer2 />,
         },
       },
     },
@@ -741,15 +681,9 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
           { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
-          Header_01: <Header_01 />,
-          Header_02: <Header_02 />,
-          Header_03: <Header_03 />,
           Header_04: <Header_04 />,
         },
       },
@@ -779,11 +713,9 @@ export const componentsConfig: ComponentsConfig = {
         title: "フッター",
         options: [
           { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,
-          Footer2: <Footer2 />,
         },
       },
     },
@@ -793,15 +725,9 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
           { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
-          Header_01: <Header_01 />,
-          Header_02: <Header_02 />,
-          Header_03: <Header_03 />,
           Header_04: <Header_04 />,
         },
       },
@@ -831,11 +757,9 @@ export const componentsConfig: ComponentsConfig = {
         title: "フッター",
         options: [
           { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,
-          Footer2: <Footer2 />,
         },
       },
     },
@@ -845,15 +769,9 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
           { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
-          Header_01: <Header_01 />,
-          Header_02: <Header_02 />,
-          Header_03: <Header_03 />,
           Header_04: <Header_04 />,
         },
       },
@@ -870,11 +788,9 @@ export const componentsConfig: ComponentsConfig = {
         title: "フッター",
         options: [
           { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,
-          Footer2: <Footer2 />,
         },
       },
     },
@@ -884,15 +800,9 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
           { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
-          Header_01: <Header_01 />,
-          Header_02: <Header_02 />,
-          Header_03: <Header_03 />,
           Header_04: <Header_04 />,
         },
       },
@@ -928,11 +838,9 @@ export const componentsConfig: ComponentsConfig = {
         title: "フッター",
         options: [
           { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,
-          Footer2: <Footer2 />,
         },
       },
     },
@@ -942,15 +850,9 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
           { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
-          Header_01: <Header_01 />,
-          Header_02: <Header_02 />,
-          Header_03: <Header_03 />,
           Header_04: <Header_04 />,
         },
       },
@@ -986,11 +888,9 @@ export const componentsConfig: ComponentsConfig = {
         title: "フッター",
         options: [
           { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,
-          Footer2: <Footer2 />,
         },
       },
     },
@@ -1000,15 +900,9 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
           { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
-          Header_01: <Header_01 />,
-          Header_02: <Header_02 />,
-          Header_03: <Header_03 />,
           Header_04: <Header_04 />,
         },
       },
@@ -1025,11 +919,9 @@ export const componentsConfig: ComponentsConfig = {
         title: "フッター",
         options: [
           { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,
-          Footer2: <Footer2 />,
         },
       },
     },
@@ -1039,15 +931,9 @@ export const componentsConfig: ComponentsConfig = {
       header: {
         title: "ヘッダー",
         options: [
-          { id: "Header_01", src: "/admin/step-01.png", alt: "Header_01" },
-          { id: "Header_02", src: "/admin/step-02.png", alt: "Header_02" },
-          { id: "Header_03", src: "/admin/step-03.png", alt: "Header_03" },
           { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
         ],
         components: {
-          Header_01: <Header_01 />,
-          Header_02: <Header_02 />,
-          Header_03: <Header_03 />,
           Header_04: <Header_04 />,
         },
       },
@@ -1064,11 +950,9 @@ export const componentsConfig: ComponentsConfig = {
         title: "フッター",
         options: [
           { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
-          { id: "Footer2", src: "/admin/step-02.png", alt: "Footer2" },
         ],
         components: {
           Footer1: <Footer1 />,
-          Footer2: <Footer2 />,
         },
       },
     },

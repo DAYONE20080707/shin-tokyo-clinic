@@ -61,7 +61,7 @@ const Footer_01 = () => {
             </nav>
 
             {/* ボタン */}
-            <div className="flex flex-col lg:flex-row gap-2">
+            <div className="flex flex-col lg:flex-row gap-2 w-[80%] mx-auto lg:w-auto lg:mx-0">
               <Link
                 href="/coming-soon"
                 className="flex items-center justify-center gap-1 px-6 lg:px-10 py-4 bg-[#ffd89b] rounded-[30px] w-full lg:w-[250px] hover:opacity-90 transition-opacity"
@@ -97,7 +97,7 @@ const Footer_01 = () => {
         <div className="w-full h-px bg-[#d9d9d9] my-4" />
 
         {/* コピーライト */}
-        <p className="text-base font-medium text-[#393939] text-center leading-[1.6]">
+        <p className="text-xs lg:text-base font-medium text-[#393939] text-center leading-[1.6]">
           Copyright&copy;2026シン・東京駅こどもの成長クリニック
         </p>
       </div>

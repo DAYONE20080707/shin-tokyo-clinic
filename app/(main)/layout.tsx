@@ -19,7 +19,7 @@ const RightSidebar = () => {
           className="w-[80px] h-[220px] bg-[#ffd89b] rounded-l-[10px] flex flex-col items-center justify-center text-white hover:opacity-90 transition-opacity py-[10px] px-[10px]"
         >
           <Image
-            src="/common/sidebar-icon01.svg"
+            src="/images/sidebar-icon01.svg"
             alt=""
             width={24}
             height={24}
@@ -35,7 +35,7 @@ const RightSidebar = () => {
           className="w-[80px] h-[220px] bg-[#73c6be] rounded-l-[10px] flex flex-col items-center justify-center text-white hover:opacity-90 transition-opacity py-[10px] px-[10px]"
         >
           <Image
-            src="/common/sidebar-icon02.svg"
+            src="/images/sidebar-icon02.svg"
             alt=""
             width={20}
             height={24}
@@ -51,7 +51,7 @@ const RightSidebar = () => {
           className="w-[80px] h-[220px] bg-accentColor rounded-l-[10px] flex flex-col items-center justify-center text-white hover:opacity-90 transition-opacity py-[10px] px-[10px]"
         >
           <Image
-            src="/common/sidebar-icon03.svg"
+            src="/images/sidebar-icon03.svg"
             alt=""
             width={20}
             height={20}

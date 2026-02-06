@@ -25,7 +25,7 @@ const Purpose_01 = () => {
         </ul>
         <div className="w-full h-[300px] lg:h-[523px] relative rounded overflow-hidden">
           <Image
-            src="/about/about-purpose.jpg"
+            src="/images/about-purpose.jpg"
             alt="message"
             fill
             className="object-cover"

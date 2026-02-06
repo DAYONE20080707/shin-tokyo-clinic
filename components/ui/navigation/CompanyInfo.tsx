@@ -4,7 +4,7 @@ export const CompanyInfo = [
   {
     companyName: (type: "primary" | "secondary" | "tertiary") => (
       <Image
-        src="/common/logo01.png"
+        src="/images/logo01.png"
         alt="東京駅こどもの成長クリニック"
         width={240}
         height={70}

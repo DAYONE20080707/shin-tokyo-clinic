@@ -12,7 +12,7 @@ const Cta_02 = () => {
       <PageContent className="bg-accentColor">
         <section className="lg:max-w-[1200px] mx-auto grid grid-cols-2 gap-x-20">
           <Image
-            src="/cta/background.png"
+            src="/images/background.png"
             alt="ctaイメージ画像"
             width={500}
             height={363}

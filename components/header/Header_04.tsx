@@ -22,7 +22,7 @@ const Header_04 = () => {
         {/* ロゴ */}
         <Link href="/" className="w-[200px] lg:w-[350px]">
           <Image
-            src="/common/logo01.png"
+            src="/images/logo01.png"
             alt="シン・東京駅こどもの成長クリニック"
             width={350}
             height={70}
@@ -38,21 +38,21 @@ const Header_04 = () => {
               href="/coming-soon"
               className="bg-[#ffd89b] text-white text-lg font-bold rounded-full px-4 py-2 flex items-center justify-center gap-2 hover:opacity-80 transition-opacity w-[220px]"
             >
-              <Image src="/common/navi-icon01.svg" alt="" width={24} height={24} className="w-6 h-6" />
+              <Image src="/images/navi-icon01.svg" alt="" width={24} height={24} className="w-6 h-6" />
               保険診療予約
             </Link>
             <Link
               href="/coming-soon"
               className="bg-[#73c6be] text-white text-lg font-bold rounded-full px-4 py-2 flex items-center justify-center gap-2 hover:opacity-80 transition-opacity w-[220px]"
             >
-              <Image src="/common/navi-icon02.svg" alt="" width={20} height={20} className="w-5 h-5 scale-y-[-1]" />
+              <Image src="/images/navi-icon02.svg" alt="" width={20} height={20} className="w-5 h-5 scale-y-[-1]" />
               低身長治療予約
             </Link>
             <Link
               href="tel:0362819234"
               className="bg-accentColor text-white text-lg font-bold rounded-full px-4 py-2 flex items-center justify-center gap-2 hover:opacity-80 transition-opacity w-[220px]"
             >
-              <Image src="/common/sidebar-icon03.svg" alt="" width={20} height={20} className="w-5 h-5" />
+              <Image src="/images/sidebar-icon03.svg" alt="" width={20} height={20} className="w-5 h-5" />
               03-6281-9234
             </Link>
           </div>
@@ -140,7 +140,7 @@ const Header_04 = () => {
             className="w-full bg-[#ffd89b] text-white text-base font-bold rounded-full py-4 flex items-center justify-center gap-2"
             onClick={toggleMenu}
           >
-            <Image src="/common/navi-icon01.svg" alt="" width={24} height={24} className="w-6 h-6" />
+            <Image src="/images/navi-icon01.svg" alt="" width={24} height={24} className="w-6 h-6" />
             保険診療予約
           </Link>
           <Link
@@ -148,7 +148,7 @@ const Header_04 = () => {
             className="w-full bg-[#73c6be] text-white text-base font-bold rounded-full py-4 flex items-center justify-center gap-2"
             onClick={toggleMenu}
           >
-            <Image src="/common/navi-icon02.svg" alt="" width={20} height={20} className="w-5 h-5 scale-y-[-1]" />
+            <Image src="/images/navi-icon02.svg" alt="" width={20} height={20} className="w-5 h-5 scale-y-[-1]" />
             低身長治療予約
           </Link>
           <Link
@@ -156,7 +156,7 @@ const Header_04 = () => {
             className="w-full bg-accentColor text-white text-base font-bold rounded-full py-4 flex items-center justify-center gap-2"
             onClick={toggleMenu}
           >
-            <Image src="/common/sidebar-icon03.svg" alt="" width={20} height={20} className="w-5 h-5" />
+            <Image src="/images/sidebar-icon03.svg" alt="" width={20} height={20} className="w-5 h-5" />
             03-6281-9234
           </Link>
         </div>

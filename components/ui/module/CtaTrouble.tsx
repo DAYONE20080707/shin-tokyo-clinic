@@ -24,7 +24,7 @@ const CtaTrouble = () => {
         <ul className="bg-white text-black flex justify-center  items-center relative lg:w-[558px] mx-auto my-4 rounded-full py-1 lg:py-4">
           <li>
             <Image
-              src="/common/tel.svg"
+              src="/images/tel.svg"
               alt="電話アイコン"
               width={40}
               height={40}
@@ -36,7 +36,7 @@ const CtaTrouble = () => {
           </li>
           <li>
             <Image
-              src="/common/trouble_cta.png"
+              src="/images/trouble_cta.png"
               alt="トラブルにあってしまったらのイメージアイコン"
               width={150}
               height={150}

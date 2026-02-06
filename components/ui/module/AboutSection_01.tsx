@@ -59,7 +59,7 @@ const AboutSection_01 = ({
       </div>
       <section className="lg:w-full h-[250px] lg:h-[480px] mx-auto mt-10 lg:mt-[120px]  flex justify-center relative ">
         <Image
-          src="/top/message.png"
+          src="/images/message.png"
           alt="message"
           fill
           className="object-cover rounded-t-[40px]"

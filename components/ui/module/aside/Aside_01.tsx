@@ -12,7 +12,7 @@ const Aside_01 = () => {
       <PageContent className="bg-white px-0 pt-0">
         <section className="lg:max-w-[1200px] py-10 lg:py-16 mx-auto relative overflow-hidden flex flex-col items-center text-white px-4">
           <Image
-            src="/common/aside.png"
+            src="/images/aside.png"
             alt=""
             fill
             className="object-cover -z-10"

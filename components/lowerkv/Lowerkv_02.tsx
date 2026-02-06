@@ -7,7 +7,7 @@ const Lowerkv_02 = () => {
   return (
     <div className="h-[200px] lg:h-[400px] relative overflow-hidden">
       <Image
-        src="/common/lower-kv-01.jpg"
+        src="/images/lower-kv-01.jpg"
         alt=""
         fill
         className="object-cover"

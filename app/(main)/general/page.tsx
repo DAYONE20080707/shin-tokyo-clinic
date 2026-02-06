@@ -180,7 +180,7 @@ const GeneralPage = () => {
           <div className="flex-1 w-full">
             <div className="relative aspect-[500/700] rounded-[40px] overflow-hidden">
               <Image
-                src="/common/lower-kv-02.jpg"
+                src="/images/lower-kv-02.jpg"
                 alt="小児外来イメージ"
                 fill
                 className="object-cover"

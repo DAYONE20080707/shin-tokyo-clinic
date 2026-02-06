@@ -9,14 +9,14 @@ const scheduleData = [
   {
     label: "午前",
     time: "9:00 〜13:00",
-    schedule: ["●", "×", "×", "●", "●", "●", "×", "×"],
+    schedule: ["●", "●", "×", "●", "●", "●", "×", "×"],
     type: "normal",
   },
 
   {
     label: "午後",
     time: "14:00〜18:00",
-    schedule: ["●", "●", "×", "×", "●", "●", "×", "×"],
+    schedule: ["●", "●", "×", "●", "●", "●", "×", "×"],
     type: "normal",
   },
 ]
@@ -94,14 +94,11 @@ const Access_01 = () => {
                 {/* 休診日・注意事項 */}
                 <div className="py-4 border-b border-[#666]">
                   <p className="text-base font-medium text-[#393939] leading-[1.6] font-zenKaku">
-                    休診日：水曜・木曜・日曜・祝日
+                    休診日：水曜・日曜・祝日
                   </p>
                   <div className="text-xs text-[#393939] leading-[1.4] mt-1 space-y-0.5 font-zenKaku">
                     <p>
                       ※最終受付は、午前・午後それぞれの診療時間終了30分前までとなります。
-                    </p>
-                    <p>
-                      ※予防接種の最終受付は診察終了の１時間前までとなります。
                     </p>
 
                   </div>

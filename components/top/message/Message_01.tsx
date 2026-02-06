@@ -38,7 +38,7 @@ const Message_01 = () => {
             </div>
 
             {/* 本文 */}
-            <div className="text-[#393939] text-sm lg:text-base leading-[2.5] tracking-[0.03em] space-y-4">
+            <div className="text-[#393939] text-sm lg:text-base leading-[1.8] tracking-[0.03em] space-y-4">
               <p>
                 当院は2026年2月に「シン・東京駅こどもの成長クリニック」をオープンしました。
               </p>

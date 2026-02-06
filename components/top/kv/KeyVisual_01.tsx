@@ -16,15 +16,15 @@ const KeyVisual_01 = () => {
           {/* 背景画像 - SP */}
           <Image
             src="/images/sp-mv-img.jpg"
-            alt="地域のお子様・ご家族のかかりつけ医に"
+            alt="お子様の成長に寄り添う小児科クリニック"
             fill
             priority
             className="object-cover object-center lg:hidden"
           />
           {/* 背景画像 - PC */}
           <Image
-            src="/images/mv-img.jpg"
-            alt="地域のお子様・ご家族のかかりつけ医に"
+            src="/images/mv-img02.jpg"
+            alt="お子様の成長に寄り添う小児科クリニック"
             fill
             priority
             className="object-cover object-center hidden lg:block"
@@ -36,7 +36,7 @@ const KeyVisual_01 = () => {
           {/* テキストコンテンツ */}
           <div className="absolute left-5 lg:left-24 bottom-10 lg:bottom-20 max-w-[600px]">
             <h1 className="text-white font-bold text-3xl lg:text-[50px] leading-[1.4] tracking-[0.05em]">
-              お子様・ご家族の
+              お子様の
               <br />
               成長に寄り添う小児科クリニック
             </h1>

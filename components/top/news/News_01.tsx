@@ -82,10 +82,9 @@ const News_01 = ({ limit = 6 }: NewsProps) => {
         <div className="bg-white rounded-[20px] lg:rounded-[40px] p-6 lg:p-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-x-20">
             {contents.map((post) => (
-              <Link
+              <div
                 key={post.id}
-                href="/coming-soon"
-                className="flex gap-4 py-6 border-b border-primaryColor hover:opacity-80 transition-opacity"
+                className="flex gap-4 py-6 border-b border-primaryColor"
               >
                 {/* サムネイル */}
                 <div className="relative w-[120px] lg:w-[150px] h-[80px] lg:h-[100px] flex-shrink-0 rounded-[10px] overflow-hidden">
@@ -126,7 +125,7 @@ const News_01 = ({ limit = 6 }: NewsProps) => {
                     )}
                   </div>
                 </div>
-              </Link>
+              </div>
             ))}
           </div>
         </div>

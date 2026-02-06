@@ -35,14 +35,14 @@ const Header_04 = () => {
           {/* 上部ボタン */}
           <div className="flex gap-1">
             <Link
-              href="#"
+              href="/coming-soon"
               className="bg-[#ffd89b] text-white text-lg font-bold rounded-full px-4 py-2 flex items-center justify-center gap-2 hover:opacity-80 transition-opacity w-[220px]"
             >
               <Image src="/common/navi-icon01.svg" alt="" width={24} height={24} className="w-6 h-6" />
               保険診療予約
             </Link>
             <Link
-              href="#"
+              href="/coming-soon"
               className="bg-[#73c6be] text-white text-lg font-bold rounded-full px-4 py-2 flex items-center justify-center gap-2 hover:opacity-80 transition-opacity w-[220px]"
             >
               <Image src="/common/navi-icon02.svg" alt="" width={20} height={20} className="w-5 h-5 scale-y-[-1]" />
@@ -136,7 +136,7 @@ const Header_04 = () => {
         {/* ボタン */}
         <div className="w-[80%] lg:w-full mx-auto flex flex-col items-center gap-3 mt-8">
           <Link
-            href="#"
+            href="/coming-soon"
             className="w-full bg-[#ffd89b] text-white text-base font-bold rounded-full py-4 flex items-center justify-center gap-2"
             onClick={toggleMenu}
           >
@@ -144,7 +144,7 @@ const Header_04 = () => {
             保険診療予約
           </Link>
           <Link
-            href="#"
+            href="/coming-soon"
             className="w-full bg-[#73c6be] text-white text-base font-bold rounded-full py-4 flex items-center justify-center gap-2"
             onClick={toggleMenu}
           >

@@ -15,7 +15,7 @@ const RightSidebar = () => {
       <div className="fixed right-0 top-[200px] z-50 hidden lg:flex flex-col gap-4">
         {/* 保険診療予約 */}
         <Link
-          href="#"
+          href="/coming-soon"
           className="w-[80px] h-[220px] bg-[#ffd89b] rounded-l-[10px] flex flex-col items-center justify-center text-white hover:opacity-90 transition-opacity py-[10px] px-[10px]"
         >
           <Image
@@ -31,7 +31,7 @@ const RightSidebar = () => {
         </Link>
         {/* 低身長治療予約 */}
         <Link
-          href="#"
+          href="/coming-soon"
           className="w-[80px] h-[220px] bg-[#73c6be] rounded-l-[10px] flex flex-col items-center justify-center text-white hover:opacity-90 transition-opacity py-[10px] px-[10px]"
         >
           <Image
@@ -66,13 +66,13 @@ const RightSidebar = () => {
       {/* SP: 画面最下部固定バー */}
       <div className="fixed bottom-0 left-0 w-full z-50 flex lg:hidden">
         <Link
-          href="#"
+          href="/coming-soon"
           className="flex-1 bg-[#ffd89b] flex items-center justify-center py-3 text-white hover:opacity-90 transition-opacity"
         >
           <span className="text-sm font-bold">保険診療予約</span>
         </Link>
         <Link
-          href="#"
+          href="/coming-soon"
           className="flex-1 bg-[#73c6be] flex items-center justify-center py-3 text-white hover:opacity-90 transition-opacity"
         >
           <span className="text-sm font-bold">低身長治療予約</span>

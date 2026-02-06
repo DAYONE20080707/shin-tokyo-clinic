@@ -10,7 +10,7 @@ import FirstViewContent from "@/components/top/kv/FirstViewContent"
 const KeyVisual_01 = () => {
   return (
     <FirstViewContent className="relative">
-      <section className="relative px-5 lg:px-20 pb-10 lg:pb-20 pt-[42px] lg:pt-[80px]">
+      <section className="relative px-5 lg:px-20 pb-10 lg:pb-20 pt-[100px] lg:pt-[140px]">
         {/* 背景画像コンテナ - 角丸 */}
         <div className="relative w-full h-[60vh] lg:h-[80vh] rounded-[40px] lg:rounded-[80px] overflow-hidden">
           {/* 背景画像 - SP */}

@@ -34,9 +34,9 @@ const KeyVisual_01 = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20" />
 
           {/* テキストコンテンツ */}
-          <div className="absolute left-5 lg:left-24 bottom-10 lg:bottom-20 max-w-[600px]">
-            <h1 className="text-white font-bold text-3xl lg:text-[50px] leading-[1.4] tracking-[0.05em]">
-              お子様の 成長に寄り添う小児科クリニック
+          <div className="absolute left-5 lg:left-24 bottom-20 lg:bottom-36 max-w-[600px]">
+            <h1 className="text-white font-bold text-3xl lg:text-[50px] leading-[1.4] tracking-[0.05em] whitespace-nowrap">
+              お子様の成長に寄り添う小児科クリニック
             </h1>
           </div>
         </div>

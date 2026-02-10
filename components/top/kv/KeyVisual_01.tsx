@@ -35,9 +35,9 @@ const KeyVisual_01 = () => {
 
           {/* テキストコンテンツ */}
           <div className="absolute left-5 lg:left-24 bottom-20 lg:bottom-36 max-w-[600px]">
-            <h1 className="text-white font-bold text-[18px] lg:text-[50px] leading-[1.4] tracking-[0.05em] whitespace-nowrap">
-              お子様の<br />
-              成長に寄り添う小児科クリニック
+            <h1 className="text-white font-bold text-[22px] lg:text-[50px] leading-[1.4] tracking-[0.05em] whitespace-nowrap">
+              お子様の成長に寄り添う<br />
+              小児科クリニック
             </h1>
           </div>
         </div>

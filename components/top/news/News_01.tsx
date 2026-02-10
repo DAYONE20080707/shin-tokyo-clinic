@@ -45,26 +45,6 @@ const News_01 = ({ limit = 6 }: NewsProps) => {
     }
   }, [limit])
 
-  if (loading) {
-    return (
-      <section className="bg-[#f3fbfa] py-16 lg:py-[120px] px-4 lg:px-5">
-        <div className="lg:max-w-[1200px] mx-auto">
-          <p className="text-center">Loading...</p>
-        </div>
-      </section>
-    )
-  }
-
-  if (!contents || contents.length === 0) {
-    return (
-      <section className="bg-[#f3fbfa] py-16 lg:py-[120px] px-4 lg:px-5">
-        <div className="lg:max-w-[1200px] mx-auto">
-          <p className="text-center">お知らせはありません</p>
-        </div>
-      </section>
-    )
-  }
-
   return (
     <section id="news" className="bg-[#f3fbfa] py-16 lg:py-[120px] px-4 lg:px-5">
       <div className="lg:max-w-[1200px] mx-auto">
@@ -79,6 +59,7 @@ const News_01 = ({ limit = 6 }: NewsProps) => {
         </div>
 
         {/* ニュースカード */}
+        {!loading && contents.length > 0 && (
         <div className="bg-white rounded-[20px] lg:rounded-[40px] p-6 lg:p-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-x-20">
             {contents.map((post) => (
@@ -129,6 +110,7 @@ const News_01 = ({ limit = 6 }: NewsProps) => {
             ))}
           </div>
         </div>
+        )}
       </div>
     </section>
   )

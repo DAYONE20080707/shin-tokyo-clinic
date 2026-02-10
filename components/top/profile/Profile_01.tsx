@@ -139,7 +139,7 @@ const Profile_01 = () => {
         }
       `}</style>
 
-      <section className="bg-[#f3fbfa] py-16 lg:py-24 overflow-hidden">
+      <section id="facility" className="bg-[#f3fbfa] py-16 lg:py-24 overflow-hidden">
         <div className="lg:max-w-[1560px] mx-auto px-5 lg:px-0 lg:pl-[calc((100%-1200px)/2)]">
           <div className="flex flex-col lg:flex-row lg:gap-[120px] lg:items-start">
             {/* 左側：テキストコンテンツ */}

@@ -66,7 +66,7 @@ const News_01 = ({ limit = 6 }: NewsProps) => {
   }
 
   return (
-    <section className="bg-[#f3fbfa] py-16 lg:py-[120px] px-4 lg:px-5">
+    <section id="news" className="bg-[#f3fbfa] py-16 lg:py-[120px] px-4 lg:px-5">
       <div className="lg:max-w-[1200px] mx-auto">
         {/* セクションヘッダー */}
         <div className="mb-10 lg:mb-16">

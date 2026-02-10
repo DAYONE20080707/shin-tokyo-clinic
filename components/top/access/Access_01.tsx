@@ -25,7 +25,7 @@ const days = ["月", "火", "水", "木", "金", "土", "日", "祝"]
 
 const Access_01 = () => {
   return (
-    <SectionContent className="bg-[#73c6be]">
+    <SectionContent id="access" className="bg-[#73c6be]">
       <section className="lg:max-w-[1200px] mx-auto">
         <div className="bg-white rounded-[40px] p-6 lg:p-16 flex flex-col lg:flex-row gap-10 lg:gap-20">
           {/* 左側: 情報 */}

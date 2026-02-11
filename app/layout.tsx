@@ -47,7 +47,7 @@ const RootLayout = async ({ children }: RootLayoutProps) => {
   return (
     <html lang="ja">
       <body className={`${zenKakuGothicNew.className} text-baseColor ${poppins.variable}`}>
-        <GoogleTagManager gtmId="GTM-XYZ" />
+        <GoogleTagManager gtmId="GTM-5S84PLS6" />
         <ToastProvider />
         {children}
       </body>

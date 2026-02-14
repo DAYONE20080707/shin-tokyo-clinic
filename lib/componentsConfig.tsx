@@ -5,7 +5,6 @@ import About_01 from "@/components/top/about/About_01"
 import Message_01 from "@/components/top/message/Message_01"
 import Service_01 from "@/components/top/service/Service_01"
 import News_01 from "@/components/top/news/News_01"
-import Plan_01 from "@/components/top/plan/Plan_01"
 import Faq_01 from "@/components/top/faq/Faq_01"
 import Profile_01 from "@/components/top/profile/Profile_01"
 import Flow_01 from "@/components/top/flow/Flow_01"
@@ -20,24 +19,7 @@ import Lowerkv_01 from "@/components/lowerkv/Lowerkv_01"
 import Lowerkv_02 from "@/components/lowerkv/Lowerkv_02"
 import Lowerkv_03 from "@/components/lowerkv/Lowerkv_03"
 import Lowerkv_04 from "@/components/lowerkv/Lowerkv_04"
-import Privacy_01 from "@/components/privacy/Privacy_01"
 import Site_01 from "@/components/site/Site_01"
-import LowerAbout_01 from "@/components/about/about/About_01"
-import LowerAbout_02 from "@/components/about/about/About_02"
-import LowerAbout_03 from "@/components/about/about/About_03"
-import LowerAbout_04 from "@/components/about/about/About_04"
-import Purpose_01 from "@/components/about/purpose/Purpose_01"
-import History_01 from "@/components/about/history/History_01"
-import LowerMessage_01 from "@/components/about/message/Message_01"
-import LowerMessage_02 from "@/components/about/message/Message_02"
-import LowerMessage_03 from "@/components/about/message/Message_03"
-import LowerMessage_04 from "@/components/about/message/Message_04"
-import LowerPlan_01 from "@/components/price/plan/Plan_01"
-import LowerPlan_02 from "@/components/price/plan/Plan_02"
-import LowerPlan_03 from "@/components/price/plan/Plan_03"
-import LowerPlan_04 from "@/components/price/plan/Plan_04"
-import LowerFaq_01 from "@/components/faq/faq/Faq_01"
-import LowerFaq_02 from "@/components/faq/faq/Faq_02"
 import Contact_01 from "@/components/contact/contact/Contact_01"
 import ServiceAbout_01 from "@/components/service/about/About_01"
 import ServiceAbout_02 from "@/components/service/about/About_02"
@@ -124,15 +106,6 @@ export const componentsConfig: ComponentsConfig = {
         ],
         components: {
           Service_01: <Service_01 />,
-        },
-      },
-      plan: {
-        title: "料金プラン",
-        options: [
-          { id: "Plan_01", src: "/admin/step-01.png", alt: "Plan_01" },
-        ],
-        components: {
-          Plan_01: <Plan_01 />,
         },
       },
       flow: {
@@ -293,50 +266,6 @@ export const componentsConfig: ComponentsConfig = {
           Lowerkv_04: <Lowerkv_04 />,
         },
       },
-      about: {
-        title: "私たちについて",
-        options: [
-          { id: "LowerAbout_01", src: "/admin/step-01.png", alt: "LowerAbout_01" },
-          { id: "LowerAbout_02", src: "/admin/step-02.png", alt: "LowerAbout_02" },
-          { id: "LowerAbout_03", src: "/admin/step-03.png", alt: "LowerAbout_03" },
-          { id: "LowerAbout_04", src: "/admin/step-04.png", alt: "LowerAbout_04" },
-        ],
-        components: {
-          LowerAbout_01: <LowerAbout_01 />,
-          LowerAbout_02: <LowerAbout_02 />,
-          LowerAbout_03: <LowerAbout_03 />,
-          LowerAbout_04: <LowerAbout_04 />,
-        },
-      },
-      purpose: {
-        title: "私たちの想い",
-        options: [{ id: "Purpose_01", src: "/admin/step-01.png", alt: "Purpose_01" }],
-        components: {
-          Purpose_01: <Purpose_01 />,
-        },
-      },
-      history: {
-        title: "企業沿革",
-        options: [{ id: "History_01", src: "/admin/step-01.png", alt: "History_01" }],
-        components: {
-          History_01: <History_01 />,
-        },
-      },
-      message: {
-        title: "メッセージ",
-        options: [
-          { id: "LowerMessage_01", src: "/admin/step-01.png", alt: "LowerMessage_01" },
-          { id: "LowerMessage_02", src: "/admin/step-02.png", alt: "LowerMessage_02" },
-          { id: "LowerMessage_03", src: "/admin/step-03.png", alt: "LowerMessage_03" },
-          { id: "LowerMessage_04", src: "/admin/step-04.png", alt: "LowerMessage_04" },
-        ],
-        components: {
-          LowerMessage_01: <LowerMessage_01 />,
-          LowerMessage_02: <LowerMessage_02 />,
-          LowerMessage_03: <LowerMessage_03 />,
-          LowerMessage_04: <LowerMessage_04 />,
-        },
-      },
       profile: {
         title: "会社概要",
         options: [
@@ -344,82 +273,6 @@ export const componentsConfig: ComponentsConfig = {
         ],
         components: {
           Profile_01: <Profile_01 />,
-        },
-      },
-      footer: {
-        title: "フッター",
-        options: [
-          { id: "Footer1", src: "/admin/step-01.png", alt: "Footer1" },
-        ],
-        components: {
-          Footer1: <Footer1 />,
-        },
-      },
-    },
-  },
-  Price: {
-    sections: {
-      header: {
-        title: "ヘッダー",
-        options: [
-          { id: "Header_04", src: "/admin/step-04.png", alt: "Header_04" },
-        ],
-        components: {
-          Header_04: <Header_04 />,
-        },
-      },
-      lowerkv: {
-        title: "下層キービジュアル",
-        options: [
-          { id: "Lowerkv_01", src: "/admin/step-01.png", alt: "Lowerkv_01" },
-          { id: "Lowerkv_02", src: "/admin/step-02.png", alt: "Lowerkv_02" },
-          { id: "Lowerkv_03", src: "/admin/step-03.png", alt: "Lowerkv_03" },
-          { id: "Lowerkv_04", src: "/admin/step-04.png", alt: "Lowerkv_04" },
-        ],
-        components: {
-          Lowerkv_01: <Lowerkv_01 />,
-          Lowerkv_02: <Lowerkv_02 />,
-          Lowerkv_03: <Lowerkv_03 />,
-          Lowerkv_04: <Lowerkv_04 />,
-        },
-      },
-      plan: {
-        title: "料金プラン",
-        options: [
-          { id: "LowerPlan_01", src: "/admin/step-01.png", alt: "LowerPlan_01" },
-          { id: "LowerPlan_02", src: "/admin/step-02.png", alt: "LowerPlan_02" },
-          { id: "LowerPlan_03", src: "/admin/step-03.png", alt: "LowerPlan_03" },
-          { id: "LowerPlan_04", src: "/admin/step-04.png", alt: "LowerPlan_04" },
-        ],
-        components: {
-          LowerPlan_01: <LowerPlan_01 />,
-          LowerPlan_02: <LowerPlan_02 />,
-          LowerPlan_03: <LowerPlan_03 />,
-          LowerPlan_04: <LowerPlan_04 />,
-        },
-      },
-      flow: {
-        title: "ご利用の流れ",
-        options: [
-          { id: "Flow_01", src: "/admin/step-01.png", alt: "Flow_01" },
-        ],
-        components: {
-          Flow_01: <Flow_01 className="bg-bgLight" />,
-        },
-      },
-      cta: {
-        title: "CTA",
-        options: [
-          { id: "Cta_01", src: "/admin/step-01.png", alt: "Cta_01" },
-          { id: "Cta_02", src: "/admin/step-02.png", alt: "Cta_02" },
-          { id: "Cta_03", src: "/admin/step-03.png", alt: "Cta_03" },
-          { id: "Cta_04", src: "/admin/step-04.png", alt: "Cta_04" },
-        ],
-        components: {
-          Cta_01: <Cta_01 />,
-          Cta_02: <Cta_02 />,
-          Cta_03: <Cta_03 />,
-          Cta_04: <Cta_04 />,
         },
       },
       footer: {
@@ -457,17 +310,6 @@ export const componentsConfig: ComponentsConfig = {
           Lowerkv_02: <Lowerkv_02 />,
           Lowerkv_03: <Lowerkv_03 />,
           Lowerkv_04: <Lowerkv_04 />,
-        },
-      },
-      faq: {
-        title: "よくある質問",
-        options: [
-          { id: "LowerFaq_01", src: "/admin/step-01.png", alt: "LowerFaq_01" },
-          { id: "LowerFaq_02", src: "/admin/step-02.png", alt: "LowerFaq_02" },
-        ],
-        components: {
-          LowerFaq_01: <LowerFaq_01 />,
-          LowerFaq_02: <LowerFaq_02 />,
         },
       },
       cta: {
@@ -700,13 +542,6 @@ export const componentsConfig: ComponentsConfig = {
           Lowerkv_02: <Lowerkv_02 />,
           Lowerkv_03: <Lowerkv_03 />,
           Lowerkv_04: <Lowerkv_04 />,
-        },
-      },
-      privacy: {
-        title: "プライバシーポリシー",
-        options: [{ id: "Privacy_01", src: "/admin/step-01.png", alt: "Privacy_01" }],
-        components: {
-          Privacy_01: <Privacy_01 />,
         },
       },
       footer: {

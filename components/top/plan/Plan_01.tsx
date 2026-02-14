@@ -1,13 +1,8 @@
 // components/plan/Plan_01.tsx
 "use client"
 
-import { useState, useEffect } from "react"
-import Image from "next/image"
-import Link from "next/link"
 import ContentHeadline from "@/components/ui/frame/ContentHeadline"
-import PlanCard from "@/components/ui/ItemCard/PlanCard_01"
 import PlanOption from "@/components/ui/module/PlanOption"
-import PlanList from "@/components/ui/ItemCard/PlanList_01"
 import SectionContent from "@/components/ui/frame/SectionContent"
 
 const Plan_01 = () => {
@@ -21,7 +16,6 @@ const Plan_01 = () => {
             subTitleClassName=""
             titleClassName=""
           />
-          <PlanList />
         </section>
         <PlanOption />
       </SectionContent>

@@ -1,15 +1,8 @@
 // components/plan/Plan_01.tsx
 "use client"
 
-import React from "react"
-import { useState, useEffect } from "react"
-import Image from "next/image"
-import Link from "next/link"
-import ContentHeadline from "@/components/ui/frame/ContentHeadline"
 import SectionContent from "@/components/ui/frame/SectionContent"
-import PlanCard from "@/components/ui/ItemCard/PlanCard_01"
 import PlanOption from "@/components/ui/module/PlanOption"
-import PlanList from "@/components/ui/ItemCard/PlanList_01"
 
 const Plan_01 = () => {
   return (
@@ -24,14 +17,6 @@ const Plan_01 = () => {
               様々な料金プランをご用意しております
             </p>
           </div>
-
-          {/* <ContentHeadline
-            subTitle="Plan"
-            mainTitle="料金プラン"
-            subTitleClassName=""
-            titleClassName=""
-          /> */}
-          <PlanList />
         </section>
         <PlanOption />
       </SectionContent>

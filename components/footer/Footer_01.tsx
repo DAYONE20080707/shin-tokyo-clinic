@@ -18,7 +18,7 @@ const footerMenu = [
 // フッター
 const Footer_01 = () => {
   return (
-    <footer className="bg-white py-10 lg:py-[120px] px-4 lg:px-0">
+    <footer className="bg-white py-10 lg:py-[120px] px-4 lg:px-0 border-t border-[#d9d9d9]">
       <div className="lg:max-w-[1200px] mx-auto">
         {/* 上部 */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
@@ -46,7 +46,7 @@ const Footer_01 = () => {
           <div className="flex flex-col items-start lg:items-end gap-6 lg:gap-7">
             {/* メニュー */}
             <nav>
-              <ul className="flex flex-wrap lg:flex-nowrap items-center gap-4 lg:gap-10 text-base font-medium text-[#393939] leading-[1.6]">
+              <ul className="space-y-2 lg:flex lg:items-center lg:gap-10 text-base font-medium text-[#393939] leading-[1.6]">
                 {footerMenu.map((item, index) => (
                   <li key={index}>
                     <Link
@@ -61,7 +61,7 @@ const Footer_01 = () => {
             </nav>
 
             {/* ボタン */}
-            <div className="flex flex-col lg:flex-row gap-2 w-[80%] mx-auto lg:w-auto lg:mx-0">
+            <div className="flex flex-col lg:flex-row gap-2 w-full lg:w-auto">
               <Link
                 href="/coming-soon"
                 className="flex items-center justify-center gap-1 px-6 lg:px-10 py-4 bg-[#ffd89b] rounded-[30px] w-full lg:w-[250px] hover:opacity-90 transition-opacity"

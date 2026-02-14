@@ -24,7 +24,7 @@
   left: 0;
   width: 0;
   height: 0;
-  border-top: 20px solid #b80000;
+  border-top: 20px solid #347694;
   border-right: 20px solid transparent;
 }
 
@@ -49,7 +49,7 @@
     #ffffff 2px,
     #ffffff 4px
   );
-  border-left: 8px solid #b80000;
+  border-left: 8px solid #347694;
 }
 
 .content h3 {
@@ -71,8 +71,8 @@
   height: 4px;
   background-image: repeating-linear-gradient(
     -45deg,
-    #b80000,
-    #b80000,
+    #347694,
+    #347694,
     1px,
     transparent 2px,
     transparent 3px
@@ -148,15 +148,7 @@
 }
 
 .content u {
-  text-decoration: none;
-  font-weight: bold;
-  padding: 0 2px;
-  background: linear-gradient(transparent 60%, #fdf39f 60%);
-}
-
-.content u > * {
-  position: relative;
-  z-index: 1;
+  text-decoration: underline;
 }
 
 /* テーブルの共通スタイル */
@@ -256,15 +248,7 @@
   }
 
   .content u {
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0 2px;
-    background: linear-gradient(transparent 60%, #fdf39f 60%);
-  }
-
-  .content u > * {
-    position: relative;
-    z-index: 1;
+    text-decoration: underline;
   }
 
   /* SP時のテーブルスタイル */

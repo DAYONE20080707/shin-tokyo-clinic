@@ -75,32 +75,55 @@ const Service_01 = () => {
           </h2>
         </div>
 
-        {/* 診療メニューカード */}
-        <div className="flex flex-wrap justify-center gap-10 mb-16">
+        {/* 診療メニューカード - SP */}
+        <div className="flex flex-wrap justify-center gap-5 mb-16 lg:hidden">
           {treatments.map((treatment) => (
             <Link
               key={treatment.id}
               href={treatment.href}
-              className="w-full sm:w-[calc(50%-20px)] lg:w-[270px] rounded-[20px] p-6 flex flex-col items-center gap-4 transition-transform hover:scale-105"
+              className="w-[calc(50%-20px)] rounded-[20px] p-4 flex flex-col items-center gap-3 transition-transform hover:scale-105"
               style={{ backgroundColor: treatment.bgColor }}
             >
-              {/* アイコン */}
-              <div className="relative w-[150px] h-[100px] flex items-center justify-center">
-                <Image
-                  src={treatment.icon}
-                  alt={treatment.title}
-                  width={150}
-                  height={100}
-                  className="object-contain"
-                />
+              <div className="relative w-[100px] h-[70px] flex items-center justify-center">
+                <Image src={treatment.icon} alt={treatment.title} width={100} height={70} className="object-contain" />
               </div>
-
-              {/* タイトル */}
-              <p className="text-xl font-bold leading-[1.7] text-baseColor text-center">
-                {treatment.title}
-              </p>
+              <p className="text-sm font-bold leading-[1.5] text-baseColor text-center">{treatment.title}</p>
             </Link>
           ))}
+        </div>
+
+        {/* 診療メニューカード - PC 4個+3個 */}
+        <div className="hidden lg:block mb-16">
+          <div className="flex justify-center gap-5 mb-5">
+            {treatments.slice(0, 4).map((treatment) => (
+              <Link
+                key={treatment.id}
+                href={treatment.href}
+                className="w-[200px] rounded-[20px] p-4 flex flex-col items-center gap-3 transition-transform hover:scale-105"
+                style={{ backgroundColor: treatment.bgColor }}
+              >
+                <div className="relative w-[100px] h-[70px] flex items-center justify-center">
+                  <Image src={treatment.icon} alt={treatment.title} width={100} height={70} className="object-contain" />
+                </div>
+                <p className="text-base font-bold leading-[1.5] text-baseColor text-center">{treatment.title}</p>
+              </Link>
+            ))}
+          </div>
+          <div className="flex justify-center gap-5">
+            {treatments.slice(4).map((treatment) => (
+              <Link
+                key={treatment.id}
+                href={treatment.href}
+                className="w-[200px] rounded-[20px] p-4 flex flex-col items-center gap-3 transition-transform hover:scale-105"
+                style={{ backgroundColor: treatment.bgColor }}
+              >
+                <div className="relative w-[100px] h-[70px] flex items-center justify-center">
+                  <Image src={treatment.icon} alt={treatment.title} width={100} height={70} className="object-contain" />
+                </div>
+                <p className="text-base font-bold leading-[1.5] text-baseColor text-center">{treatment.title}</p>
+              </Link>
+            ))}
+          </div>
         </div>
 
         {/* 詳しく見るボタン */}

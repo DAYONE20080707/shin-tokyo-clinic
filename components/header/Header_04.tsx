@@ -94,8 +94,17 @@ const Header_04 = () => {
           MenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        {/* 閉じるボタン */}
-        <div className="flex justify-end p-4">
+        {/* ロゴ + 閉じるボタン */}
+        <div className="flex items-center justify-between px-4 h-[75px]">
+          <Link href="/" onClick={toggleMenu} className="w-[160px]">
+            <Image
+              src="/images/logo01.png"
+              alt="シン・東京駅こどもの成長クリニック"
+              width={160}
+              height={32}
+              className="object-contain"
+            />
+          </Link>
           <button
             aria-label="メニューを閉じる"
             onClick={toggleMenu}

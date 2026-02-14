@@ -144,8 +144,33 @@ const CaseDetail_01 = async ({ params, draftKey }: CaseDetailProps) => {
       {/* 診療案内ナビ */}
       <section className="py-16 lg:py-[80px] px-5">
         <div className="lg:max-w-[1200px] mx-auto">
+          {/* 1段目: 4個 */}
+          <div className="flex flex-wrap justify-center gap-6 lg:gap-10 mb-6 lg:mb-10">
+            {treatments.slice(0, 4).map((treatment, index) => (
+              <Link
+                key={index}
+                href={treatment.href}
+                className="w-[140px] lg:w-[150px] rounded-[20px] p-4 flex flex-col items-center gap-3 transition-transform hover:scale-105"
+                style={{ backgroundColor: treatment.bgColor }}
+              >
+                <div className="relative w-[80px] h-[60px] flex items-center justify-center">
+                  <Image
+                    src={treatment.icon}
+                    alt={treatment.title}
+                    width={80}
+                    height={60}
+                    className="object-contain"
+                  />
+                </div>
+                <p className="text-sm lg:text-base font-bold text-baseColor text-center">
+                  {treatment.title}
+                </p>
+              </Link>
+            ))}
+          </div>
+          {/* 2段目: 3個 */}
           <div className="flex flex-wrap justify-center gap-6 lg:gap-10">
-            {treatments.map((treatment, index) => (
+            {treatments.slice(4).map((treatment, index) => (
               <Link
                 key={index}
                 href={treatment.href}

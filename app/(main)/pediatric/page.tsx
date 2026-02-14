@@ -205,15 +205,8 @@ const PediatricPage = () => {
         <div className="lg:max-w-[1200px] mx-auto">
           {/* 見出し */}
           <div className="flex items-center gap-2 mb-6">
-            <div className="w-9 h-9 bg-[#347694] rounded-full flex items-center justify-center">
-              <Image
-                src="/images/mask-icon.svg"
-                alt=""
-                width={20}
-                height={20}
-              />
-            </div>
-            <h2 className="text-primaryColor text-2xl lg:text-[32px] font-bold tracking-wide">
+            <Image src="/images/mask-icon.svg" alt="" width={36} height={36} />
+            <h2 className="text-primaryColor text-lg lg:text-[32px] font-bold tracking-wide">
               主な症状や病気
             </h2>
           </div>
@@ -250,8 +243,8 @@ const PediatricPage = () => {
                 </p>
                 {/* 疾患テーブル */}
                 <div className="border border-[#347694] rounded-[10px] overflow-hidden flex flex-col lg:flex-row">
-                  <div className="bg-[#f3fbfa] border-b lg:border-b-0 lg:border-r border-[#347694] p-4 lg:w-[180px] flex-shrink-0">
-                    <p className="text-[#393939] text-sm lg:text-base leading-[1.7]">
+                  <div className="bg-[#f3fbfa] border-b lg:border-b-0 lg:border-r border-[#347694] p-4 lg:w-[180px] flex-shrink-0 flex items-center">
+                    <p className="text-[#393939] text-sm lg:text-base leading-[1.7] whitespace-nowrap">
                       考えられる主な疾患
                     </p>
                   </div>
@@ -272,15 +265,8 @@ const PediatricPage = () => {
         <div className="lg:max-w-[1200px] mx-auto">
           {/* 見出し */}
           <div className="flex items-center gap-2 mb-6">
-            <div className="w-9 h-9 bg-[#347694] rounded-full flex items-center justify-center">
-              <Image
-                src="/images/inspection-icon.svg"
-                alt=""
-                width={20}
-                height={20}
-              />
-            </div>
-            <h2 className="text-primaryColor text-2xl lg:text-[32px] font-bold tracking-wide">
+            <Image src="/images/inspection-icon.svg" alt="" width={36} height={36} />
+            <h2 className="text-primaryColor text-lg lg:text-[32px] font-bold tracking-wide">
               当院で行える検査
             </h2>
           </div>
@@ -308,16 +294,9 @@ const PediatricPage = () => {
         <div className="lg:max-w-[1200px] mx-auto">
           {/* 見出し */}
           <div className="flex items-center gap-2 mb-6">
-            <div className="w-9 h-9 bg-[#347694] rounded-full flex items-center justify-center">
-              <Image
-                src="/images/stethoscope-icon.svg"
-                alt=""
-                width={20}
-                height={20}
-              />
-            </div>
-            <h2 className="text-primaryColor text-2xl lg:text-[32px] font-bold">
-              「このような場合は早めに受診を」
+            <Image src="/images/stethoscope-icon.svg" alt="" width={36} height={36} />
+            <h2 className="text-primaryColor text-lg lg:text-[32px] font-bold">
+              このような場合は早めに受診を
             </h2>
           </div>
           {/* グラデーションライン */}
@@ -328,7 +307,7 @@ const PediatricPage = () => {
             <p className="text-[#d96c6c] text-base lg:text-xl font-bold mb-4">
               次のような様子がみられる場合は、早めの受診をおすすめします。
             </p>
-            <ul className="list-disc list-inside space-y-2 text-[#393939] text-sm lg:text-base leading-[2.5]">
+            <ul className="list-disc pl-5 space-y-2 text-[#393939] text-sm lg:text-base leading-[1.7]">
               {urgentSymptoms.map((symptom, index) => (
                 <li key={index}>{symptom}</li>
               ))}
@@ -343,8 +322,33 @@ const PediatricPage = () => {
       {/* 診療案内ナビ */}
       <section className="py-16 lg:py-[80px] px-5">
         <div className="lg:max-w-[1200px] mx-auto">
+          {/* 1段目: 4個 */}
+          <div className="flex flex-wrap justify-center gap-6 lg:gap-10 mb-6 lg:mb-10">
+            {treatments.slice(0, 4).map((treatment, index) => (
+              <Link
+                key={index}
+                href={treatment.href}
+                className="w-[140px] lg:w-[150px] rounded-[20px] p-4 flex flex-col items-center gap-3 transition-transform hover:scale-105"
+                style={{ backgroundColor: treatment.bgColor }}
+              >
+                <div className="relative w-[80px] h-[60px] flex items-center justify-center">
+                  <Image
+                    src={treatment.icon}
+                    alt={treatment.title}
+                    width={80}
+                    height={60}
+                    className="object-contain"
+                  />
+                </div>
+                <p className="text-sm lg:text-base font-bold text-baseColor text-center">
+                  {treatment.title}
+                </p>
+              </Link>
+            ))}
+          </div>
+          {/* 2段目: 3個 */}
           <div className="flex flex-wrap justify-center gap-6 lg:gap-10">
-            {treatments.map((treatment, index) => (
+            {treatments.slice(4).map((treatment, index) => (
               <Link
                 key={index}
                 href={treatment.href}

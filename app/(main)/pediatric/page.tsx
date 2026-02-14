@@ -2,17 +2,16 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { CheckCircle } from "lucide-react"
 
 // 診療メニューデータ
 const treatments = [
-  { title: "一般小児外来", icon: "/images/treatment-icon01.svg", bgColor: "#e6eef8", href: "/general" },
-  { title: "低身長外来", icon: "/images/treatment-icon02.svg", bgColor: "#edebfa", href: "/coming-soon" },
-  { title: "あたまのかたち外来", icon: "/images/treatment-icon03.svg", bgColor: "#f7efe8", href: "/coming-soon" },
-  { title: "乳幼児健診", icon: "/images/treatment-icon04.svg", bgColor: "#fdeef8", href: "/coming-soon" },
-  { title: "予防接種", icon: "/images/treatment-icon05.svg", bgColor: "#fff6c9", href: "/coming-soon" },
-  { title: "でべそ外来", icon: "/images/treatment-icon06.svg", bgColor: "#fff0e1", href: "/coming-soon" },
-  { title: "夜尿症外来", icon: "/images/treatment-icon07.svg", bgColor: "#eaf5f3", href: "/coming-soon" },
+  { title: "一般小児外来", icon: "/images/treatment-icon01.svg", bgColor: "#e6eef8", href: "/pediatric" },
+  { title: "低身長外来", icon: "/images/treatment-icon02.svg", bgColor: "#edebfa", href: "/pediatric/short-stature" },
+  { title: "あたまのかたち外来", icon: "/images/treatment-icon03.svg", bgColor: "#f7efe8", href: "/pediatric/head-shape" },
+  { title: "乳幼児健診", icon: "/images/treatment-icon04.svg", bgColor: "#fdeef8", href: "/pediatric/infant-checkup" },
+  { title: "予防接種", icon: "/images/treatment-icon05.svg", bgColor: "#fff6c9", href: "/pediatric/vaccination" },
+  { title: "でべそ外来", icon: "/images/treatment-icon06.svg", bgColor: "#fff0e1", href: "/pediatric/umbilical-hernia" },
+  { title: "夜尿症外来", icon: "/images/treatment-icon07.svg", bgColor: "#eaf5f3", href: "/pediatric/bedwetting" },
 ]
 
 // 小児科一覧ページ
@@ -135,7 +134,7 @@ const PediatricPage = () => {
         <div className="absolute bottom-0 right-0 w-[150px] lg:w-[300px] h-[150px] lg:h-[300px] bg-accentColor/30 rounded-full translate-x-1/3 translate-y-1/3" />
 
         {/* コンテンツ */}
-        <div className="relative z-10 pt-24 lg:pt-32 pb-6 lg:pb-10">
+        <div className="relative z-10 pt-28 lg:pt-40 pb-6 lg:pb-10">
           {/* パンくずリスト */}
           <div className="lg:max-w-[1200px] mx-auto px-5 lg:px-[120px]">
             <nav className="flex items-center gap-2 text-xs text-[#393939]">
@@ -226,7 +225,7 @@ const PediatricPage = () => {
             <div className="flex flex-wrap gap-4 lg:gap-6">
               {symptoms.map((symptom, index) => (
                 <div key={index} className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-[#73c6be]" />
+                  <Image src="/images/check-icon.svg" alt="" width={20} height={20} className="w-5 h-5" />
                   <span className="text-[#393939] text-base lg:text-xl font-bold">
                     {symptom}
                   </span>

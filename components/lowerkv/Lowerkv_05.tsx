@@ -38,7 +38,7 @@ const Lowerkv_05 = ({
       <div className="absolute bottom-0 right-0 w-[150px] lg:w-[300px] h-[150px] lg:h-[300px] bg-accentColor/30 rounded-full translate-x-1/3 translate-y-1/3" />
 
       {/* コンテンツ */}
-      <div className="relative z-10 pt-24 lg:pt-32 pb-6 lg:pb-10">
+      <div className="relative z-10 pt-28 lg:pt-40 pb-6 lg:pb-10">
         {/* パンくずリスト */}
         <div className="lg:max-w-[1200px] mx-auto px-5 lg:px-[120px]">
           <nav className="flex items-center gap-2 text-xs text-[#393939]">

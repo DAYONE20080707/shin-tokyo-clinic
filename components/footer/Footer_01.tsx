@@ -7,7 +7,7 @@ import { Calendar, Ruler, Phone } from "lucide-react";
 // フッターメニュー
 const footerMenu = [
   { name: "お知らせ", href: "/coming-soon" },
-  { name: "診療案内", href: "/coming-soon" },
+  { name: "診療案内", href: "/pediatric" },
   { name: "医師紹介", href: "/coming-soon" },
   { name: "当院の特徴", href: "/coming-soon" },
   { name: "医院の様子", href: "/coming-soon" },

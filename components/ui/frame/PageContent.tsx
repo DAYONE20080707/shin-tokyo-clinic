@@ -45,7 +45,7 @@ const PageContent: React.FC<PageContentProps> = ({
 
   return (
     <div
-      className={classNames(" mx-auto pt-14 lg:pt-[120px]", className)}
+      className={classNames(" mx-auto pt-24 lg:pt-[140px]", className)}
       style={getVariantStyle()}
     >
       {children}
